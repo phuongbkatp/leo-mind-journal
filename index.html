@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="theme-color" content="#0a0a0c" />
-<title>Leo Mind Journal · Daily Trading Command Center v2.33</title>
+<title>Leo Mind Journal · Daily Trading Command Center v2.21</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,29 +31,6 @@ nav.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--b
 .kpi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}@media(min-width:720px){.kpi-grid{grid-template-columns:repeat(4,1fr)}}.kpi{background:var(--bg-1);border:1px solid var(--border);border-radius:11px;padding:14px}.kpi-label{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}.kpi-value{font-family:var(--serif);font-size:32px;font-style:italic;line-height:1;letter-spacing:-1px}.kpi-value.bull{color:var(--bull)}.kpi-value.bear{color:var(--bear)}.kpi-value.gold{color:var(--gold)}.kpi-value.warn{color:var(--warn)}.kpi-value.info{color:var(--info)}.kpi-sub{font-family:var(--mono);font-size:10px;color:var(--text-dim);margin-top:6px}
 .risk-result{background:linear-gradient(180deg,var(--surface-2),var(--surface));border:1px solid var(--border-light);border-radius:14px;padding:18px;margin-bottom:16px;position:relative;overflow:hidden}.risk-result.green{border-color:var(--bull)}.risk-result.yellow{border-color:var(--warn)}.risk-result.orange{border-color:var(--warn);box-shadow:0 0 0 1px rgba(245,158,11,.12)}.risk-result.red,.risk-result.black{border-color:var(--bear);box-shadow:0 0 0 1px rgba(239,68,68,.14)}.risk-head{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap}.risk-score{font-family:var(--serif);font-size:60px;font-style:italic;line-height:1}.risk-score.green{color:var(--bull)}.risk-score.yellow,.risk-score.orange{color:var(--warn)}.risk-score.red,.risk-score.black{color:var(--bear)}.risk-meta{padding-bottom:7px}.risk-label{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:var(--text-dim);margin-bottom:4px}.risk-title{font-family:var(--serif);font-size:24px;font-style:italic}.risk-note{font-size:13px;line-height:1.6;color:var(--text-mid);background:var(--bg-1);border-left:2px solid var(--gold);border-radius:6px;padding:12px 14px;margin-top:14px}.risk-note b{color:var(--text)}
 .do-dont{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}@media(max-width:720px){.do-dont{grid-template-columns:1fr}}.do,.dont{background:var(--bg-1);border:1px solid var(--border);border-radius:9px;padding:10px 12px}.do h4,.dont h4{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}.do h4{color:var(--bull)}.dont h4{color:var(--bear)}.do ul,.dont ul{list-style:none;margin:0;padding:0}.do li,.dont li{font-size:12.5px;color:var(--text-mid);padding:3px 0 3px 14px;position:relative}.do li::before,.dont li::before{content:'·';position:absolute;left:2px;color:var(--gold)}
-
-/* === v2.14 Symbol Scenario Planning === */
-.scenario-card{background:var(--bg-1);border:1px solid var(--border);border-radius:11px;padding:13px;margin-bottom:10px}
-.scenario-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
-.scenario-title{font-family:var(--mono);font-size:12px;font-weight:800;color:var(--gold);letter-spacing:.8px;text-transform:uppercase}
-.scenario-meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-.scenario-body{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px}
-.scenario-box{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:9px 10px;font-size:12.5px;color:var(--text-mid);line-height:1.5}
-.scenario-box b{color:var(--text);display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:4px}
-.scenario-review{border-color:rgba(212,165,116,.34);background:linear-gradient(135deg,rgba(212,165,116,.055),rgba(255,255,255,.012))}
-@media(max-width:800px){.scenario-body{grid-template-columns:1fr}.scenario-card{padding:12px}}
-
-/* === v2.13 Persuasive Psychology Advice === */
-.psych-advice{margin-top:14px;border:1px solid rgba(212,165,116,.26);border-radius:10px;background:rgba(212,165,116,.045);padding:12px 13px}
-.psych-advice-title{font-family:var(--mono);font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:8px}
-.psych-advice-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.psych-advice-card{background:var(--bg-1);border:1px solid var(--border);border-radius:9px;padding:10px 12px}
-.psych-advice-card h4{font-family:var(--mono);font-size:9.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--text);margin:0 0 6px}
-.psych-advice-card ul{margin:0;padding:0;list-style:none}.psych-advice-card li{font-size:12.3px;color:var(--text-mid);line-height:1.45;padding:4px 0 4px 14px;position:relative}.psych-advice-card li::before{content:'•';position:absolute;left:1px;color:var(--gold)}
-.psych-advice-card.cause{border-left:2px solid var(--warn)}.psych-advice-card.rule{border-left:2px solid var(--bull)}.psych-advice-card.reminder{border-left:2px solid var(--bear)}
-.psych-script{margin-top:10px;background:rgba(0,0,0,.22);border-left:2px solid var(--gold);border-radius:7px;padding:10px 12px;color:var(--text-mid);font-size:12.6px;line-height:1.55}.psych-script b{color:var(--text)}
-@media(max-width:720px){.psych-advice-grid{grid-template-columns:1fr}.psych-advice{padding:10px}}
-
 .emotion-groups{display:flex;flex-direction:column;gap:12px}.emotion-group{background:var(--bg-1);border:1px solid var(--border);border-radius:10px;padding:13px}.eg-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.eg-title{font-family:var(--serif);font-size:17px;font-style:italic;color:var(--text)}.eg-risk{font-family:var(--mono);font-size:9px;letter-spacing:1.4px;text-transform:uppercase;padding:3px 8px;border-radius:4px}.eg-risk.good{color:var(--bull);background:var(--bull-soft)}.eg-risk.warn{color:var(--warn);background:var(--warn-soft)}.eg-risk.bad{color:var(--bear);background:var(--bear-soft)}.emotion-chip-row{display:flex;flex-wrap:wrap;gap:7px}.chip{border:1px solid var(--border);background:var(--bg);color:var(--text-mid);font-family:var(--mono);font-size:10.5px;border-radius:999px;padding:7px 10px;cursor:pointer;transition:all .12s;user-select:none}.chip:hover{border-color:var(--border-light);color:var(--text)}.chip.on{border-color:var(--gold);background:var(--gold-soft);color:var(--gold);box-shadow:inset 0 0 0 1px rgba(212,165,116,.12)}.chip.bad.on{border-color:var(--bear);background:var(--bear-soft);color:var(--bear)}.chip.warn.on{border-color:var(--warn);background:var(--warn-soft);color:var(--warn)}.chip.good.on{border-color:var(--bull);background:var(--bull-soft);color:var(--bull)}
 .slider-row{display:grid;grid-template-columns:110px 1fr 44px;gap:10px;align-items:center;margin-top:10px}.slider-row span{font-family:var(--mono);font-size:10px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase}.slider-row output{font-family:var(--mono);font-size:12px;color:var(--gold);text-align:center}.slider-row input[type=range]{width:100%;accent-color:var(--gold)}
 .trade-board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}@media(max-width:1050px){.trade-board{grid-template-columns:1fr}}.lane{background:var(--bg-1);border:1px solid var(--border);border-radius:12px;padding:12px}.lane-title{display:flex;justify-content:space-between;gap:10px;align-items:center;font-family:var(--mono);font-size:10px;letter-spacing:1.5px;color:var(--text-dim);text-transform:uppercase;margin-bottom:10px}.lane-title b{color:var(--gold)}.trade-list{display:flex;flex-direction:column;gap:10px}.trade-row{background:var(--bg);border:1px solid var(--border);border-radius:11px;padding:14px;transition:border-color .15s}.trade-row:hover{border-color:var(--border-light)}.trade-row.active{border-color:var(--gold);box-shadow:var(--shadow-gold)}.trade-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px}.trade-symbol{font-family:var(--mono);font-weight:700;font-size:14px;color:var(--gold);letter-spacing:.5px}.trade-id{font-family:var(--mono);font-size:10px;color:var(--text-dim);margin-left:6px}.pill{font-family:var(--mono);font-size:10px;font-weight:700;padding:3px 9px;border-radius:4px;letter-spacing:1.1px;text-transform:uppercase;display:inline-flex;align-items:center;gap:4px}.pill.long{background:var(--bull-soft);color:var(--bull)}.pill.short{background:var(--bear-soft);color:var(--bear)}.pill.planned{background:rgba(212,165,116,.10);color:var(--gold)}.pill.watching{background:rgba(156,163,175,.12);color:var(--text-mid)}.pill.open{background:var(--info-soft);color:var(--info)}.pill.cancelled{background:rgba(156,163,175,.12);color:var(--text-dim)}.pill.win{background:var(--bull-soft);color:var(--bull)}.pill.loss{background:var(--bear-soft);color:var(--bear)}.pill.be{background:rgba(156,163,175,.12);color:var(--text-mid)}.pill.good{background:var(--bull-soft);color:var(--bull)}.pill.warn{background:var(--warn-soft);color:var(--warn)}.pill.bad{background:var(--bear-soft);color:var(--bear)}.pill.info{background:var(--info-soft);color:var(--info)}.trade-detail{font-family:var(--mono);font-size:11px;color:var(--text-dim);display:flex;flex-wrap:wrap;gap:12px}.trade-detail b{color:var(--text-mid);font-weight:500}.trade-expand{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);font-size:13px;color:var(--text-mid);line-height:1.6}.empty{text-align:center;padding:30px 12px;color:var(--text-dim);font-size:13px}.empty .icon{font-family:var(--serif);font-style:italic;font-size:38px;color:var(--gold-soft);margin-bottom:6px}
@@ -61,7 +38,7 @@ nav.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--b
 .bar-stat{margin-bottom:14px}.bar-stat-label{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;margin-bottom:4px}.bar-stat-label b{color:var(--text)}.bar-stat-label span{color:var(--text-dim)}.bar-stat-track{height:8px;background:var(--bg-1);border-radius:4px;overflow:hidden}.bar-stat-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-bright));border-radius:4px;transition:width .4s}
 .table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:11px;background:var(--bg-1)}table{width:100%;border-collapse:collapse;font-size:12px;min-width:840px}th,td{padding:10px;border-bottom:1px solid var(--border);text-align:left;vertical-align:top}tr:last-child td{border-bottom:0}th{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:1.5px;text-transform:uppercase;font-weight:600;background:rgba(255,255,255,.015)}td{color:var(--text-mid);line-height:1.45}td b{color:var(--text)}
 .toast{position:fixed;bottom:86px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--surface);border:1px solid var(--gold);border-radius:10px;padding:12px 20px;font-family:var(--mono);font-size:12px;color:var(--gold);box-shadow:var(--shadow-gold);transition:transform .3s;z-index:1000}.toast.show{transform:translateX(-50%) translateY(0)}
-.quick-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:stretch}.quick-panel>div{min-width:0}.quick-panel .risk-result{height:100%;margin-bottom:0;display:flex;flex-direction:column}.quick-panel .risk-result .risk-note{flex:1}@media(max-width:1100px){.quick-panel{grid-template-columns:1fr}}.rule-box{background:var(--bg-1);border:1px solid var(--border);border-radius:10px;padding:12px 14px}.rule-title{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px}.rule-text{font-size:12.7px;line-height:1.55;color:var(--text-mid)}.rule-text b{color:var(--text)}
+.quick-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}@media(max-width:900px){.quick-panel{grid-template-columns:1fr}}.rule-box{background:var(--bg-1);border:1px solid var(--border);border-radius:10px;padding:12px 14px}.rule-title{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px}.rule-text{font-size:12.7px;line-height:1.55;color:var(--text-mid)}.rule-text b{color:var(--text)}
 .cooldown{border:1px solid var(--bear);background:linear-gradient(135deg,rgba(239,68,68,.13),transparent);border-radius:12px;padding:14px;margin-bottom:16px}.cooldown-title{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--bear);font-weight:700}.cooldown-time{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--text);margin-top:4px}.cooldown-note{font-size:13px;color:var(--text-mid);margin-top:4px}
 .bottom-nav{position:fixed;left:0;right:0;bottom:0;background:rgba(10,10,12,.92);backdrop-filter:blur(10px);border-top:1px solid var(--border);display:none;z-index:100;padding:7px 8px calc(7px + env(safe-area-inset-bottom))}.bottom-nav button{flex:1;background:transparent;border:0;color:var(--text-dim);font-family:var(--mono);font-size:9px;letter-spacing:1px;text-transform:uppercase;padding:7px 4px;border-radius:8px}.bottom-nav button.active{background:var(--gold-soft);color:var(--gold)}@media(max-width:780px){.bottom-nav{display:flex}nav.tabs{display:none}.shell{padding:12px 10px 92px}header.brand{padding:12px 14px}.brand-title{font-size:18px}.brand-right{display:none}.card{padding:14px}.risk-score{font-size:52px}.trade-row{padding:12px}.btn{padding:10px 12px}.toast{bottom:78px}}
 /* === Chart Context Note spacing fix v2.6 === */
@@ -130,17 +107,6 @@ nav.tabs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--b
   height:auto;
   display:block;
 }
-.chart-note-summary{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.chart-note-detail{margin-top:10px;padding:10px 12px;background:var(--bg-1);border:1px solid var(--border);border-radius:10px}
-.chart-note-detail + .chart-note-detail{margin-top:10px}
-.chart-note-detail .chart-preview{display:block;max-height:70vh;margin-top:10px;overflow:auto}
-.chart-note-detail .chart-preview img{width:100%;height:auto;display:block}
-details.trade-details{margin-top:10px;border-top:1px dashed var(--border);padding-top:10px}
-details.trade-details summary{cursor:pointer;color:var(--gold);font-family:var(--mono);font-size:10.5px;letter-spacing:1px;text-transform:uppercase;list-style:none}
-details.trade-details summary::-webkit-details-marker{display:none}
-details.trade-details summary::after{content:' +';color:var(--text-dim)}
-details.trade-details[open] summary::after{content:' −'}
-
 @media(max-width:780px){
   .chart-note-box{padding:14px;margin-top:12px}
   .chart-note-head{margin-bottom:14px}
@@ -160,12 +126,12 @@ details.trade-details[open] summary::after{content:' −'}
 @media(max-width:780px){.emotion-groups{grid-template-columns:1fr!important}.emotion-group{padding:10px!important}.chip{font-size:10.5px!important;padding:6px 9px!important}}
 
 
-/* === v2.24 Psychology Diagnosis layout + merge fix === */
+/* === v2.21 Psychology Diagnosis layout fix === */
 .psych-advice{
   margin-top:14px;
   padding:14px;
-  background:radial-gradient(700px 180px at 0 0,rgba(245,158,11,.08),transparent 65%),linear-gradient(180deg,#17171a,#101116);
-  border:1px solid rgba(245,158,11,.24);
+  background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(0,0,0,.10));
+  border:1px solid rgba(212,165,116,.28);
   border-radius:12px;
   box-shadow:0 10px 28px rgba(0,0,0,.18);
 }
@@ -179,257 +145,77 @@ details.trade-details[open] summary::after{content:' −'}
   margin-bottom:12px;
   line-height:1.45;
 }
-.psych-advice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.psych-advice-card{background:rgba(6,8,12,.55);border:1px solid rgba(255,255,255,.075);border-radius:10px;padding:13px 15px;min-height:100%}
+.psych-advice-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.psych-advice-card{
+  background:var(--bg-1);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:13px 15px;
+  min-height:100%;
+}
 .psych-advice-card.cause{border-left:3px solid var(--warn)}
 .psych-advice-card.rule{border-left:3px solid var(--bull)}
 .psych-advice-card.reminder{border-left:3px solid var(--bear)}
-.psych-advice-card h4{font-family:var(--mono);font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:var(--text);margin:0 0 9px;line-height:1.45}
-.psych-advice-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
-.psych-advice-card li{position:relative;padding-left:16px;color:var(--text-mid);font-size:13px;line-height:1.62}
-.psych-advice-card li::before{content:'•';position:absolute;left:2px;top:0;color:var(--gold)}
-.psych-script{margin-top:12px;padding:12px 14px;background:rgba(0,0,0,.20);border-left:2px solid var(--gold);border-radius:8px;color:var(--text-mid);font-size:13px;line-height:1.65}
+.psych-advice-card h4{
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  color:var(--text);
+  margin:0 0 9px;
+  line-height:1.45;
+}
+.psych-advice-card ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+.psych-advice-card li{
+  position:relative;
+  padding-left:16px;
+  color:var(--text-mid);
+  font-size:13px;
+  line-height:1.62;
+}
+.psych-advice-card li::before{
+  content:'•';
+  position:absolute;
+  left:2px;
+  top:0;
+  color:var(--gold);
+}
+.psych-script{
+  margin-top:12px;
+  padding:12px 14px;
+  background:rgba(0,0,0,.18);
+  border-left:2px solid var(--gold);
+  border-radius:8px;
+  color:var(--text-mid);
+  font-size:13px;
+  line-height:1.65;
+}
 .psych-script b{color:var(--text)}
-@media(max-width:780px){.psych-advice{padding:12px;margin-top:12px}.psych-advice-grid{grid-template-columns:1fr;gap:10px}.psych-advice-card{padding:12px 13px}.psych-advice-card li{font-size:12.8px;line-height:1.6}}
+@media(max-width:780px){
+  .psych-advice{padding:12px;margin-top:12px}
+  .psych-advice-grid{grid-template-columns:1fr;gap:10px}
+  .psych-advice-card{padding:12px 13px}
+  .psych-advice-card li{font-size:12.8px;line-height:1.6}
+}
 
 .footer{margin-top:24px;text-align:center;font-family:var(--mono);font-size:10px;color:var(--text-dim);letter-spacing:1px}
-
-
-/* === v2.16 Visual hierarchy refresh ===
-   Goal: make important, input, review and archive sections visually distinct
-   without breaking the dark/gold terminal style. */
-:root{
-  --surface-raised:#1a1d24;
-  --surface-input:#17131f;
-  --surface-review:#111820;
-  --surface-muted:#101116;
-  --surface-data:#0e1118;
-  --surface-important:#1b1711;
-  --line-soft:rgba(255,255,255,.055);
-  --line-gold:rgba(212,165,116,.32);
-  --line-blue:rgba(59,130,246,.22);
-  --line-green:rgba(16,185,129,.24);
-  --line-red:rgba(239,68,68,.24);
-}
-
-body{
-  background-color:#090a0d;
-  background-image:
-    radial-gradient(1200px 600px at 80% -10%,rgba(212,165,116,.06),transparent),
-    radial-gradient(900px 420px at 0% 100%,rgba(59,130,246,.045),transparent),
-    linear-gradient(180deg,#090a0d 0%,#0b0d12 55%,#08090c 100%);
-}
-
-/* Primary page blocks */
-.card{
-  background:
-    linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012)),
-    var(--surface);
-  border-color:rgba(255,255,255,.075);
-  box-shadow:0 10px 28px rgba(0,0,0,.22);
-}
-.card:hover{border-color:rgba(212,165,116,.16)}
-.card-title{color:var(--gold-bright)}
-.card-sub{color:#7b8190}
-
-/* Cards that are mainly forms: slightly warmer, easier to identify as action areas */
-.card:has(.field input),
-.card:has(.field select),
-.card:has(.field textarea),
-.chart-note-box{
-  background:
-    radial-gradient(700px 180px at 0 0,rgba(212,165,116,.035),transparent 65%),
-    linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012)),
-    var(--surface-input);
-  border-color:rgba(212,165,116,.145);
-}
-
-/* High-importance decision blocks */
-.risk-result,
-.cooldown{
-  background:
-    radial-gradient(900px 260px at 0 0,rgba(212,165,116,.105),transparent 60%),
-    linear-gradient(180deg,#20242d 0%,#171a21 100%);
-  border-width:1.5px;
-  box-shadow:0 0 0 1px rgba(212,165,116,.055),0 14px 38px rgba(0,0,0,.32);
-}
-.risk-note{
-  background:rgba(5,6,9,.45);
-  border-left-width:3px;
-  border-color:var(--line-gold);
-}
-.risk-result.green{background:radial-gradient(900px 260px at 0 0,rgba(16,185,129,.105),transparent 60%),linear-gradient(180deg,#1d2428,#151a20)}
-.risk-result.yellow,.risk-result.orange{background:radial-gradient(900px 260px at 0 0,rgba(245,158,11,.12),transparent 60%),linear-gradient(180deg,#25231c,#171a20)}
-.risk-result.red,.risk-result.black{background:radial-gradient(900px 260px at 0 0,rgba(239,68,68,.12),transparent 60%),linear-gradient(180deg,#261d20,#171a20)}
-
-/* KPI and summary blocks */
-.kpi{
-  background:linear-gradient(180deg,#181c23,#10131a);
-  border-color:rgba(255,255,255,.08);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.025);
-}
-.kpi:nth-child(1){border-left:3px solid var(--line-gold)}
-.kpi:nth-child(2){border-left:3px solid var(--line-blue)}
-.kpi:nth-child(3){border-left:3px solid rgba(245,158,11,.34)}
-.kpi:nth-child(4){border-left:3px solid var(--line-green)}
-
-/* Command center lanes and trade cards */
-.lane{
-  background:linear-gradient(180deg,#141820,#0e1117);
-  border-color:rgba(255,255,255,.075);
-}
-.lane-title{
-  padding-bottom:8px;
-  border-bottom:1px solid rgba(255,255,255,.055);
-}
-.trade-row{
-  background:linear-gradient(180deg,#11151d,#0b0d12);
-  border-color:rgba(255,255,255,.075);
-  box-shadow:0 8px 20px rgba(0,0,0,.18);
-}
-.trade-row.active{
-  background:radial-gradient(600px 180px at 0 0,rgba(212,165,116,.08),transparent 60%),linear-gradient(180deg,#15181f,#0d0f14);
-}
-.trade-expand{
-  background:rgba(255,255,255,.018);
-  margin-left:-4px;margin-right:-4px;
-  padding:12px 10px 2px;
-  border-radius:10px;
-}
-
-/* Scenario cards: planning blocks should stand out from ordinary notes */
-.scenario-card{
-  background:radial-gradient(650px 180px at 0 0,rgba(59,130,246,.055),transparent 70%),linear-gradient(180deg,#131923,#0e1118);
-  border-color:rgba(59,130,246,.16);
-  border-left:3px solid rgba(59,130,246,.34);
-  box-shadow:0 8px 22px rgba(0,0,0,.18);
-}
-.scenario-card.scenario-review{
-  background:radial-gradient(650px 180px at 0 0,rgba(212,165,116,.075),transparent 70%),linear-gradient(180deg,#1a1713,#101116);
-  border-color:rgba(212,165,116,.22);
-  border-left-color:rgba(212,165,116,.45);
-}
-.scenario-box{
-  background:rgba(4,6,10,.38);
-  border-color:rgba(255,255,255,.07);
-}
-.scenario-box b{color:var(--gold-bright)}
-
-/* Emotion groups: group risk is visible by color, not just text */
-.emotion-group{
-  background:linear-gradient(180deg,#121620,#0e1016);
-  border-color:rgba(255,255,255,.075);
-  border-left:3px solid rgba(156,163,175,.24);
-}
-.emotion-group:has(.eg-risk.good){border-left-color:rgba(16,185,129,.42);background:radial-gradient(420px 120px at 0 0,rgba(16,185,129,.055),transparent 70%),linear-gradient(180deg,#121a1d,#0e1016)}
-.emotion-group:has(.eg-risk.warn){border-left-color:rgba(245,158,11,.45);background:radial-gradient(420px 120px at 0 0,rgba(245,158,11,.06),transparent 70%),linear-gradient(180deg,#191712,#0e1016)}
-.emotion-group:has(.eg-risk.bad){border-left-color:rgba(239,68,68,.48);background:radial-gradient(420px 120px at 0 0,rgba(239,68,68,.06),transparent 70%),linear-gradient(180deg,#1a1215,#0e1016)}
-.eg-head{border-bottom:1px solid rgba(255,255,255,.045);padding-bottom:8px}
-
-/* Checklist: execution gates are clearer */
-.check{
-  background:linear-gradient(180deg,#11151b,#0d1015);
-  border-color:rgba(255,255,255,.075);
-}
-.check:has(input:checked){
-  background:linear-gradient(180deg,rgba(212,165,116,.075),rgba(255,255,255,.018));
-  border-color:rgba(212,165,116,.27);
-}
-
-/* Hints and rules: secondary information is visible but quieter */
-.hint,.rule-box,.psych-advice-card{
-  background:rgba(6,8,12,.45);
-  border-color:rgba(255,255,255,.065);
-}
-.rule-box{border-left:2px solid rgba(212,165,116,.28)}
-.psych-advice{
-  background:radial-gradient(700px 180px at 0 0,rgba(245,158,11,.07),transparent 65%),linear-gradient(180deg,#17171a,#101116);
-  border-color:rgba(245,158,11,.2);
-}
-
-/* Tables and archives: deliberately muted */
-.table-wrap,table{
-  background:var(--surface-data);
-}
-.table-wrap{border-color:rgba(255,255,255,.055)}
-th{background:rgba(255,255,255,.018);color:#69707f}
-td{color:#8f97a6}
-
-/* Inputs: keep clear but not as black rectangles */
-.field input,.field select,.field textarea{
-  background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(0,0,0,.10));
-  border-color:rgba(212,165,116,.20);
-}
-.field input:hover,.field select:hover,.field textarea:hover{border-color:rgba(212,165,116,.34)}
-.field label{color:#858b99;font-weight:700}
-
-/* Buttons and pills get a bit more structure */
-.btn{background:linear-gradient(180deg,#11151c,#0a0c11);border-color:rgba(255,255,255,.075)}
-.pill{box-shadow:inset 0 0 0 1px rgba(255,255,255,.035)}
-
-/* Low-use/raw/data sections fade slightly, without hiding them */
-#panel-data .card,
-#rawData,
-#emotionTable,
-#missedHistory{
-  opacity:.92;
-}
-
-/* Mobile: keep contrast but avoid visual noise */
-@media(max-width:780px){
-  .card{box-shadow:0 8px 20px rgba(0,0,0,.18)}
-  .risk-result{box-shadow:0 0 0 1px rgba(212,165,116,.04),0 10px 26px rgba(0,0,0,.25)}
-  .scenario-card,.trade-row,.emotion-group{box-shadow:none}
-}
-
-
-/* === v2.24 Daily State embedded in Psychological Risk === */
-.daily-risk-guide{margin-top:10px}
-.daily-risk-guide .dg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:0}
-.daily-risk-guide .dg-card{border:1px solid rgba(255,255,255,.07);border-radius:10px;background:rgba(0,0,0,.16);padding:10px 11px;font-size:12px;line-height:1.45;color:var(--text-mid);min-height:96px}
-.daily-risk-guide .dg-card b{display:block;font-family:var(--mono);font-size:9px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
-.daily-risk-guide .dg-card.good{border-left:2px solid var(--bull)}
-.daily-risk-guide .dg-card.warn{border-left:2px solid var(--warn)}
-.daily-risk-guide .dg-card.bad{border-left:2px solid var(--bear)}
-.daily-risk-guide .dg-action{margin-top:10px;padding:9px 11px;border-radius:9px;background:rgba(0,0,0,.22);border-left:2px solid var(--gold);font-size:12.5px;color:var(--text);line-height:1.5}
-.field .helper{font-family:var(--mono);font-size:9px;color:var(--text-dim);margin-top:5px;line-height:1.35}
-@media(max-width:760px){.daily-risk-guide .dg-grid{grid-template-columns:1fr}.daily-risk-guide .dg-card{min-height:auto}}
-
-
-
-/* === v2.27 In-session No Trade Monitor === */
-.no-trade-session{background:linear-gradient(135deg,rgba(16,185,129,.045),rgba(59,130,246,.035));border:1px solid rgba(16,185,129,.20);box-shadow:0 12px 34px rgba(0,0,0,.18)}
-.nt-session-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
-.nt-session-card{background:linear-gradient(180deg,rgba(255,255,255,.032),rgba(255,255,255,.012));border:1px solid var(--border-light);border-radius:12px;padding:12px;color:var(--text-mid);font-size:12.5px;line-height:1.6}
-.nt-session-card.watch{border-left:3px solid var(--info)}.nt-session-card.ready{border-left:3px solid var(--bull)}.nt-session-card.warn{border-left:3px solid var(--warn)}.nt-session-card.danger{border-left:3px solid var(--bear)}
-.nt-session-title{font-family:var(--mono);font-size:11px;letter-spacing:1.3px;text-transform:uppercase;color:var(--gold);font-weight:800;margin-bottom:7px}
-.nt-session-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}
-.nt-session-check{display:flex;gap:8px;align-items:flex-start;background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:8px;padding:8px 10px;color:var(--text-mid);font-size:12px}.nt-session-check input{margin-top:2px;accent-color:var(--gold)}
-.nt-session-diagnosis{margin-top:12px;background:linear-gradient(180deg,rgba(0,0,0,.24),rgba(255,255,255,.012));border:1px solid rgba(16,185,129,.22);border-left:3px solid var(--bull);border-radius:10px;padding:12px 14px;color:var(--text-mid);font-size:12.7px;line-height:1.7}.nt-session-diagnosis b{color:var(--text)}.nt-session-diagnosis ul{margin:6px 0 0 18px;padding:0}.nt-session-diagnosis li{margin:5px 0}
-@media(max-width:860px){.nt-session-grid,.nt-session-list{grid-template-columns:1fr}}
-
-/* === No Trade Psychology & Skill Review v2.24 === */
-.no-trade-desk{background:linear-gradient(135deg,rgba(59,130,246,.045),rgba(212,165,116,.035));border:1px solid rgba(59,130,246,.22);box-shadow:0 12px 34px rgba(0,0,0,.20)}
-.nt-summary-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:12px 0}
-.nt-card{background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));border:1px solid var(--border-light);border-radius:12px;padding:12px;margin-bottom:10px}
-.nt-card.valid{border-left:3px solid var(--bull)}.nt-card.missed{border-left:3px solid var(--warn)}.nt-card.fear{border-left:3px solid var(--bear)}.nt-card.avoided{border-left:3px solid var(--info)}.nt-card.unclear{border-left:3px solid var(--gold)}
-.nt-title{font-family:var(--mono);font-size:12px;font-weight:800;letter-spacing:.8px;color:var(--gold);text-transform:uppercase;display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
-.nt-body{font-size:12.5px;color:var(--text-mid);line-height:1.65;display:grid;grid-template-columns:1fr 1fr;gap:10px}.nt-body b{color:var(--text)}
-.nt-box{background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.06);border-radius:9px;padding:10px;line-height:1.6}
-.nt-diagnosis{margin-top:12px;background:linear-gradient(180deg,rgba(0,0,0,.23),rgba(255,255,255,.012));border:1px solid rgba(212,165,116,.25);border-left:3px solid var(--gold);border-radius:10px;padding:12px 14px;color:var(--text-mid);line-height:1.7;font-size:12.7px}
-.nt-diagnosis b{color:var(--text)}.nt-diagnosis ul{margin:6px 0 0 18px;padding:0}.nt-diagnosis li{margin:5px 0}
-.nt-psych-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.nt-psych-item{display:flex;gap:8px;align-items:flex-start;background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:8px;padding:8px 10px;color:var(--text-mid);font-size:12px}.nt-psych-item input{margin-top:2px;accent-color:var(--gold)}
-.nt-score-checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.nt-score-checks label{display:flex;gap:8px;align-items:flex-start;background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:8px;padding:9px 10px;color:var(--text-mid);font-size:12px;line-height:1.45}.nt-score-checks input{margin-top:2px;accent-color:var(--gold)}
-.nt-mini-kpi{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:10px}.nt-mini-kpi .k{font-family:var(--mono);font-size:9px;color:var(--text-dim);letter-spacing:1.5px;text-transform:uppercase}.nt-mini-kpi .v{font-family:var(--serif);font-size:24px;color:var(--gold);font-style:italic;line-height:1.1;margin-top:4px}
-.nt-thumb{max-height:90px;border-radius:8px;border:1px solid var(--border);margin-top:8px;object-fit:cover}.nt-full-img{width:100%;max-height:70vh;object-fit:contain;border-radius:10px;border:1px solid var(--border);background:#fff;margin-top:10px}
-@media(max-width:900px){.nt-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nt-body{grid-template-columns:1fr}.nt-psych-grid,.nt-score-checks{grid-template-columns:1fr}}
-
 </style>
 </head>
 <body>
 <div class="shell">
 <header class="brand">
-  <div class="brand-left"><div class="brand-mark">L</div><div><div class="brand-title">Leo Mind Journal</div><div class="brand-sub">Daily Trading Command Center · SMC + Psychology · v2.33</div></div></div>
+  <div class="brand-left"><div class="brand-mark">L</div><div><div class="brand-title">Leo Mind Journal</div><div class="brand-sub">Daily Trading Command Center · SMC + Psychology · v2.21</div></div></div>
   <div class="brand-right"><span class="dot"></span><span>LOCAL STORAGE · OFFLINE READY</span></div>
 </header>
 <nav class="tabs" id="topTabs">
@@ -438,7 +224,6 @@ td{color:#8f97a6}
   <button class="tab" data-tab="live">Live Trade</button>
   <button class="tab" data-tab="close">Close Review</button>
   <button class="tab" data-tab="missed">Missed</button>
-  <button class="tab" data-tab="notrade">No Trade</button>
   <button class="tab" data-tab="eod">End Day</button>
   <button class="tab" data-tab="analytics">Analytics</button>
   <button class="tab" data-tab="data">Data</button>
@@ -452,9 +237,9 @@ td{color:#8f97a6}
         <div class="card-title">Daily State</div><div class="card-sub">Save before trading · determines permission</div>
         <div class="grid four">
           <div class="field"><label>Date</label><input id="dayDate" type="date"></div>
-          <div class="field"><label>Energy 1-5</label><input id="dayEnergy" type="number" min="1" max="5" value="4"><div class="helper">1-2: chỉ quan sát · 3: giảm tốc · 4-5: đủ tỉnh táo</div></div>
-          <div class="field"><label>Sleep 1-5</label><input id="daySleep" type="number" min="1" max="5" value="4"><div class="helper">1-2: dễ sai thao tác · 3: chỉ A+ · 4-5: ổn định</div></div>
-          <div class="field"><label>Pressure 1-5</label><input id="dayPressure" type="number" min="1" max="5" value="1"><div class="helper">1-2: nhẹ · 3: theo dõi · 4: giảm risk · 5: dễ trade vì tiền/cảm xúc</div></div>
+          <div class="field"><label>Energy 1-5</label><input id="dayEnergy" type="number" min="1" max="5" value="4"></div>
+          <div class="field"><label>Sleep 1-5</label><input id="daySleep" type="number" min="1" max="5" value="4"></div>
+          <div class="field"><label>Pressure 1-5</label><input id="dayPressure" type="number" min="1" max="5" value="1"></div>
         </div>
         <div class="grid four" style="margin-top:12px">
           <div class="field"><label>Market Focus</label><select id="dayMarket"><option>XAUUSD</option><option>BTCUSD</option><option>USOIL</option><option>Mixed</option></select></div>
@@ -469,30 +254,6 @@ td{color:#8f97a6}
       </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-title">Daily Symbol Scenarios</div><div class="card-sub">Write planned scenarios per symbol · review them at End Day</div>
-    <div class="hint" style="margin-bottom:12px"><b>Mục tiêu:</b> Viết trước kịch bản theo từng symbol để khi giá chạy, bạn biết mình đang thực thi plan hay phản ứng theo cảm xúc. Cuối ngày hãy review: kịch bản đúng/sai, có tuân thủ không, cảm xúc nào xuất hiện khi market state diễn ra.</div>
-    <input id="scenarioEditId" type="hidden">
-    <div class="grid four">
-      <div class="field"><label>Symbol</label><select id="scenarioSymbol"><option>XAUUSD</option><option>BTCUSD</option><option>USOIL</option><option>Other</option></select></div>
-      <div class="field"><label>Expected Bias</label><select id="scenarioBias"><option>Bullish</option><option>Bearish</option><option>Neutral</option><option>Mixed</option></select></div>
-      <div class="field"><label>Primary Market State</label><select id="scenarioState"><option>Waiting for Key Zone retest</option><option>Trend continuation</option><option>Liquidity sweep then reversal</option><option>Range / no clean bias</option><option>CHoCH/BOS transition</option><option>News risk / avoid</option></select></div>
-      <div class="field"><label>Scenario Quality</label><select id="scenarioQuality"><option>A+</option><option>A</option><option>B</option><option>No Trade</option><option>Unclear</option></select></div>
-    </div>
-    <div class="grid two" style="margin-top:12px">
-      <div class="field"><label>Main Scenario</label><textarea id="scenarioMain" placeholder="VD: Nếu BTC hồi về H4 supply 65700-67400 và M15 reject, ưu tiên short theo D1/H4 bearish."></textarea></div>
-      <div class="field"><label>Alternative / Invalidation</label><textarea id="scenarioAlt" placeholder="VD: Nếu H1 close mạnh trên supply hoặc D1 bias đổi, không short; chờ lại setup mới."></textarea></div>
-    </div>
-    <div class="grid two" style="margin-top:12px">
-      <div class="field"><label>Expected Psychology Trap</label><textarea id="scenarioPsych" placeholder="VD: Dễ FOMO short sau cú rơi mạnh; dễ sợ mất lời khi giá phản ứng nhanh; dễ vào sớm trước M15 trigger."></textarea></div>
-      <div class="field"><label>Action Rule</label><textarea id="scenarioRule" placeholder="VD: Chỉ entry khi giá chạm zone + M15 trigger. Không đuổi giá. Nếu đang lời chỉ partial theo plan, không đóng vì PnL."></textarea></div>
-    </div>
-    <div class="btn-row"><button class="btn primary" onclick="saveScenario()">Save Scenario</button><button class="btn" onclick="clearScenarioForm()">Clear Form</button></div>
-    <div class="card-divider"></div>
-    <div id="dailyScenarioList"></div>
-  </div>
-
-
   <div id="deskKpis" class="kpi-grid"></div>
   <div class="card">
     <div class="card-title">Trade Command Center</div><div class="card-sub">Plan → Enter → Live → Close · use quick buttons on each card</div>
@@ -510,91 +271,9 @@ td{color:#8f97a6}
   </div>
 </section>
 
-
-<section class="panel" id="panel-notrade">
-  <div class="card notrade-intro">
-    <div class="card-title">No Trade Desk</div><div class="card-sub">Theo dõi khi chưa có trade · review ngày không vào lệnh · tách khỏi Daily Desk để ngày có trade thao tác nhanh hơn</div>
-    <div class="hint"><b>Mục tiêu:</b> Dùng tab này khi đang trong phiên nhưng chưa có lệnh, hoặc khi cuối ngày cần review vì sao không trade. Daily Desk chỉ giữ Daily State, Scenario và Trade Command Center.</div>
-  </div>
-
-  <div class="card no-trade-session" id="noTradeSessionDesk">
-    <div class="card-title">No Trade Session Monitor</div><div class="card-sub">Theo dõi trong phiên khi chưa có trade · không chờ đến cuối ngày mới review</div>
-    <div class="hint" style="margin-bottom:12px"><b>Mục tiêu:</b> Khi đang trong phiên nhưng chưa có lệnh, hãy ghi các checkpoint theo symbol để biết bạn đang kiên nhẫn đúng plan, đang bỏ lỡ tín hiệu vì kỹ năng, hay đang bắt đầu “đói lệnh”.</div>
-    <input id="ntsEditId" type="hidden">
-    <div class="grid four">
-      <div class="field"><label>Symbol</label><select id="ntsSymbol"><option>XAUUSD</option><option>BTCUSD</option><option>USOIL</option><option>Other</option></select></div>
-      <div class="field"><label>Timeframe chính</label><select id="ntsTf"><option>D1/H4</option><option>H4</option><option>H1</option><option>M15</option><option>Mixed</option></select></div>
-      <div class="field"><label>Session checkpoint</label><select id="ntsCheckpoint"><option>Pre-session</option><option>Mid-session</option><option>Before news</option><option>After news</option><option>End-session</option></select></div>
-      <div class="field"><label>Current Bias</label><select id="ntsBias"><option>Bullish</option><option>Bearish</option><option>Neutral</option><option>Mixed</option><option>Unclear</option></select></div>
-    </div>
-    <div class="grid four" style="margin-top:12px">
-      <div class="field"><label>Price vs Key Zone</label><select id="ntsPriceState" onchange="updateNoTradeSessionDiagnosis()"><option>Chưa tới Key Zone</option><option>Đang tiến gần Key Zone</option><option>Đã vào Key Zone</option><option>Đã chạy xa khỏi Key Zone</option><option>Key Zone không rõ</option></select></div>
-      <div class="field"><label>Trigger Status</label><select id="ntsTriggerState" onchange="updateNoTradeSessionDiagnosis()"><option>Chưa có trigger</option><option>Đang hình thành trigger</option><option>Trigger đã xuất hiện</option><option>Trigger không rõ</option><option>Trigger đã miss</option></select></div>
-      <div class="field"><label>Market State</label><select id="ntsMarketState" onchange="updateNoTradeSessionDiagnosis()"><option>Waiting for retest</option><option>Trend continuation</option><option>Liquidity sweep possible</option><option>Range / choppy</option><option>CHoCH/BOS transition</option><option>News risk / avoid</option><option>Strong move already gone</option></select></div>
-      <div class="field"><label>Ảnh chart trong phiên</label><input id="ntsChartFile" type="file" accept="image/*"></div>
-    </div>
-    <div class="grid two" style="margin-top:12px">
-      <div>
-        <div class="field"><label>Trong phiên tôi đang cảm thấy</label></div>
-        <div id="ntsPsychChecks" class="nt-session-list"></div>
-      </div>
-      <div>
-        <div class="field"><label>Điều kiện chưa vào / cần kiểm tra</label></div>
-        <div id="ntsProcessChecks" class="nt-session-list"></div>
-      </div>
-    </div>
-    <div class="grid two" style="margin-top:12px">
-      <div class="field"><label>In-session chart note</label><textarea id="ntsChartNote" placeholder="Giá đang ở đâu so với Key Zone? Có liquidity / CHoCH / BOS / OB nào đáng chú ý? Tôi đang chờ điều kiện nào? Nếu có trade, điều kiện entry cụ thể là gì?"></textarea></div>
-      <div class="field"><label>Anti-FOMO action rule</label><textarea id="ntsActionRule" placeholder="VD: Nếu chưa chạm zone hoặc chưa có M15 trigger thì không vào. Nếu muốn tìm lệnh ở M1/M5, dừng lại và đọc lại scenario."></textarea></div>
-    </div>
-    <div id="ntsChartPreview" class="chart-preview"></div>
-    <div id="ntsDiagnosis" class="nt-session-diagnosis"></div>
-    <div class="btn-row"><button class="btn primary" onclick="saveNoTradeSessionCheck()">Save In-Session Check</button><button class="btn" onclick="clearNoTradeSessionForm()">Clear</button><button class="btn success" onclick="copySessionToNoTradeReview()">Use for End-Day No Trade Review</button></div>
-    <div class="card-divider"></div>
-    <div id="noTradeSessionList"></div>
-  </div>
-
-  <div class="card no-trade-desk" id="noTradeDesk">
-    <div class="card-title">No Trade Psychology & Skill Review</div><div class="card-sub">Không vào lệnh cũng là một quyết định giao dịch · phân biệt market/no setup vs missed skill vs fear</div>
-    <div class="hint" style="margin-bottom:12px"><b>Mục tiêu:</b> Khi vài ngày không có lệnh, hãy xác định lý do thật: thị trường chưa cho setup, bạn chưa nhận ra tín hiệu, bạn đã tránh được lệnh xấu, hay bạn né setup vì sợ.</div>
-    <input id="ntEditId" type="hidden">
-    <div class="grid four">
-      <div class="field"><label>Symbol</label><select id="ntSymbol"><option>XAUUSD</option><option>BTCUSD</option><option>USOIL</option><option>Other</option></select></div>
-      <div class="field"><label>Timeframe chính</label><select id="ntTf"><option>D1/H4</option><option>H4</option><option>H1</option><option>M15</option><option>Mixed</option></select></div>
-      <div class="field"><label>Bias</label><select id="ntBias"><option>Bullish</option><option>Bearish</option><option>Neutral</option><option>Mixed</option><option>Unclear</option></select></div>
-      <div class="field"><label>No Trade Type</label><select id="ntType" onchange="updateNoTradeDiagnosis()"><option>Valid No Trade</option><option>Missed Opportunity</option><option>Avoided Bad Trade</option><option>Fear-Based No Trade</option><option>Unclear No Trade</option></select></div>
-    </div>
-    <div class="grid three" style="margin-top:12px">
-      <div class="field"><label>Market Condition</label><select id="ntMarket" onchange="updateNoTradeDiagnosis()"><option>Giá chưa về Key Zone</option><option>Không có Key Zone hợp lệ</option><option>Có zone nhưng chưa có trigger</option><option>Bias không rõ</option><option>H4/H1 conflict</option><option>RR không đạt</option><option>Giá đã chạy xa khỏi vùng</option><option>News/spread/session không phù hợp</option><option>Sideway khó đọc</option><option>Biến động quá mạnh, entry không an toàn</option></select></div>
-      <div class="field"><label>Skill Condition</label><select id="ntSkill" onchange="updateNoTradeDiagnosis()"><option>Tôi hiểu rõ vì sao không có lệnh</option><option>Tôi không chắc có bỏ lỡ setup không</option><option>Tôi nhìn chart bị rối</option><option>Tôi thấy setup sau khi nó đã chạy</option><option>Không rõ Key Zone chính</option><option>Không rõ Market State</option><option>Bị nhiễu bởi nhiều timeframe</option><option>Cần replay/backtest tình huống này</option></select></div>
-      <div class="field"><label>Ảnh chart no-trade</label><input id="ntChartFile" type="file" accept="image/*"></div>
-    </div>
-    <div class="grid two" style="margin-top:12px">
-      <div>
-        <div class="field"><label>Psychology Condition</label></div>
-        <div id="ntPsychChecks" class="nt-psych-grid"></div>
-      </div>
-      <div>
-        <div class="field"><label>No Trade Quality Score</label></div>
-        <div id="ntScoreChecks" class="nt-score-checks"></div>
-      </div>
-    </div>
-    <div class="grid two" style="margin-top:12px">
-      <div class="field"><label>Chart / Market Note</label><textarea id="ntChartNote" placeholder="Market state hôm nay? Giá có vào zone chưa? Có trigger không? Nếu nhìn lại, có setup nào tôi bỏ lỡ không?"></textarea></div>
-      <div class="field"><label>Lesson / Next Rule</label><textarea id="ntLesson" placeholder="Ngày không trade này dạy tôi điều gì? Cần set alert, backtest, giảm khung hay tiếp tục chờ đúng plan?"></textarea></div>
-    </div>
-    <div id="ntChartPreview" class="chart-preview"></div>
-    <div id="ntDiagnosis" class="nt-diagnosis"></div>
-    <div class="btn-row"><button class="btn primary" onclick="saveNoTradeReview()">Save No Trade Review</button><button class="btn" onclick="clearNoTradeForm()">Clear Form</button></div>
-    <div class="card-divider"></div>
-    <div id="noTradeList"></div>
-  </div>
-</section>
-
 <section class="panel" id="panel-plan">
   <div class="card">
-    <div class="card-title">Trade Plan</div><div class="card-sub">Pre-trade mental gate · creates Planned Trade, not Open Trade</div>
-    <div id="planEditNotice" class="hint" style="display:none;margin-bottom:12px"></div>
+    <div class="card-title">Trade Plan</div><div class="card-sub">Pre-trade mental gate · creates Planned Trade, not Open Trade</div><div id="planEditNotice" class="hint" style="display:none;margin-bottom:12px"></div>
     <div class="grid four">
       <div class="field"><label>Symbol</label><select id="planSymbol"><option>XAUUSD</option><option>BTCUSD</option><option>USOIL</option><option>Other</option></select></div>
       <div class="field"><label>Side</label><select id="planSide"><option>Long</option><option>Short</option></select></div>
@@ -636,7 +315,7 @@ td{color:#8f97a6}
     <div id="smcChecks" class="check-grid"></div>
   </div>
   <div class="card">
-    <div class="card-title">Pre-Trade Emotions</div><div class="card-sub">Stage-based emotion groups · compact full library</div>
+    <div class="card-title">Pre-Trade Emotions</div><div class="card-sub">Quick mode for speed · full mode for detail</div>
     <div class="emotion-mode-note">Nhóm cảm xúc theo giai đoạn Trade Plan · không dùng Quick Mode</div>
     <div id="preEmotionGroups" class="emotion-groups"></div>
     <div class="slider-row"><span>Intensity</span><input id="preIntensity" type="range" min="1" max="5" value="2" oninput="preIntensityOut.value=this.value;updatePlanRisk()"><output id="preIntensityOut">2</output></div>
@@ -680,7 +359,7 @@ td{color:#8f97a6}
   <div class="card">
     <div class="card-title">Close Trade Review</div><div class="card-sub">Best Loser Score · process before PnL</div>
     <div class="grid four">
-      <div class="field"><label>Open Trade</label><select id="closeTradeSelect" onchange="selectTrade(this.value)"></select></div>
+      <div class="field"><label>Trade to Close / Edit</label><select id="closeTradeSelect" onchange="selectTrade(this.value)"></select></div>
       <div class="field"><label>Result</label><select id="closeResult"><option>Win</option><option>Loss</option><option>BE</option></select></div>
       <div class="field"><label>R Multiple</label><input id="closeR" type="number" step="0.1" value="0"></div>
       <div class="field"><label>Discipline 0-10</label><input id="closeDiscipline" type="number" min="0" max="10" value="8"></div>
@@ -710,7 +389,7 @@ td{color:#8f97a6}
       <div class="chart-preview" id="closeChartPreview"></div>
     </div>
   </div>
-  <div class="card"><div class="field"><label>Close Reflection</label><textarea id="closeNote" placeholder="Did I follow the plan? What emotion appeared? What rule should be improved?"></textarea></div><div class="btn-row"><button class="btn primary" onclick="closeTrade()">Close Trade</button><button class="btn" onclick="quickTab('live')">Back to Live</button></div></div>
+  <div class="card"><div class="field"><label>Close Reflection</label><textarea id="closeNote" placeholder="Did I follow the plan? What emotion appeared? What rule should be improved?"></textarea></div><div class="btn-row"><button id="closeTradeBtn" class="btn primary" onclick="closeTrade()">Close Trade</button><button class="btn" onclick="quickTab('live')">Back to Live</button></div></div>
 </section>
 
 <section class="panel" id="panel-missed">
@@ -727,14 +406,6 @@ td{color:#8f97a6}
     <div class="grid four"><div class="field"><label>Date</label><input id="eodDate" type="date"></div><div class="field"><label>Day Type</label><select id="eodType"><option>Good Process Day</option><option>No Trade Good Day</option><option>Mixed Day</option><option>Emotional Day</option></select></div><div class="field"><label>Main Emotion</label><select id="eodEmotion"></select></div><div class="field"><label>Discipline 0-10</label><input id="eodDiscipline" type="number" min="0" max="10" value="8"></div></div>
     <div class="check-grid" style="margin-top:12px" id="eodChecks"></div>
     <div class="grid three" style="margin-top:12px"><div class="field"><label>Best Thing</label><textarea id="eodBest"></textarea></div><div class="field"><label>Biggest Mistake</label><textarea id="eodMistake"></textarea></div><div class="field"><label>Tomorrow Rule</label><textarea id="eodTomorrow"></textarea></div></div>
-    <div class="card-divider"></div>
-    <div class="card-title" style="font-size:18px">No Trade Review</div><div class="card-sub">Review no-trade decisions and identify discipline / skill / fear</div>
-    <div id="eodNoTradeReviewList"></div>
-    <div class="btn-row"><button class="btn success" onclick="saveNoTradeEndReviews()">Save No Trade Reviews</button></div>
-    <div class="card-divider"></div>
-    <div class="card-title" style="font-size:18px">Scenario Review</div><div class="card-sub">Review the scenarios written in Daily Desk</div>
-    <div id="eodScenarioReviewList"></div>
-    <div class="btn-row"><button class="btn success" onclick="saveScenarioReviews()">Save Scenario Reviews</button></div>
     <div class="btn-row"><button class="btn primary" onclick="saveEod()">Save End Day Review</button><button class="btn" onclick="loadEodForDate()">Load Date</button></div>
   </div>
   <div class="card"><div class="card-title">Today Summary</div><div class="card-sub">Automatically calculated</div><div id="eodSummary"></div></div>
@@ -751,8 +422,6 @@ td{color:#8f97a6}
     <div class="card"><div class="card-title">Process vs Result</div><div class="card-sub">Clean Win · Emotional Pressure · Bad Win · Good/Bad Loss</div><div id="processResult"></div></div>
   </div>
   <div class="card"><div class="card-title">Pattern Insight</div><div class="card-sub">automatic diagnosis</div><div id="patternInsight" class="hint"></div></div>
-  <div class="card"><div class="card-title">No Trade Analytics</div><div class="card-sub">valid no-trade · missed opportunity · avoided bad trade · fear-based no-trade</div><div id="noTradeAnalytics"></div></div>
-  <div class="card"><div class="card-title">In-Session No Trade Analytics</div><div class="card-sub">waiting state · hungry/FOMO · missed/skill clarity before end-day review</div><div id="noTradeSessionAnalytics"></div></div>
   <div class="card"><div class="card-title">Chart Psychology Review</div><div class="card-sub">review chart images + market state + real emotion</div><div id="chartReview"></div></div>
   <div class="card"><div class="card-title">Trade History</div><div class="card-sub">all trades and reviews</div><div class="grid four" style="margin-bottom:12px"><div class="field"><label>Filter Symbol</label><select id="filterSymbol" onchange="renderAll()"><option>All</option><option>XAUUSD</option><option>BTCUSD</option><option>USOIL</option></select></div><div class="field"><label>Filter Status</label><select id="filterStatus" onchange="renderAll()"><option>All</option><option>planned</option><option>open</option><option>closed</option><option>cancelled</option></select></div><div class="field"><label>Filter Process</label><select id="filterProcess" onchange="renderAll()"><option>All</option><option>Clean Good Win</option><option>Good Win with Emotional Pressure</option><option>Bad Win</option><option>Good Loss</option><option>Bad Loss</option><option>Clean BE</option><option>Mixed BE</option></select></div><div class="field"><label>Search Note</label><input id="filterText" oninput="renderAll()" placeholder="emotion / note"></div></div><div id="tradeHistory"></div></div>
   <div class="card"><div class="card-title">Emotion Log</div><div class="card-sub">audit trail</div><div class="table-wrap"><table><thead><tr><th>Time</th><th>Stage</th><th>Trade</th><th>Emotions</th><th>Risk</th><th>Note</th></tr></thead><tbody id="emotionTable"></tbody></table></div></div>
@@ -763,15 +432,15 @@ td{color:#8f97a6}
   <div class="card"><div class="card-title">Raw Data</div><div class="card-sub">for backup/debug</div><div class="field"><textarea id="rawData" style="min-height:420px;font-family:var(--mono)"></textarea></div></div>
 </section>
 
-<div class="footer">Leo Mind Journal · Daily Trading Command Center · Chart Psychology Notes × SMC Execution · v2.33</div>
+<div class="footer">Leo Mind Journal · Daily Trading Command Center · Chart Psychology Notes × SMC Execution · v2.21</div>
 </div>
 <div class="bottom-nav" id="bottomNav">
-  <button class="active" data-tab="desk">Desk</button><button data-tab="plan">Plan</button><button data-tab="live">Live</button><button data-tab="close">Close</button><button data-tab="notrade">No Trade</button><button data-tab="analytics">Stats</button>
+  <button class="active" data-tab="desk">Desk</button><button data-tab="plan">Plan</button><button data-tab="live">Live</button><button data-tab="close">Close</button><button data-tab="analytics">Stats</button>
 </div>
 <div id="toast" class="toast"></div>
 <script>
 const LS_KEY='leo_mind_journal_v2';
-const APP_VERSION='2.29';
+const APP_VERSION='2.9';
 const legacyKey='leo_mind_journal_v1';
 const todayISO=()=>new Date().toISOString().slice(0,10);
 const nowISO=()=>new Date().toISOString();
@@ -779,8 +448,8 @@ const uid=()=>Math.random().toString(36).slice(2,7).toUpperCase();
 const $=id=>document.getElementById(id);
 const qsa=(sel,root=document)=>Array.from(root.querySelectorAll(sel));
 const state={preMode:'full',liveMode:'full',closeMode:'full'};
-const dataTemplate=()=>({version:2,daily:{},trades:[],missed:[],emotions:[],eod:{},chartNotes:[],scenarios:[],noTrades:[],settings:{activeTradeId:null,cooldownUntil:null,cooldownReason:null},noTradeChecks:[]});
-function normalizeData(d){d=d||dataTemplate();d.version=2;d.daily=d.daily||{};d.trades=d.trades||[];d.missed=d.missed||[];d.emotions=d.emotions||[];d.eod=d.eod||{};d.chartNotes=d.chartNotes||[];d.scenarios=d.scenarios||[];d.noTrades=d.noTrades||[];d.noTradeChecks=d.noTradeChecks||[];d.noTrades.forEach(n=>{if(!n.id)n.id=uid();if(!n.date)n.date=(n.time||nowISO()).slice(0,10);});d.settings=d.settings||{};d.trades.forEach(t=>{if(t.status==='open'&&!t.entered){t.entered=t.created||nowISO()} if(!t.status)t.status='planned'; if(!t.id)t.id=uid(); if(!t.created)t.created=nowISO();});return d}
+const dataTemplate=()=>({version:2,daily:{},trades:[],missed:[],emotions:[],eod:{},chartNotes:[],settings:{activeTradeId:null,cooldownUntil:null,cooldownReason:null}});
+function normalizeData(d){d=d||dataTemplate();d.version=2;d.daily=d.daily||{};d.trades=d.trades||[];d.missed=d.missed||[];d.emotions=d.emotions||[];d.eod=d.eod||{};d.chartNotes=d.chartNotes||[];d.settings=d.settings||{};d.trades.forEach(t=>{if(t.status==='open'&&!t.entered){t.entered=t.created||nowISO()} if(!t.status)t.status='planned'; if(!t.id)t.id=uid(); if(!t.created)t.created=nowISO();});return d}
 function load(){try{let raw=localStorage.getItem(LS_KEY)||localStorage.getItem(legacyKey);return normalizeData(JSON.parse(raw))}catch(e){return dataTemplate()}}
 function save(d){localStorage.setItem(LS_KEY,JSON.stringify(normalizeData(d)))}
 
@@ -823,24 +492,11 @@ function clearChartStage(stage){
   const prev=$(stage+'ChartPreview'); if(prev){prev.style.display='none';prev.innerHTML=''}
   const input=$(stage+'ChartFile'); if(input) input.value='';
   ['ChartNote','MindQuestion','DefenseAction','MindLesson'].forEach(suf=>{const el=$(stage+suf); if(el) el.value=''})
-  const defaults={
-    pre:{MarketState:'Trend continuation',PsychForecast:'Bình tĩnh chờ trigger'},
-    live:{MarketState:'Trade following plan',PsychPattern:'Bình tĩnh giữ plan'},
-    close:{MarketState:'Plan completed',PsychReality:'Chấp nhận kết quả'}
-  };
-  const cfg=defaults[stage]||{};
-  Object.keys(cfg).forEach(suf=>{const el=$(stage+suf); if(el) el.value=cfg[suf]});
 }
 function chartThumbs(notes){
   notes=(notes||[]).filter(Boolean);
   if(!notes.length) return '';
-  const stages=[...new Set(notes.map(n=>n.stage).filter(Boolean))].join(' · ')||'Chart notes';
-  return `<div class="chart-note-summary"><span class="pill gold">${notes.length} chart note${notes.length>1?'s':''}</span><span class="trade-id">${stages} · tap details to view image</span></div>`;
-}
-function chartDetails(notes){
-  notes=(notes||[]).filter(Boolean);
-  if(!notes.length) return '';
-  return notes.map(n=>`<div class="chart-note-detail"><div><span class="pill info">${n.stage||'Chart'}</span> <span class="market-chip">${n.marketState||'Market state -'}</span> <span class="market-chip">${n.psychology||'Psychology -'}</span></div><div style="margin-top:8px"><b>Chart note:</b> ${n.chartNote||'-'}<br><b>Tâm lý / hành động:</b> ${n.mindNote||'-'}</div>${n.image?`<div class="chart-preview"><img src="${n.image}" alt="chart"></div>`:''}</div>`).join('');
+  return '<div class="chart-thumb-row">'+notes.slice(-4).map(n=>`<div class="chart-thumb">${n.image?`<img src="${n.image}" alt="chart">`:''}<div><b>${n.stage}</b><br>${n.marketState||'-'}<br>${n.psychology||''}</div></div>`).join('')+'</div>';
 }
 function renderChartReview(){
   const d=load(); let notes=[];
@@ -918,23 +574,6 @@ function toggleEmotionMode(prefix,mode){state[prefix+'Mode']='full';renderEmotio
 function toggleChip(el){el.classList.toggle('on')}
 function selectedEmotions(rootId){return qsa('.chip.on',$(rootId)).map(x=>x.dataset.emotion)}
 function checkedValues(cls){return qsa('input.'+cls+':checked').map(x=>x.value)}
-
-function smcScore(){const total=typeof smcItems!=='undefined'?smcItems.length:qsa('input.smc').length;const checked=checkedValues('smc').length;return total?Math.round(checked/total*100):0}
-function biasConflict(side,bias){return (side==='Long'&&bias==='Bearish')||(side==='Short'&&bias==='Bullish')}
-function renderRiskBox(el,risk,title='Risk Check',stage='plan'){
- if(!el)return;
- el.className='risk-result '+risk.mode;
- el.innerHTML=`<div class="risk-head"><div class="risk-score ${risk.mode}">${risk.score}</div><div class="risk-meta"><div class="risk-label">${title}</div><div class="risk-title">${risk.title}</div></div></div><div class="risk-note"><b>Permission:</b> ${risk.permission}<br><span style="color:var(--text-dim)">${risk.reasons&&risk.reasons.length?'Reasons: '+risk.reasons.join(' · '):'No major emotional risk detected.'}</span></div><div class="do-dont">${riskDoDont(risk,stage)}</div>`;
-}
-function updatePlanRisk(){
- const emotions=selectedEmotions('preEmotionGroups');
- const risk=evaluateRisk(emotions,{intensity:$('preIntensity')?$('preIntensity').value:2,smcScore:smcScore(),quality:$('planQuality')?$('planQuality').value:80,biasConflict:biasConflict($('planSide')?$('planSide').value:'Long',$('planBias')?$('planBias').value:'Bullish'),cooldown:cooldownRemaining()>0,dailyLimitHit:dailyLimitHit($('dayDate')?$('dayDate').value:todayISO())});
- renderRiskBox($('planRisk'),risk,'Pre-Trade Risk','plan');
- if($('planRisk')) $('planRisk').insertAdjacentHTML('beforeend',planPsychologyAdvice(emotions,risk));
- if($('savePlanBtn')) $('savePlanBtn').disabled=risk.mode==='black';
- return risk;
-}
-
 function riskFromMode(score){if(score>=90)return{mode:'black',title:'Black Mode'};if(score>=70)return{mode:'red',title:'Red Mode'};if(score>=45)return{mode:'orange',title:'Orange Mode'};if(score>=25)return{mode:'yellow',title:'Yellow Mode'};return{mode:'green',title:'Green Mode'}}
 function evaluateRisk(emotions=[],opts={}){
  let score=0; const reasons=[]; const unique=[...new Set(emotions||[])];
@@ -951,16 +590,9 @@ function evaluateRisk(emotions=[],opts={}){
  if(score>0) score=Math.round(score*(1+(intensity-1)*0.25));
  // Pure positive state: keep score at 0 instead of showing artificial risk.
  if(score===0 && goodCount>0){reasons.push('Stable state')}
- const energyVal=Number(opts.energy)||0;
- const sleepVal=Number(opts.sleep)||0;
- const pressureVal=Number(opts.pressure)||0;
- if(energyVal===3){score+=8;reasons.push('Energy medium')}
- if(energyVal>0&&energyVal<=2){score+=28;reasons.push('Low energy')}
- if(sleepVal===3){score+=8;reasons.push('Sleep medium')}
- if(sleepVal>0&&sleepVal<=2){score+=24;reasons.push('Low sleep')}
- if(pressureVal===3){score+=10;reasons.push('Pressure watch')}
- if(pressureVal===4){score+=28;reasons.push('High pressure')}
- if(pressureVal>=5){score+=48;reasons.push('Extreme pressure')}
+ if(Number(opts.energy)&&Number(opts.energy)<=2){score+=22;reasons.push('Low energy')}
+ if(Number(opts.sleep)&&Number(opts.sleep)<=2){score+=14;reasons.push('Low sleep')}
+ if(Number(opts.pressure)&&Number(opts.pressure)>=4){score+=20;reasons.push('High pressure')}
  if(Number(opts.lossStreak)>=2){score+=24;reasons.push('Loss streak')}
  if(opts.cooldown){score+=35;reasons.push('Cooldown active')}
  if(opts.dailyLimitHit){score+=45;reasons.push('Daily limit hit')}
@@ -974,63 +606,16 @@ function evaluateRisk(emotions=[],opts={}){
  if(badCount>=1) minScore=Math.max(minScore,45); // at least Orange
  if(unique.includes('FOMO')) minScore=Math.max(minScore,45); // FOMO is at least Orange: no normal permission
  if(unique.some(e=>['Muốn gỡ','Tức giận','Hy vọng quay lại','Muốn lấy lại tiền','Muốn đảo chiều trả thù','Muốn tăng lot để gỡ','Muốn dời SL'].includes(e))) minScore=Math.max(minScore,70); // Red
- if((Number(opts.energy)||0)<=2 && Number(opts.energy)>0) minScore=Math.max(minScore,25);
- if((Number(opts.sleep)||0)<=2 && Number(opts.sleep)>0) minScore=Math.max(minScore,25);
- if(Number(opts.pressure)===4) minScore=Math.max(minScore,25);
- if(Number(opts.pressure)>=5) minScore=Math.max(minScore,45);
- if(((Number(opts.pressure)>=4) && ((Number(opts.energy)||5)<=2 || (Number(opts.sleep)||5)<=2))) minScore=Math.max(minScore,70);
  if(opts.cooldown||opts.dailyLimitHit) minScore=Math.max(minScore,70);
  score=clamp(Math.max(Math.round(score),minScore),0,100); const base=riskFromMode(score);
- let permission='Trade bình thường.';
-	 if(opts.stage==='daily'){
-	  if(base.mode==='green') permission='Có thể giao dịch nếu setup đạt chuẩn. Giữ risk mặc định và không ép lệnh.';
-	  if(base.mode==='yellow') permission='Daily caution: chỉ trade A/A+, giảm tốc độ quyết định và không tăng risk.';
-	  if(base.mode==='orange') permission='Daily pressure cao: giảm risk 50% hoặc chỉ quan sát nếu không có setup A+ rõ ràng.';
-	  if(base.mode==='red') permission='Không mở lệnh mới cho đến khi áp lực/năng lượng ổn hơn. Chỉ quản lý lệnh đang có.';
-	  if(base.mode==='black') permission='Dừng giao dịch trong ngày. Chỉ làm scenario/EOD review.';
-	 } else if(opts.stage==='live'){
-	  if(base.mode==='green') permission='Tiếp tục quản lý lệnh theo plan. Không cần hành động nếu chưa có tín hiệu kỹ thuật.';
-	  if(base.mode==='yellow') permission='Đang có nhiễu tâm lý nhẹ: không thêm/sửa lệnh vì cảm xúc. Chỉ hành động khi có lý do kỹ thuật rõ.';
-	  if(base.mode==='orange') permission='Quản lý phòng thủ: không chốt/sửa lệnh vì PnL. Chỉ giữ, partial, dời SL hoặc đóng nếu đúng rule đã định trước.';
-	  if(base.mode==='red') permission='Khóa hành động cảm xúc: không thêm vị thế, không dời SL xa hơn, không đảo chiều. Chỉ để SL/TP/invalidation theo plan xử lý.';
-	  if(base.mode==='black') permission='Dừng quyết định chủ động. Ưu tiên đóng chart/cooldown, chỉ xử lý lệnh theo kế hoạch an toàn.';
-	 } else if(opts.stage==='close'){
-	  if(base.mode==='green') permission='Review bình thường. Có thể kết thúc trade và nghỉ theo kế hoạch.';
-	  if(base.mode==='yellow') permission='Post-trade caution: chưa tạo plan mới ngay. Ghi bài học trước khi nhìn chart tiếp.';
-	  if(base.mode==='orange') permission='Cooldown sau lệnh. Không vào lệnh tiếp cho đến khi cảm xúc ổn định.';
-	  if(base.mode==='red') permission='Khóa trade tiếp theo. Nguy cơ revenge/overconfidence cao, bắt buộc cooldown.';
-	  if(base.mode==='black') permission='Dừng giao dịch trong ngày. Chỉ làm End of Day Review.';
-	 } else {
-	  if(base.mode==='yellow')permission='Chỉ trade setup A/A+, giảm tốc độ quyết định.'; if(base.mode==='orange')permission='Giảm risk 50%, chỉ trade A+ hoặc chỉ quản lý lệnh đang có.'; if(base.mode==='red')permission='Không mở lệnh mới. Chỉ quản lý lệnh đang có theo plan.'; if(base.mode==='black')permission='Dừng giao dịch trong ngày.';
-	 }
+ let permission='Trade bình thường.'; if(base.mode==='yellow')permission='Chỉ trade setup A/A+, giảm tốc độ quyết định.'; if(base.mode==='orange')permission='Giảm risk 50%, chỉ trade A+ hoặc chỉ quản lý lệnh đang có.'; if(base.mode==='red')permission='Không mở lệnh mới. Chỉ quản lý lệnh đang có theo plan.'; if(base.mode==='black')permission='Dừng giao dịch trong ngày.';
  return {...base,score,permission,reasons};
 }
-function riskDoDont(risk,stage='plan'){
- let doItems, dontItems;
- if(stage==='daily'){
-  doItems=risk.mode==='green'?['Trade chỉ khi đủ Bias → Setup → Key Zone → Trigger','Giữ risk mặc định','Viết kịch bản trước khi vào lệnh']:risk.mode==='yellow'?['Chỉ trade A/A+','Giảm tốc độ quyết định','Xác nhận lại: mình trade setup hay trade áp lực?']:risk.mode==='orange'?['Giảm risk 50% hoặc đứng ngoài','Chỉ chọn setup A+ có Key Zone rõ','Đặt max trades thấp hơn nếu cần']:risk.mode==='red'?['Không mở lệnh mới','Cooldown / nghỉ màn hình','Chỉ viết scenario hoặc quản lý lệnh cũ']:['Dừng ngày','Không tạo plan mới','Chỉ làm End Day Review'];
-  dontItems=risk.mode==='green'?['Không chủ quan vì trạng thái tốt','Không tăng lot tùy tiện']:risk.mode==='yellow'?['Không vào lệnh để giải tỏa áp lực','Không trade setup B/C']:risk.mode==='orange'?['Không cố kiếm tiền hôm nay','Không revenge / FOMO','Không tăng risk để bù']:risk.mode==='red'?['Không mở lệnh mới','Không cố gỡ','Không đổi plan vì cảm xúc']:['Không trade thêm','Không nhìn chart để tìm lệnh','Không phá daily limit'];
- } else if(stage==='close'){
-  doItems=risk.mode==='green'?['Ghi bài học chính','Nghỉ ngắn trước khi xem setup mới','Giữ đánh giá theo process, không theo cảm xúc']:risk.mode==='yellow'?['Ghi rõ điều làm tốt / điều cần sửa','Cooldown nhẹ trước trade tiếp theo','Không sửa system ngay sau 1 lệnh']:risk.mode==='orange'?['Bắt đầu cooldown','Chỉ làm review, không mở plan mới','Tách kết quả PnL khỏi chất lượng quy trình']:risk.mode==='red'?['Khóa trade tiếp theo','Rời màn hình 15-30 phút','Chỉ quay lại sau khi viết xong bài học']:['Dừng ngày','Làm End of Day Review','Ngủ/nghỉ, không phân tích quá mức'];
-  dontItems=risk.mode==='green'?['Không chủ quan sau win','Không tự phạt sau loss']:risk.mode==='yellow'?['Không vào lại vì tiếc nuối','Không tăng lot vì vừa thắng']:risk.mode==='orange'?['Không revenge','Không đuổi giá sau khi bỏ lỡ','Không đổi hệ thống trong cảm xúc']:risk.mode==='red'?['Không gỡ lỗ','Không đảo chiều trả thù','Không mở chart để tìm lệnh ngay']:['Không trade thêm','Không nạp thêm rủi ro','Không đưa ra quyết định lớn'];
- } else if(stage==='live'){
-  doItems=risk.mode==='green'?['Giữ lệnh theo plan','Quan sát cấu trúc, không nhìn PnL quá nhiều','Ghi lại cảm xúc nếu nó thay đổi']:
-   risk.mode==='yellow'?['Tạm dừng thao tác 60 giây','Đọc lại entry reason + invalidation','Chỉ hành động khi chart có tín hiệu kỹ thuật']:
-   risk.mode==='orange'?['Giữ nguyên SL/TP nếu plan chưa invalid','Nếu muốn chốt, chỉ partial theo rule đã có trước','Viết lý do kỹ thuật trước khi bấm nút']:
-   risk.mode==='red'?['Không chạm SL/TP bằng cảm xúc','Không thêm vị thế','Bắt đầu cooldown sau khi lệnh kết thúc']:
-   ['Rời màn hình nếu đang mất kiểm soát','Chỉ để lệnh chạy theo SL/TP/plan','Làm Close Review sau lệnh'];
-  dontItems=risk.mode==='green'?['Không chủ quan','Không tự thưởng bằng scale-in']:
-   risk.mode==='yellow'?['Không đóng vì khó chịu','Không sửa lệnh chỉ vì nến rung lắc']:
-   risk.mode==='orange'?['Không chốt vì sợ mất lời','Không đóng chỉ vì PnL','Không dời SL xa hơn']:
-   risk.mode==='red'?['Không revenge','Không đảo chiều','Không tăng lot / DCA']:
-   ['Không ra quyết định mới','Không cố gỡ','Không đổi system trong cảm xúc'];
- } else {
-  doItems=risk.mode==='green'?['Trade đúng plan','Giữ risk cố định','Ghi nhật ký sau lệnh']:risk.mode==='yellow'?['Chỉ trade A/A+','Đọc lại checklist SMC','Giảm tốc độ ra quyết định']:risk.mode==='orange'?['Risk tối đa 0.5%','Chỉ quản lý lệnh đang có','Chờ đủ Key Zone + Trigger']:risk.mode==='red'?['Khóa lệnh mới','Cooldown tối thiểu 15-30 phút','Ghi lý do cảm xúc']:['Dừng ngày','Đóng chart nếu cần','Chỉ làm End of Day Review'];
-  dontItems=risk.mode==='green'?['Không chủ quan','Không tăng lot tùy tiện']:risk.mode==='yellow'?['Không vào khi chưa tới Key Zone','Không bỏ checklist']:risk.mode==='orange'?['Không revenge','Không tăng lot','Không vào lệnh B/C']:risk.mode==='red'?['Không gỡ lỗ','Không dời SL','Không đảo chiều trả thù']:['Không trade thêm','Không nạp thêm rủi ro','Không đổi system trong cảm xúc'];
- }
+function riskDoDont(risk){
+ const doItems=risk.mode==='green'?['Trade đúng plan','Giữ risk cố định','Ghi nhật ký sau lệnh']:risk.mode==='yellow'?['Chỉ trade A/A+','Đọc lại checklist SMC','Giảm tốc độ ra quyết định']:risk.mode==='orange'?['Risk tối đa 0.5%','Chỉ quản lý lệnh đang có','Chờ đủ Key Zone + Trigger']:risk.mode==='red'?['Khóa lệnh mới','Cooldown tối thiểu 15-30 phút','Ghi lý do cảm xúc']:['Dừng ngày','Đóng chart nếu cần','Chỉ làm End of Day Review'];
+ const dontItems=risk.mode==='green'?['Không chủ quan','Không tăng lot tùy tiện']:risk.mode==='yellow'?['Không vào khi chưa tới Key Zone','Không bỏ checklist']:risk.mode==='orange'?['Không revenge','Không tăng lot','Không vào lệnh B/C']:risk.mode==='red'?['Không gỡ lỗ','Không dời SL','Không đảo chiều trả thù']:['Không trade thêm','Không nạp thêm rủi ro','Không đổi system trong cảm xúc'];
  return `<div class="do"><h4>DO</h4><ul>${doItems.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="dont"><h4>DON’T</h4><ul>${dontItems.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
 }
-
 function dailyStats(date=todayISO()){const d=load();const trades=d.trades.filter(t=>sameDay(t.created,date)||sameDay(t.entered,date)||sameDay(t.closed,date));const closed=d.trades.filter(t=>t.status==='closed'&&sameDay(t.closed,date));const open=d.trades.filter(t=>t.status==='open');const planned=d.trades.filter(t=>['planned','watching'].includes(t.status)&&sameDay(t.created,date));const r=closed.reduce((s,t)=>s+(Number(t.rMultiple)||0),0);return{trades,closed,open,planned,r,enteredToday:d.trades.filter(t=>t.entered&&sameDay(t.entered,date)).length}}
 function lossStreak(){const closed=load().trades.filter(t=>t.status==='closed').sort((a,b)=>new Date(b.closed)-new Date(a.closed));let n=0;for(const t of closed){if(t.result==='Loss')n++;else break}return n}
 function cooldownRemaining(){const d=load();const until=d.settings.cooldownUntil;if(!until)return 0;return Math.max(0,new Date(until)-new Date())}
@@ -1038,212 +623,16 @@ function startCooldown(minutes,reason){const d=load();d.settings.cooldownUntil=n
 function clearCooldown(){const d=load();d.settings.cooldownUntil=null;d.settings.cooldownReason=null;save(d);renderAll();toast('Cooldown cleared')}
 function renderCooldown(){const d=load();const ms=cooldownRemaining();if(ms<=0){$('cooldownBox').innerHTML='';return}const m=Math.floor(ms/60000),s=Math.floor((ms%60000)/1000);$('cooldownBox').innerHTML=`<div class="cooldown"><div class="cooldown-title">Cooldown Active</div><div class="cooldown-time">${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')} remaining</div><div class="cooldown-note">${d.settings.cooldownReason||'Cooling down to prevent emotional trade.'}</div><div class="btn-row"><button class="btn danger small" onclick="clearCooldown()">Clear Cooldown</button></div></div>`}
 function initDates(){const date=todayISO();$('dayDate').value=date;$('eodDate').value=date;loadDailyState()}
-
-function clearScenarioForm(){['scenarioEditId','scenarioMain','scenarioAlt','scenarioPsych','scenarioRule'].forEach(id=>$(id).value='');$('scenarioSymbol').value='XAUUSD';$('scenarioBias').value='Bullish';$('scenarioState').value='Waiting for Key Zone retest';$('scenarioQuality').value='A'}
-function saveScenario(){const d=load();const date=$('dayDate').value||todayISO();const id=$('scenarioEditId').value||uid();const sc={id,date,symbol:$('scenarioSymbol').value,bias:$('scenarioBias').value,state:$('scenarioState').value,quality:$('scenarioQuality').value,main:$('scenarioMain').value.trim(),alt:$('scenarioAlt').value.trim(),psych:$('scenarioPsych').value.trim(),rule:$('scenarioRule').value.trim(),created:nowISO(),updated:nowISO()};if(!sc.main&&!sc.alt){toast('Scenario cần ít nhất Main Scenario hoặc Alternative');return}const idx=d.scenarios.findIndex(x=>x.id===id);if(idx>=0){sc.created=d.scenarios[idx].created||sc.created;sc.review=d.scenarios[idx].review||null;d.scenarios[idx]=sc}else d.scenarios.push(sc);save(d);clearScenarioForm();renderAll();toast('Scenario saved')}
-function editScenario(id){const sc=load().scenarios.find(x=>x.id===id);if(!sc)return;$('scenarioEditId').value=sc.id;$('scenarioSymbol').value=sc.symbol||'XAUUSD';$('scenarioBias').value=sc.bias||'Bullish';$('scenarioState').value=sc.state||'Waiting for Key Zone retest';$('scenarioQuality').value=sc.quality||'A';$('scenarioMain').value=sc.main||'';$('scenarioAlt').value=sc.alt||'';$('scenarioPsych').value=sc.psych||'';$('scenarioRule').value=sc.rule||'';quickTab('desk');toast('Scenario loaded for edit')}
-function deleteScenario(id){if(!confirm('Xóa kịch bản này?'))return;const d=load();d.scenarios=d.scenarios.filter(x=>x.id!==id);save(d);renderAll();toast('Scenario deleted')}
-function scenariosForDate(date){return load().scenarios.filter(s=>s.date===date).sort((a,b)=>(a.symbol||'').localeCompare(b.symbol||''))}
-function scenarioCard(sc,reviewMode=false){const r=sc.review||{};return `<div class="scenario-card ${reviewMode?'scenario-review':''}"><div class="scenario-head"><div class="scenario-title">${sc.symbol} · ${sc.bias} · ${sc.quality}</div><div class="scenario-meta"><span class="pill ${sc.quality==='A+'||sc.quality==='A'?'good':sc.quality==='No Trade'?'bad':'warn'}">${sc.state}</span>${r.grade?`<span class="pill ${r.grade.includes('Good')||r.grade.includes('Accurate')?'good':r.grade.includes('Wrong')||r.grade.includes('Emotional')?'bad':'warn'}">${r.grade}</span>`:''}</div></div><div class="scenario-body"><div class="scenario-box"><b>Main Scenario</b>${sc.main||'-'}</div><div class="scenario-box"><b>Alternative / Invalidation</b>${sc.alt||'-'}</div><div class="scenario-box"><b>Expected Psychology Trap</b>${sc.psych||'-'}</div><div class="scenario-box"><b>Action Rule</b>${sc.rule||'-'}</div></div>${r.note?`<div class="hint" style="margin-top:10px"><b>Review:</b> ${r.note}<br><b>Followed:</b> ${r.followed||'-'} · <b>Accuracy:</b> ${r.accuracy||'-'} · <b>Execution:</b> ${r.execution||'-'}</div>`:''}${reviewMode?'':`<div class="btn-row"><button class="btn small" onclick="editScenario('${sc.id}')">Edit</button><button class="btn danger small" onclick="deleteScenario('${sc.id}')">Delete</button></div>`}</div>`}
-function renderDailyScenarios(){const el=$('dailyScenarioList');if(!el)return;const date=$('dayDate').value||todayISO();const arr=scenariosForDate(date);el.innerHTML=arr.length?arr.map(sc=>scenarioCard(sc)).join(''):'<div class="empty"><div class="icon">S</div>Chưa có kịch bản cho ngày này. Hãy viết trước cho từng symbol trước khi giao dịch.</div>'}
-function renderEodScenarioReviews(){const el=$('eodScenarioReviewList');if(!el)return;const date=$('eodDate').value||todayISO();const arr=scenariosForDate(date);if(!arr.length){el.innerHTML='<div class="empty"><div class="icon">S</div>Không có kịch bản nào để review cho ngày này.</div>';return}el.innerHTML=arr.map(sc=>{const r=sc.review||{};return `<div class="scenario-card scenario-review"><div class="scenario-head"><div class="scenario-title">${sc.symbol} · ${sc.bias} · ${sc.quality}</div><div class="scenario-meta"><span class="pill warn">${sc.state}</span></div></div><div class="scenario-body"><div class="scenario-box"><b>Main Scenario</b>${sc.main||'-'}</div><div class="scenario-box"><b>Action Rule</b>${sc.rule||'-'}</div></div><div class="grid four" style="margin-top:12px"><div class="field"><label>Scenario Result</label><select id="srGrade_${sc.id}"><option ${r.grade==='Accurate Good Plan'?'selected':''}>Accurate Good Plan</option><option ${r.grade==='Partially Right'?'selected':''}>Partially Right</option><option ${r.grade==='Wrong Read'?'selected':''}>Wrong Read</option><option ${r.grade==='Good No Trade Scenario'?'selected':''}>Good No Trade Scenario</option><option ${r.grade==='Emotional Execution'?'selected':''}>Emotional Execution</option></select></div><div class="field"><label>Followed Plan?</label><select id="srFollow_${sc.id}"><option ${r.followed==='Yes'?'selected':''}>Yes</option><option ${r.followed==='Partial'?'selected':''}>Partial</option><option ${r.followed==='No'?'selected':''}>No</option><option ${r.followed==='No Trade'?'selected':''}>No Trade</option></select></div><div class="field"><label>Market Accuracy</label><select id="srAcc_${sc.id}"><option ${r.accuracy==='High'?'selected':''}>High</option><option ${r.accuracy==='Medium'?'selected':''}>Medium</option><option ${r.accuracy==='Low'?'selected':''}>Low</option></select></div><div class="field"><label>Execution Quality</label><select id="srExec_${sc.id}"><option ${r.execution==='Clean'?'selected':''}>Clean</option><option ${r.execution==='Mixed'?'selected':''}>Mixed</option><option ${r.execution==='Emotional'?'selected':''}>Emotional</option></select></div></div><div class="field" style="margin-top:12px"><label>Review Note</label><textarea id="srNote_${sc.id}" placeholder="Kịch bản đúng/sai ở đâu? Khi market state diễn ra, cảm xúc thực tế là gì? Có hành động theo plan không?">${r.note||''}</textarea></div></div>`}).join('')}
-function saveScenarioReviews(){const d=load();const date=$('eodDate').value||todayISO();let n=0;(d.scenarios||[]).filter(sc=>sc.date===date).forEach(sc=>{const g=$(`srGrade_${sc.id}`);if(!g)return;sc.review={grade:g.value,followed:$(`srFollow_${sc.id}`).value,accuracy:$(`srAcc_${sc.id}`).value,execution:$(`srExec_${sc.id}`).value,note:$(`srNote_${sc.id}`).value,saved:nowISO()};n++});save(d);renderAll();toast(`${n} scenario review saved`)}
-
 function saveDailyState(){const d=load();d.daily[$('dayDate').value]={date:$('dayDate').value,energy:Number($('dayEnergy').value),sleep:Number($('daySleep').value),pressure:Number($('dayPressure').value),market:$('dayMarket').value,bias:$('dayBias').value,maxTrades:Number($('dayMaxTrades').value),maxLossR:Number($('dayMaxLossR').value),saved:nowISO()};save(d);renderAll();toast('Daily state saved')}
 function loadDailyState(){const d=load();const day=d.daily[$('dayDate').value];if(day){$('dayEnergy').value=day.energy;$('daySleep').value=day.sleep;$('dayPressure').value=day.pressure;$('dayMarket').value=day.market||'XAUUSD';$('dayBias').value=day.bias||'Mixed';$('dayMaxTrades').value=day.maxTrades||3;$('dayMaxLossR').value=day.maxLossR??-2}}
 $('dayDate').addEventListener('change',()=>{loadDailyState();renderAll()});
-['dayEnergy','daySleep','dayPressure','dayMaxTrades','dayMaxLossR','dayMarket','dayBias'].forEach(id=>$(id)?.addEventListener('input',renderDailyRisk));$('eodDate').addEventListener('change',()=>{renderAll()});
 function dailyLimitHit(date=todayISO()){const d=load();const day=d.daily[date]||{};const st=dailyStats(date);return (day.maxTrades&&st.enteredToday>=day.maxTrades)||(day.maxLossR!==undefined&&st.r<=Number(day.maxLossR))||lossStreak()>=3}
-
-const ntPsychItems=['Bình tĩnh','Kiên nhẫn','Sốt ruột','FOMO','Chán nản','Nghi ngờ hệ thống','Tự trách','Áp lực kiếm tiền','Muốn tìm lệnh ở khung nhỏ','Muốn đổi system','So sánh với người khác','Hài lòng vì đã không ép lệnh'];
-const ntScoreItems=['Có phân tích Daily Bias rõ','Có xác định Key Zone / vùng chờ','Có lý do không trade rõ ràng','Không ép lệnh / không vào setup B-C','Có ghi bài học hoặc chart note'];
-let ntChartCache=null;
-function setupNoTradeChartInput(){const el=$('ntChartFile');if(!el)return;el.addEventListener('change',e=>{const f=e.target.files&&e.target.files[0];if(!f)return;resizeImage(f,data=>{ntChartCache=data;$('ntChartPreview').innerHTML=`<img src="${data}" class="nt-full-img" alt="No trade chart preview">`;});});}
-function renderNoTradeControls(){const pc=$('ntPsychChecks'), sc=$('ntScoreChecks'); if(!pc||!sc)return; pc.innerHTML=ntPsychItems.map(x=>`<label class="nt-psych-item"><input type="checkbox" class="ntpsych" value="${x}" onchange="updateNoTradeDiagnosis()"><span>${x}</span></label>`).join(''); sc.innerHTML=ntScoreItems.map(x=>`<label><input type="checkbox" class="ntscore" value="${x}" onchange="updateNoTradeDiagnosis()"><span>${x}</span></label>`).join('');}
-function clearNoTradeForm(){['ntEditId','ntChartNote','ntLesson'].forEach(id=>$(id).value='');$('ntSymbol').value='XAUUSD';$('ntTf').value='D1/H4';$('ntBias').value='Unclear';$('ntType').value='Valid No Trade';$('ntMarket').value='Giá chưa về Key Zone';$('ntSkill').value='Tôi hiểu rõ vì sao không có lệnh';qsa('.ntpsych,.ntscore').forEach(x=>x.checked=false);ntChartCache=null;$('ntChartFile').value='';$('ntChartPreview').innerHTML='';updateNoTradeDiagnosis();}
-function noTradeScore(){return checkedValues('ntscore').length*20}
-function noTradeScoreLabel(score){return score>=80?'Good No-Trade Day':score>=60?'Acceptable No-Trade Day':score>=40?'Unclear No-Trade Day':'Avoidance / Process Weakness'}
-function noTradeDiagnosisObj(nt){const type=nt.type||$('ntType')?.value||'Valid No Trade';const market=nt.market||$('ntMarket')?.value||'';const skill=nt.skill||$('ntSkill')?.value||'';const psych=nt.psych||checkedValues('ntpsych');const score=nt.score??noTradeScore();let title='', cls='unclear', bullets=[];
- if(type==='Valid No Trade'){title='Good No-Trade Discipline';cls='valid';bullets=['Thị trường chưa cung cấp đủ điều kiện vào lệnh. Không trade là một quyết định đúng nếu Bias/Zone/Trigger chưa đủ.','Việc cần làm là bảo toàn vốn, giữ alert ở Key Zone và không hạ tiêu chuẩn setup chỉ vì lâu chưa có lệnh.'];}
- else if(type==='Missed Opportunity'){title='Skill Review Needed';cls='missed';bullets=['Có khả năng thị trường đã tạo setup nhưng bạn chưa nhận ra hoặc phản ứng chưa kịp. Đây là vấn đề kỹ năng/quy trình, không phải lý do để ép lệnh.','Lưu ảnh chart, đánh dấu tín hiệu đã bỏ lỡ và replay 5 ví dụ tương tự: zone nào, trigger nào, market state nào chưa rõ?'];}
- else if(type==='Avoided Bad Trade'){title='Avoided Bad Trade — Good Discipline';cls='avoided';bullets=['Bạn có thể đã có cảm xúc muốn vào nhưng setup chưa đạt chuẩn. Việc đứng ngoài là một chiến thắng tâm lý.','Ghi lại rule đã giúp bạn không trả tiền cho FOMO để lặp lại trong ngày sau.'];}
- else if(type==='Fear-Based No Trade'){title='Fear-Based No Trade';cls='fear';bullets=['Nếu setup đạt chuẩn nhưng bạn không vào vì sợ, đây không phải kỷ luật mà là né tránh rủi ro.','Lần sau hãy giảm risk size để có thể thực thi setup đúng: 0.25R/0.5R thay vì bỏ setup A.'];}
- else {title='Unclear No-Trade';cls='unclear';bullets=['Lý do không trade chưa đủ rõ. Đây là vùng dễ sinh nghi ngờ hệ thống hoặc tự trách.','Cần viết lại market state, Key Zone chính và điều kiện trigger cụ thể trước phiên sau.'];}
- if(psych.includes('Sốt ruột')||psych.includes('FOMO')||psych.includes('Muốn tìm lệnh ở khung nhỏ')) bullets.push('Cảnh báo: đây là dấu hiệu “đói lệnh”. Không mở M1/M5 để tìm trade nếu D1/H4/H1 chưa có setup đúng.');
- if(psych.includes('Nghi ngờ hệ thống')||psych.includes('Muốn đổi system')) bullets.push('Không đổi hệ thống vì vài ngày không có trade. Edge cần được đánh giá bằng chuỗi mẫu, không bằng cảm giác thiếu cơ hội.');
- if(skill!=='Tôi hiểu rõ vì sao không có lệnh') bullets.push('Skill note: '+skill+'. Hãy biến ngày không trade thành bài review chart, không biến thành lý do vào lệnh muộn.');
- if(score<60) bullets.push('No Trade Score thấp: cần hoàn thiện Daily Bias, Key Zone, lý do đứng ngoài và chart note để ngày không trade vẫn có giá trị học tập.');
- return{title,cls,bullets,score,label:noTradeScoreLabel(score),market};}
-function updateNoTradeDiagnosis(){const obj=noTradeDiagnosisObj({});const el=$('ntDiagnosis');if(!el)return;el.innerHTML=`<b>${obj.title}</b> · ${obj.label} · Score ${obj.score}/100<ul>${obj.bullets.map(b=>`<li>${b}</li>`).join('')}</ul>`;}
-function saveNoTradeReview(){const d=load();const date=$('dayDate').value||todayISO();const id=$('ntEditId').value||uid();const psych=checkedValues('ntpsych');const checks=checkedValues('ntscore');const score=checks.length*20;const nt={id,date,time:nowISO(),symbol:$('ntSymbol').value,tf:$('ntTf').value,bias:$('ntBias').value,type:$('ntType').value,market:$('ntMarket').value,skill:$('ntSkill').value,psych,checks,score,scoreLabel:noTradeScoreLabel(score),chartNote:$('ntChartNote').value.trim(),lesson:$('ntLesson').value.trim(),image:ntChartCache||'',updated:nowISO()};const idx=d.noTrades.findIndex(x=>x.id===id);if(idx>=0){nt.time=d.noTrades[idx].time||nt.time;nt.endReview=d.noTrades[idx].endReview||null;if(!nt.image)nt.image=d.noTrades[idx].image||'';d.noTrades[idx]=nt}else d.noTrades.push(nt);d.emotions.push({id:uid(),time:nowISO(),stage:'No Trade Review',tradeId:id,tradeLabel:`#${id} ${nt.symbol}`,emotions:psych,riskScore:nt.type==='Fear-Based No Trade'?65:nt.type==='Missed Opportunity'?40:psych.some(x=>['FOMO','Sốt ruột','Áp lực kiếm tiền','Muốn tìm lệnh ở khung nhỏ'].includes(x))?35:10,riskMode:nt.type==='Fear-Based No Trade'?'orange':nt.type==='Missed Opportunity'?'yellow':'green',note:`${nt.type} · ${nt.market} · Score ${score}/100`});save(d);clearNoTradeForm();renderAll();toast('No Trade Review saved')}
-function editNoTrade(id){const nt=load().noTrades.find(x=>x.id===id);if(!nt)return;$('ntEditId').value=nt.id;$('ntSymbol').value=nt.symbol||'XAUUSD';$('ntTf').value=nt.tf||'D1/H4';$('ntBias').value=nt.bias||'Unclear';$('ntType').value=nt.type||'Valid No Trade';$('ntMarket').value=nt.market||'Giá chưa về Key Zone';$('ntSkill').value=nt.skill||'Tôi hiểu rõ vì sao không có lệnh';$('ntChartNote').value=nt.chartNote||'';$('ntLesson').value=nt.lesson||'';qsa('.ntpsych').forEach(x=>x.checked=(nt.psych||[]).includes(x.value));qsa('.ntscore').forEach(x=>x.checked=(nt.checks||[]).includes(x.value));ntChartCache=nt.image||null;$('ntChartPreview').innerHTML=nt.image?`<img src="${nt.image}" class="nt-full-img" alt="No trade chart">`:'';updateNoTradeDiagnosis();quickTab('desk');setTimeout(()=>document.getElementById('noTradeDesk')?.scrollIntoView({behavior:'smooth',block:'start'}),50)}
-function deleteNoTrade(id){if(!confirm('Xóa No Trade Review này?'))return;const d=load();d.noTrades=d.noTrades.filter(x=>x.id!==id);save(d);renderAll();toast('No Trade Review deleted')}
-function noTradeCard(nt,reviewMode=false){const obj=noTradeDiagnosisObj(nt);const er=nt.endReview||{};const img=nt.image?`<div><span class="pill info">1 chart</span>${reviewMode?'':` <button class="btn small" onclick="toggleDetail('ntimg${nt.id}')">View chart</button>`}<div id="ntimg${nt.id}" class="detail"><img src="${nt.image}" class="nt-full-img" alt="No trade chart"></div></div>`:'';return `<div class="nt-card ${obj.cls}"><div class="nt-title"><span>${nt.symbol}</span><span class="pill ${obj.cls==='valid'||obj.cls==='avoided'?'good':obj.cls==='fear'?'bad':'warn'}">${nt.type}</span><span class="pill ${obj.score>=80?'good':obj.score>=60?'warn':'bad'}">${obj.score}/100</span></div><div class="nt-body"><div class="nt-box"><b>Market:</b> ${nt.market||'-'}<br><b>Skill:</b> ${nt.skill||'-'}<br><b>Psych:</b> ${(nt.psych||[]).join(', ')||'-'}</div><div class="nt-box"><b>Chart note:</b> ${nt.chartNote||'-'}<br><b>Lesson:</b> ${nt.lesson||'-'}${er.result?`<br><b>EOD:</b> ${er.result} · ${er.note||''}`:''}</div></div><div class="nt-diagnosis"><b>${obj.title}</b><ul>${obj.bullets.slice(0,3).map(b=>`<li>${b}</li>`).join('')}</ul></div>${img}${reviewMode?'':`<div class="btn-row"><button class="btn small" onclick="editNoTrade('${nt.id}')">Edit</button><button class="btn danger small" onclick="deleteNoTrade('${nt.id}')">Delete</button></div>`}</div>`}
-function noTradesForDate(date){return load().noTrades.filter(n=>n.date===date).sort((a,b)=>(a.symbol||'').localeCompare(b.symbol||''))}
-function renderNoTradeList(){const el=$('noTradeList');if(!el)return;const arr=noTradesForDate($('dayDate').value||todayISO());el.innerHTML=arr.length?arr.map(n=>noTradeCard(n)).join(''):'<div class="empty"><div class="icon">N</div>Chưa có No Trade Review cho ngày này. Nếu không có lệnh, hãy ghi lại lý do để phân biệt kỷ luật, kỹ năng hay sợ hãi.</div>'}
-function renderEodNoTradeReviews(){const el=$('eodNoTradeReviewList');if(!el)return;const arr=noTradesForDate($('eodDate').value||todayISO());if(!arr.length){el.innerHTML='<div class="empty"><div class="icon">N</div>Không có No Trade Review trong ngày này.</div>';return}el.innerHTML=arr.map(n=>{const r=n.endReview||{};return `<div class="nt-card ${noTradeDiagnosisObj(n).cls}"><div class="nt-title">${n.symbol} · ${n.type} · ${n.score}/100</div><div class="grid three"><div class="field"><label>End-day classification</label><select id="ntr_${n.id}_result"><option ${r.result==='Confirmed Valid No Trade'?'selected':''}>Confirmed Valid No Trade</option><option ${r.result==='Missed Opportunity Confirmed'?'selected':''}>Missed Opportunity Confirmed</option><option ${r.result==='Avoided Bad Trade Confirmed'?'selected':''}>Avoided Bad Trade Confirmed</option><option ${r.result==='Fear-Based No Trade Confirmed'?'selected':''}>Fear-Based No Trade Confirmed</option><option ${r.result==='Still Unclear'?'selected':''}>Still Unclear</option></select></div><div class="field"><label>Skill focus</label><select id="ntr_${n.id}_skill"><option ${r.skillFocus==='No skill issue'?'selected':''}>No skill issue</option><option ${r.skillFocus==='Key Zone recognition'?'selected':''}>Key Zone recognition</option><option ${r.skillFocus==='Trigger recognition'?'selected':''}>Trigger recognition</option><option ${r.skillFocus==='Market state reading'?'selected':''}>Market state reading</option><option ${r.skillFocus==='Execution confidence'?'selected':''}>Execution confidence</option></select></div><div class="field"><label>Psych risk</label><select id="ntr_${n.id}_psych"><option ${r.psychRisk==='Low'?'selected':''}>Low</option><option ${r.psychRisk==='FOMO / impatience'?'selected':''}>FOMO / impatience</option><option ${r.psychRisk==='Fear / avoidance'?'selected':''}>Fear / avoidance</option><option ${r.psychRisk==='System doubt'?'selected':''}>System doubt</option></select></div></div><div class="field" style="margin-top:10px"><label>Review note</label><textarea id="ntr_${n.id}_note" placeholder="Cuối ngày nhìn lại: không trade hôm nay là đúng, bỏ lỡ do kỹ năng, hay né vì sợ?">${r.note||''}</textarea></div>${noTradeCard(n,true)}</div>`}).join('')}
-function saveNoTradeEndReviews(){const d=load();const date=$('eodDate').value||todayISO();d.noTrades.filter(n=>n.date===date).forEach(n=>{n.endReview={result:$(`ntr_${n.id}_result`)?.value||'',skillFocus:$(`ntr_${n.id}_skill`)?.value||'',psychRisk:$(`ntr_${n.id}_psych`)?.value||'',note:$(`ntr_${n.id}_note`)?.value||'',saved:nowISO()};});save(d);renderAll();toast('No Trade Reviews saved')}
-function renderNoTradeAnalytics(){const el=$('noTradeAnalytics');if(!el)return;const d=load();const arr=d.noTrades||[];if(!arr.length){el.innerHTML='<div class="hint">Chưa có dữ liệu No Trade. Sau 10-20 ngày, phần này sẽ cho biết bạn đang kỷ luật, bỏ lỡ vì kỹ năng, hay né vì sợ.</div>';return}const byType={};arr.forEach(n=>byType[n.type]=(byType[n.type]||0)+1);const streak=(()=>{let days=[...new Set(arr.map(n=>n.date))].sort().reverse();let n=0,cur=todayISO();for(let i=0;i<days.length;i++){if(i===0&&days[i]===cur){n++;continue} const prev=new Date(new Date(cur).getTime()-n*86400000).toISOString().slice(0,10); if(days.includes(prev))n++; else break}return n})();const missed=byType['Missed Opportunity']||0,fear=byType['Fear-Based No Trade']||0,valid=byType['Valid No Trade']||0,avoided=byType['Avoided Bad Trade']||0;let note=valid>=missed+fear?'Bạn đang có nhiều ngày no-trade hợp lệ hơn ngày né/thiếu kỹ năng. Tiếp tục giữ checklist và cảnh giác FOMO sau chuỗi không lệnh.':'Cần review kỹ: tỷ lệ Missed/Fear-Based cao cho thấy vấn đề không chỉ do thị trường, mà có thể do nhận diện setup hoặc né rủi ro.';el.innerHTML=`<div class="nt-summary-grid"><div class="nt-mini-kpi"><div class="k">No Trade Days</div><div class="v">${arr.length}</div></div><div class="nt-mini-kpi"><div class="k">Valid</div><div class="v">${valid}</div></div><div class="nt-mini-kpi"><div class="k">Missed / Fear</div><div class="v">${missed+fear}</div></div><div class="nt-mini-kpi"><div class="k">Streak</div><div class="v">${streak}</div></div></div><div class="hint"><b>Diagnosis:</b> ${note}<br><b>Avoided bad trades:</b> ${avoided}. <b>Missed opportunities:</b> ${missed}. <b>Fear-based:</b> ${fear}.</div>${arr.slice().reverse().slice(0,6).map(n=>noTradeCard(n)).join('')}`}
-
-function markNoTradeDay(){
-  // Open the dedicated No Trade tab and prefill the review form.
-  quickTab('notrade');
-  const d=load();
-  const date=$('dayDate')?.value||todayISO();
-  const day=d.daily?.[date]||{};
-  if($('ntSymbol')) $('ntSymbol').value=day.market||$('dayMarket')?.value||'XAUUSD';
-  if($('ntBias')) $('ntBias').value=day.bias||$('dayBias')?.value||'Unclear';
-  if($('ntTf')) $('ntTf').value='D1/H4';
-  if($('ntType')) $('ntType').value='Valid No Trade';
-  if($('ntMarket')) $('ntMarket').value='Giá chưa về Key Zone';
-  if($('ntSkill')) $('ntSkill').value='Tôi hiểu rõ vì sao không có lệnh';
-  qsa('.ntpsych,.ntscore').forEach(x=>x.checked=false);
-  qsa('.ntscore').forEach(x=>x.checked=true);
-  ntChartCache=null;
-  if($('ntChartFile')) $('ntChartFile').value='';
-  if($('ntChartPreview')) $('ntChartPreview').innerHTML='';
-  if($('ntChartNote')) $('ntChartNote').value='';
-  if($('ntLesson')) $('ntLesson').value='';
-  updateNoTradeDiagnosis();
-  const box=$('noTradeDesk');
-  if(box) setTimeout(()=>box.scrollIntoView({behavior:'smooth',block:'start'}),150);
-  toast('Mở No Trade Desk: ghi in-session check hoặc review lý do không trade');
-} 
+function markNoTradeDay(){const d=load();const reason=prompt('Lý do No Trade Day?\nVD: Giá chưa tới Key Zone / Bias không rõ / Tâm lý không ổn / News risk','Không có setup hợp lệ');if(reason===null)return;d.eod[$('dayDate').value]={...(d.eod[$('dayDate').value]||{}),date:$('dayDate').value,type:'No Trade Good Day',mainEmotion:'Bình tĩnh',discipline:10,best:'Không ép lệnh',mistake:'',tomorrow:reason,checks:eodItems,saved:nowISO(),noTradeReason:reason};save(d);renderAll();toast('No Trade Day saved')}
 function newPlan(){resetPlanForm();quickTab('plan')}
-function resetPlanForm(clearEdit=true){
- ['planEntry','planSL','planTP','planZone','planTrigger'].forEach(id=>$(id).value='');
- $('planSymbol').value='XAUUSD';$('planSide').value='Long';$('planBias').value='Bullish';$('planZoneTf').value='H4';$('planEntryModel').value='Balanced';$('planSetupType').value='Trend Continuation';$('planQuality').value=80;$('planRiskPct').value=1;$('planRR').value=2;
- qsa('#preEmotionGroups .chip.on').forEach(x=>x.classList.remove('on'));
- qsa('.smc').forEach((x,i)=>x.checked=i<4);
- clearChartStage('pre');
- if(clearEdit){const d=load();delete d.settings.editTradeId;delete d.settings.editPreChartNoteId;save(d)}
- updatePlanEditNotice();updatePlanRisk();
-}
-function newPlan(){resetPlanForm(true);quickTab('plan')}
-function updatePlanEditNotice(){const el=$('planEditNotice');if(!el)return;const d=load();const id=d.settings.editTradeId;const t=id?d.trades.find(x=>x.id===id):null;if(t){el.style.display='block';el.innerHTML=`<b>Editing trade:</b> #${t.id} · ${t.symbol} ${t.side} · <span class="pill ${t.status}">${t.status}</span><br><span style="color:var(--text-dim)">Form đang load dữ liệu plan hiện tại, bao gồm chart note/ảnh Pre-Trade nếu có. Save Trade Plan sẽ cập nhật trade này, không tạo trade mới.</span>`;$('savePlanBtn').textContent='Update Trade Plan'}else{el.style.display='none';el.innerHTML='';$('savePlanBtn').textContent='Save Trade Plan'}}
-function setPlanChartFromNote(note){
- clearChartStage('pre');
- if(!note)return;
- const ms=$('preMarketState'), pf=$('prePsychForecast');
- if(ms && note.marketState) ms.value=note.marketState;
- if(pf && note.psychology) pf.value=note.psychology;
- if($('preChartNote')) $('preChartNote').value=note.chartNote||'';
- if($('preMindQuestion')) $('preMindQuestion').value=note.mindNote||'';
- chartCache.pre=note.image||null;
- const prev=$('preChartPreview');
- if(prev && note.image){prev.style.display='block';prev.innerHTML='<img src="'+note.image+'" alt="chart">'}
-}
-function loadTradeIntoPlanForm(id){
- const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return false;
- d.settings.editTradeId=id;d.settings.activeTradeId=id;
- const preNotes=(t.chartNotes||[]).filter(n=>n.stage==='Pre-Trade');
- const preNote=preNotes.length?preNotes[preNotes.length-1]:null;
- if(preNote)d.settings.editPreChartNoteId=preNote.id;else delete d.settings.editPreChartNoteId;
- save(d);
- $('planSymbol').value=t.symbol||'XAUUSD';$('planSide').value=t.side||'Long';$('planBias').value=t.bias||'Bullish';$('planQuality').value=t.quality??80;$('planRiskPct').value=t.riskPct??1;$('planRR').value=t.rr??2;$('planZoneTf').value=t.zoneTf||'H4';$('planEntryModel').value=t.entryModel||'Balanced';$('planEntry').value=t.plannedEntry||'';$('planSL').value=t.plannedSL||'';$('planTP').value=t.plannedTP||'';$('planSetupType').value=t.setupType||'Trend Continuation';$('planZone').value=t.zone||'';$('planTrigger').value=t.trigger||'';
- qsa('.smc').forEach(x=>x.checked=(t.smc||[]).includes(x.value));
- qsa('#preEmotionGroups .chip').forEach(x=>x.classList.toggle('on',(t.preEmotions||[]).includes(x.dataset.emotion)));
- setPlanChartFromNote(preNote);
- updatePlanEditNotice();updatePlanRisk();quickTab('plan');setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),60);toast(`#${id} loaded for edit`);return true
-}
-function upsertPreTradeChartNote(t, cn, editNoteId){
- if(!cn)return false;
- t.chartNotes=t.chartNotes||[];
- if(editNoteId){
-   const idx=t.chartNotes.findIndex(n=>n.id===editNoteId);
-   if(idx>=0){cn.id=editNoteId;cn.time=t.chartNotes[idx].time||cn.time;t.chartNotes[idx]=cn;return true;}
- }
- const existingIdx=t.chartNotes.findIndex(n=>n.stage==='Pre-Trade');
- if(existingIdx>=0){cn.id=t.chartNotes[existingIdx].id||cn.id;cn.time=t.chartNotes[existingIdx].time||cn.time;t.chartNotes[existingIdx]=cn;return true;}
- t.chartNotes.push(cn);return true;
-}
-function saveTradePlan(markEntered=false){
- const d=load();
- const risk=updatePlanRisk();
- const editId=d.settings.editTradeId;
- const editPreChartNoteId=d.settings.editPreChartNoteId;
- const existing=editId?d.trades.find(x=>x.id===editId):null;
- const id=existing?existing.id:uid();
- const status=markEntered?'open':(existing?existing.status:'planned');
- const t=existing||{id,created:nowISO(),chartNotes:[]};
- Object.assign(t,{id,status,entered:markEntered?(t.entered||nowISO()):t.entered||null,symbol:$('planSymbol').value,side:$('planSide').value,bias:$('planBias').value,quality:Number($('planQuality').value),riskPct:Number($('planRiskPct').value),rr:Number($('planRR').value),zoneTf:$('planZoneTf').value,entryModel:$('planEntryModel').value,setupType:$('planSetupType').value,plannedEntry:$('planEntry').value,plannedSL:$('planSL').value,plannedTP:$('planTP').value,actualEntry:markEntered?($('planEntry').value||t.actualEntry||''):t.actualEntry||'',actualSL:markEntered?($('planSL').value||t.actualSL||''):t.actualSL||'',actualTP:markEntered?($('planTP').value||t.actualTP||''):t.actualTP||'',zone:$('planZone').value,trigger:$('planTrigger').value,smc:checkedValues('smc'),smcScore:smcScore(),preEmotions:selectedEmotions('preEmotionGroups'),preRiskScore:risk.score,preRiskMode:risk.mode,preNote:t.preNote||''});
- const cn=buildChartNote('pre',id,`#${id} ${t.symbol} ${t.side}`);
- const chartSaved=upsertPreTradeChartNote(t,cn,editPreChartNoteId);
- if(!existing)d.trades.push(t);
- d.settings.activeTradeId=id;
- delete d.settings.editTradeId;
- delete d.settings.editPreChartNoteId;
- d.emotions.push({id:uid(),time:nowISO(),stage:'Pre-Trade',tradeId:id,tradeLabel:`#${id} ${t.symbol} ${t.side}`,emotions:t.preEmotions,riskScore:risk.score,riskMode:risk.mode,note:`SMC ${t.smcScore} · Quality ${t.quality} · ${existing?'Updated':markEntered?'Entered':'Planned'}${chartSaved?' · Chart note':''}`});
- save(d);
- // Sau khi lưu/enter phải đưa người dùng về Daily Desk trước, rồi mới render lại board.
- // Dùng forceDailyDesk() để không phụ thuộc vào quickTab/renderAll nếu một block phụ bị lỗi runtime.
- forceDailyDesk();
- try{ resetPlanForm(false); }catch(e){ console.error('resetPlanForm after save failed', e); }
- try{ renderAll(); }catch(e){ console.error('renderAll after save failed', e); }
- forceDailyDesk();
- setTimeout(forceDailyDesk,80);
- toast(existing?(markEntered?'Trade updated and marked Open':'Trade plan updated'):(markEntered?'Plan saved and marked Open':'Trade Plan saved'));
-}
-function duplicateTrade(id){const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return;const cp={...t,id:uid(),status:'planned',created:nowISO(),entered:null,closed:null,result:null,rMultiple:null,closeNote:null,bestLoserScore:null,processVerdict:null,chartNotes:[]};d.trades.push(cp);d.settings.activeTradeId=cp.id;save(d);renderAll();toast('Duplicated as new plan')}
-function quickLive(id){
-  if(!selectTrade(id,{silent:true,noRender:true}))return;
-  try{renderAll();}catch(e){console.error('renderAll before live failed',e)}
-  quickTab('live');
-  setTimeout(()=>document.getElementById('panel-live')?.scrollIntoView({behavior:'smooth',block:'start'}),50);
-}
-function quickClose(id){
-  if(!selectTrade(id,{silent:true,noRender:true}))return;
-  try{renderAll();}catch(e){console.error('renderAll before close failed',e)}
-  quickTab('close');
-  setTimeout(()=>document.getElementById('panel-close')?.scrollIntoView({behavior:'smooth',block:'start'}),50);
-}
-function editTrade(id){
- const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return;
- if(['planned','watching','cancelled'].includes(t.status)){loadTradeIntoPlanForm(id);return}
- if(t.status==='open'){quickLive(id);toast(`#${id} loaded in Live Trade`);return}
- if(t.status==='closed'){quickClose(id);toast(`#${id} loaded in Close Review`);return}
- const q=prompt('Edit quick fields: symbol,side,quality,riskPct,rr',`${t.symbol},${t.side},${t.quality},${t.riskPct},${t.rr}`);if(!q)return;const [symbol,side,quality,riskPct,rr]=q.split(',').map(x=>x.trim());if(symbol)t.symbol=symbol;if(side)t.side=side;if(quality)t.quality=Number(quality);if(riskPct)t.riskPct=Number(riskPct);if(rr)t.rr=Number(rr);save(d);renderAll();toast(`#${id} updated`)
-}
-function selectedOpenTrades(){return load().trades.filter(t=>t.status==='open')}
-function selectedTrade(){const d=load();return d.trades.find(t=>t.id===d.settings.activeTradeId)||d.trades.find(t=>t.status==='open')||d.trades.find(t=>['planned','watching'].includes(t.status))}
-function tradeCard(t,compact=false){
- const active=load().settings.activeTradeId===t.id;
- const result=t.status==='closed'?`<span class="pill ${t.result==='Win'?'win':t.result==='Loss'?'loss':'be'}">${t.result} ${Number(t.rMultiple||0).toFixed(1)}R</span>`:`<span class="pill ${t.status}">${t.status}</span>`;
- const verdictText=t.status==='closed'?classifyProcess(t):'';
- const verdict=t.status==='closed'?`<span class="pill ${verdictClass(verdictText)}">${verdictText}</span>`:'';
- const emotions=(t.preEmotions||[]).slice(0,4).map(e=>`<span class="pill ${emotionClass(e)}">${e}</span>`).join(' ');
- const actions=t.status==='planned'||t.status==='watching'?`<button class="btn success small" onclick="event.stopPropagation();markEntered('${t.id}')">Enter</button><button class="btn info small" onclick="event.stopPropagation();selectTrade('${t.id}')">Active</button><button class="btn small" onclick="event.stopPropagation();duplicateTrade('${t.id}')">Duplicate</button><button class="btn danger small" onclick="event.stopPropagation();cancelTrade('${t.id}')">Cancel</button>`:t.status==='open'?`<button class="btn info small" onclick="event.stopPropagation();quickLive('${t.id}')">Live</button><button class="btn success small" onclick="event.stopPropagation();quickClose('${t.id}')">Close</button><button class="btn small" onclick="event.stopPropagation();selectTrade('${t.id}')">Active</button>`:`<button class="btn small" onclick="event.stopPropagation();duplicateTrade('${t.id}')">Duplicate</button>`;
- const summary=chartThumbs(t.chartNotes);
- const detail=compact?'':`<details class="trade-details"><summary>View trade details${(t.chartNotes||[]).length?` · ${(t.chartNotes||[]).length} chart`:''}</summary><div class="trade-expand"><b>Zone:</b> ${t.zone||'-'}<br><b>Trigger:</b> ${t.trigger||'-'}<br><b>Plan:</b> Entry ${t.plannedEntry||'-'} · SL ${t.plannedSL||'-'} · TP ${t.plannedTP||'-'}<br><b>Emotions:</b> <span>${emotions||'<span class="pill good">No emotion tag</span>'}</span>${t.cancelReason?`<br><b>Cancel:</b> ${t.cancelReason}`:''}${t.status==='closed'?`<br><b>Final Grade:</b> ${classifyProcess(t)}${livePressureEmotions(t).length?` · <b>Live Pressure:</b> ${livePressureEmotions(t).join(', ')}`:''}`:''}${t.closeNote?`<br><b>Reflection:</b> ${t.closeNote}`:''}${chartDetails(t.chartNotes)}</div></details>`;
- return `<div class="trade-row ${active?'active':''}"><div class="trade-head"><div><span class="trade-symbol">${t.symbol}</span><span class="trade-id">#${t.id}</span> <span class="pill ${String(t.side).toLowerCase()}">${t.side}</span></div><div>${result} ${verdict}</div></div><div class="trade-detail"><span><b>Bias:</b> ${t.bias}</span><span><b>Q:</b> ${t.quality}</span><span><b>Risk:</b> ${t.riskPct}%</span><span><b>RR:</b> ${t.rr}</span><span><b>SMC:</b> ${t.smcScore??'-'}</span><span><b>Pre Risk:</b> ${t.preRiskScore??'-'}</span><span><b>Live Max:</b> ${maxLiveRisk(t)}</span></div>${summary}${detail}<div class="btn-row">${actions}<button class="btn small" onclick="event.stopPropagation();editTrade('${t.id}')">Edit</button></div></div>`
-}
-function renderTradeBoard(){const d=load();const date=$('dayDate').value||todayISO();const planned=d.trades.filter(t=>['planned','watching'].includes(t.status)&&sameDay(t.created,date));const open=d.trades.filter(t=>t.status==='open');const done=d.trades.filter(t=>['closed','cancelled'].includes(t.status)&&(sameDay(t.closed,date)||sameDay(t.cancelled,date)||sameDay(t.created,date))).slice(-8).reverse();
- $('tradeBoard').innerHTML=`<div class="lane"><div class="lane-title"><span>Planned / Watching</span><b>${planned.length}</b></div><div class="trade-list">${planned.length?planned.map(t=>tradeCard(t,true)).join(''):'<div class="empty"><div class="icon">P</div>Không có trade plan.</div>'}</div></div><div class="lane"><div class="lane-title"><span>Active / Open</span><b>${open.length}</b></div><div class="trade-list">${open.length?open.map(t=>tradeCard(t,true)).join(''):'<div class="empty"><div class="icon">O</div>Không có open trade.</div>'}</div></div><div class="lane"><div class="lane-title"><span>Closed / Cancelled Today</span><b>${done.length}</b></div><div class="trade-list">${done.length?done.map(t=>tradeCard(t,true)).join(''):'<div class="empty"><div class="icon">D</div>Chưa có trade hoàn tất.</div>'}</div></div>`}
-function syncSelects(id){
-  ['liveTradeSelect','closeTradeSelect'].forEach(selId=>{
-    const sel=$(selId); if(!sel)return;
-    if([...sel.options].some(o=>o.value===id)) sel.value=id;
-  });
-}
-function renderSelects(){
- const d=load();const open=d.trades.filter(t=>t.status==='open');
- ['liveTradeSelect','closeTradeSelect'].forEach(id=>{
-   const sel=$(id); if(!sel)return; sel.innerHTML='';
-   if(open.length){open.forEach(t=>{const o=document.createElement('option');o.value=t.id;o.textContent=`#${t.id} · ${t.symbol} ${t.side} · ${prettyTime(t.entered)}`;sel.appendChild(o)})}
-   else{const o=document.createElement('option');o.value='';o.textContent='No open trade';sel.appendChild(o)}
- });
- const active=d.settings.activeTradeId;
- const activeOpen=open.find(t=>t.id===active);
- if(activeOpen)syncSelects(activeOpen.id); else if(open.length){d.settings.activeTradeId=open[0].id;save(d);syncSelects(open[0].id)}
-}
-function maxLiveRisk(t){return Math.max(0,...((t.liveChecks||[]).map(c=>Number(c.riskScore)||0)))}
-function livePressureEmotions(t){const pressure=new Set(['Sợ mất lời','Muốn chốt non','Muốn đóng vì PnL','Muốn thêm vị thế','Muốn dời SL xa hơn','Hy vọng quay lại','Mệt mỏi','Quá tự tin','Muốn gỡ','Muốn lấy lại tiền']);return [...new Set((t.liveChecks||[]).flatMap(c=>[...(c.emotions||[]),...(c.urges||[])].filter(x=>pressure.has(x))))]}
-function hasLivePressure(t){return maxLiveRisk(t)>8 || livePressureEmotions(t).length>0}
-function setupProcessOk(t){return Number(t.quality)>=70 && (t.smcScore===undefined || Number(t.smcScore)>=70) && !biasConflict(t.side,t.bias)}
-function verdictClass(v){if(/Bad|Emotional Loss/.test(v))return'bad'; if(/Pressure|Mixed/.test(v))return'warn'; return'good'}
-function classifyProcess(t){const closeScore=Number(t.bestLoserScore)||0;const preRisk=Number(t.preRiskScore)||0;const liveMax=maxLiveRisk(t);const setupOk=setupProcessOk(t);const preOk=preRisk<45;const closeOk=closeScore>=80; if(t.result==='Win'){if(!setupOk||!preOk||!closeOk||liveMax>20)return'Bad Win'; if(hasLivePressure(t))return'Good Win with Emotional Pressure'; return'Clean Good Win'} if(t.result==='Loss'){return closeOk&&setupOk?'Good Loss':'Bad Loss'} if(t.result==='BE'){return closeOk&&setupOk&&preOk&&liveMax<=8?'Clean BE':'Mixed BE'} return'Unreviewed'}
-function selectedBox(t){if(!t)return'<div class="hint"><b>No selected trade.</b> Create a plan or mark a plan as entered.</div>';const last=(t.liveChecks||[]).slice(-1)[0];const liveMax=maxLiveRisk(t);const pressure=livePressureEmotions(t);const verdict=t.status==='closed'?classifyProcess(t):'';return `<div class="hint"><b>Selected:</b> #${t.id} · ${t.symbol} · ${t.side} · ${t.status}${verdict?` · <b>${verdict}</b>`:''}<br><b>Bias:</b> ${t.bias} · <b>Quality:</b> ${t.quality} · <b>Risk:</b> ${t.riskPct}% · <b>Zone:</b> ${t.zoneTf||'-'}<br><b>Key Zone:</b> ${t.zone||'-'}<br><b>Trigger:</b> ${t.trigger||'-'}<br><b>Live Risk Max:</b> ${liveMax}${pressure.length?` · <b>Pressure:</b> ${pressure.join(', ')}`:''}${last?`<br><b>Last Live:</b> ${last.phase} · ${[...(last.emotions||[]),...(last.urges||[])].join(', ')||'-'} · Risk ${last.riskScore}`:''}</div>`}
-
+function resetPlanForm(clearEdit=true){['planEntry','planSL','planTP','planZone','planTrigger'].forEach(id=>$(id).value='');$('planSymbol').value='XAUUSD';$('planSide').value='Long';$('planBias').value='Bullish';$('planZoneTf').value='H4';$('planEntryModel').value='Balanced';$('planSetupType').value='Trend Continuation';$('planQuality').value=80;$('planRiskPct').value=1;$('planRR').value=2;qsa('#preEmotionGroups .chip.on').forEach(x=>x.classList.remove('on'));qsa('.smc').forEach((x,i)=>x.checked=i<4);clearChartStage('pre');if(clearEdit){const d=load();delete d.settings.editTradeId;save(d)}updatePlanEditNotice();updatePlanRisk()}
+function smcScore(){const checked=checkedValues('smc').length;return Math.round(checked/smcItems.length*100)}
+function biasConflict(side,bias){return (side==='Long'&&bias==='Bearish')||(side==='Short'&&bias==='Bullish')}
+function renderRiskBox(el,risk,title='Risk Check'){el.className='risk-result '+risk.mode;el.innerHTML=`<div class="risk-head"><div class="risk-score ${risk.mode}">${risk.score}</div><div class="risk-meta"><div class="risk-label">${title}</div><div class="risk-title">${risk.title}</div></div></div><div class="risk-note"><b>Permission:</b> ${risk.permission}<br><span style="color:var(--text-dim)">${risk.reasons.length?'Reasons: '+risk.reasons.join(' · '):'No major emotional risk detected.'}</span></div><div class="do-dont">${riskDoDont(risk)}</div>`}
 function adviceHtml(title,causes,rules,reminders,scripts=[]){
  const uniq=a=>[...new Set((a||[]).filter(Boolean))];
  causes=uniq(causes); rules=uniq(rules); reminders=uniq(reminders); scripts=uniq(scripts);
@@ -1342,6 +731,100 @@ function closePsychologyAdvice(emotions,risk){
  return adviceHtml('Psychology Diagnosis · Close-review based advice',causes,rules,reminders,scripts);
 }
 
+function updatePlanRisk(){const emotions=selectedEmotions('preEmotionGroups');const risk=evaluateRisk(emotions,{intensity:$('preIntensity').value,smcScore:smcScore(),quality:$('planQuality').value,biasConflict:biasConflict($('planSide').value,$('planBias').value),cooldown:cooldownRemaining()>0,dailyLimitHit:dailyLimitHit($('dayDate').value)});renderRiskBox($('planRisk'),risk,'Pre-Trade Risk');$('planRisk').insertAdjacentHTML('beforeend',planPsychologyAdvice(emotions,risk));$('savePlanBtn').disabled=risk.mode==='black';return risk}
+['planSide','planBias','planQuality'].forEach(id=>$(id).addEventListener('input',updatePlanRisk));
+
+function updatePlanEditNotice(){const el=$('planEditNotice');if(!el)return;const d=load();const id=d.settings.editTradeId;const t=id?d.trades.find(x=>x.id===id):null;if(t){el.style.display='block';el.innerHTML=`<b>Editing trade:</b> #${t.id} · ${t.symbol} ${t.side} · <span class="pill ${t.status}">${t.status}</span><br><span style="color:var(--text-dim)">Save Trade Plan sẽ cập nhật trade này, không tạo trade mới. Save + Mark Entered sẽ chuyển trade thành Open.</span>`;$('savePlanBtn').textContent='Update Trade Plan'}else{el.style.display='none';el.innerHTML='';$('savePlanBtn').textContent='Save Trade Plan'}}
+function loadTradeIntoPlanForm(id){const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return false;d.settings.editTradeId=id;d.settings.activeTradeId=id;save(d);$('planSymbol').value=t.symbol||'XAUUSD';$('planSide').value=t.side||'Long';$('planBias').value=t.bias||'Bullish';$('planQuality').value=t.quality??80;$('planRiskPct').value=t.riskPct??1;$('planRR').value=t.rr??2;$('planZoneTf').value=t.zoneTf||'H4';$('planEntryModel').value=t.entryModel||'Balanced';$('planEntry').value=t.plannedEntry||'';$('planSL').value=t.plannedSL||'';$('planTP').value=t.plannedTP||'';$('planSetupType').value=t.setupType||'Trend Continuation';$('planZone').value=t.zone||'';$('planTrigger').value=t.trigger||'';qsa('.smc').forEach(x=>x.checked=(t.smc||[]).includes(x.value));qsa('#preEmotionGroups .chip').forEach(x=>x.classList.toggle('on',(t.preEmotions||[]).includes(x.dataset.emotion)));clearChartStage('pre');updatePlanEditNotice();updatePlanRisk();quickTab('plan');setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),60);toast(`#${id} loaded for edit`);return true}
+
+
+function switchToDailyDesk(){quickTab('desk')}
+function setEmotionSelection(rootId, emotions){
+ const set=new Set(emotions||[]);
+ qsa('.chip',$(rootId)).forEach(ch=>ch.classList.toggle('on',set.has(ch.dataset.emotion)));
+}
+function updateCloseEditModeUI(){
+ const d=load(); const id=d.settings.editCloseTradeId; const t=id?d.trades.find(x=>x.id===id):null;
+ const btn=$('closeTradeBtn');
+ if(btn) btn.textContent=t?'Update Close Review':'Close Trade';
+ if(t&&$('closeSelectedBox')){
+   $('closeSelectedBox').innerHTML=`<div class="hint"><b>Editing closed trade:</b> #${t.id} · ${t.symbol} ${t.side} · ${t.result||'-'} ${Number(t.rMultiple||0).toFixed(1)}R<br><span style="color:var(--text-dim)">Bạn đang chỉnh lại Close Review của trade đã đóng. Save sẽ cập nhật trade cũ, không tạo trade mới.</span></div>`;
+ }
+}
+function loadTradeIntoCloseReview(id){
+ const d=load(); const t=d.trades.find(x=>x.id===id); if(!t) return;
+ d.settings.activeTradeId=id; d.settings.editCloseTradeId=id; save(d);
+ quickTab('close');
+ if($('closeTradeSelect') && Array.from($('closeTradeSelect').options).some(o=>o.value===id)) $('closeTradeSelect').value=id;
+ if($('closeResult')) $('closeResult').value=t.result||'Win';
+ if($('closeR')) $('closeR').value=(t.rMultiple!==undefined&&t.rMultiple!==null)?t.rMultiple:0;
+ if($('closeDiscipline')) $('closeDiscipline').value=(t.discipline!==undefined&&t.discipline!==null)?t.discipline:8;
+ if($('closeNote')) $('closeNote').value=t.closeNote||'';
+ setEmotionSelection('closeEmotionGroups',t.closeEmotions||[]);
+ const score=Number(t.bestLoserScore||0);
+ const checkedCount=Math.round(score/20);
+ qsa('input.bestloser').forEach((x,i)=>{x.checked=i<checkedCount});
+ const cn=(t.chartNotes||[]).slice().reverse().find(n=>n.stage==='Close Review')||null;
+ chartCache.close=cn&&cn.image?cn.image:null;
+ if($('closeMarketState')) $('closeMarketState').value=cn?.marketState||$('closeMarketState').value;
+ if($('closePsychReality')) $('closePsychReality').value=cn?.psychology||$('closePsychReality').value;
+ if($('closeChartNote')) $('closeChartNote').value=cn?.chartNote||'';
+ if($('closeMindLesson')) $('closeMindLesson').value=cn?.mindNote||'';
+ if($('closeChartPreview')){
+   $('closeChartPreview').style.display=cn&&cn.image?'block':'none';
+   $('closeChartPreview').innerHTML=cn&&cn.image?`<img src="${cn.image}" alt="close chart">`:'';
+ }
+ updateBestLoser(); updateCloseEmotionRisk(); updateCloseEditModeUI();
+ toast(`#${id} loaded for Close Review edit`);
+}
+function upsertCloseReviewChartNote(t, cn, isEditing){
+ t.chartNotes=t.chartNotes||[];
+ if(!cn) return false;
+ const idx=isEditing?t.chartNotes.findIndex(n=>n.stage==='Close Review'):-1;
+ if(idx>=0){t.chartNotes[idx]={...t.chartNotes[idx],...cn,id:t.chartNotes[idx].id||cn.id,time:nowISO()};}
+ else t.chartNotes.push(cn);
+ return true;
+}
+
+function saveTradePlan(markEntered=false){const d=load();const risk=updatePlanRisk();const editId=d.settings.editTradeId;const existing=editId?d.trades.find(x=>x.id===editId):null;const id=existing?existing.id:uid();const status=markEntered?'open':(existing?existing.status:'planned');const t=existing||{id,created:nowISO(),chartNotes:[]};Object.assign(t,{id,status,entered:markEntered?(t.entered||nowISO()):t.entered||null,symbol:$('planSymbol').value,side:$('planSide').value,bias:$('planBias').value,quality:Number($('planQuality').value),riskPct:Number($('planRiskPct').value),rr:Number($('planRR').value),zoneTf:$('planZoneTf').value,entryModel:$('planEntryModel').value,setupType:$('planSetupType').value,plannedEntry:$('planEntry').value,plannedSL:$('planSL').value,plannedTP:$('planTP').value,actualEntry:markEntered?($('planEntry').value||t.actualEntry||''):t.actualEntry||'',actualSL:markEntered?($('planSL').value||t.actualSL||''):t.actualSL||'',actualTP:markEntered?($('planTP').value||t.actualTP||''):t.actualTP||'',zone:$('planZone').value,trigger:$('planTrigger').value,smc:checkedValues('smc'),smcScore:smcScore(),preEmotions:selectedEmotions('preEmotionGroups'),preRiskScore:risk.score,preRiskMode:risk.mode,preNote:t.preNote||''});
+ const cn=buildChartNote('pre',id,`#${id} ${t.symbol} ${t.side}`); if(cn){t.chartNotes=t.chartNotes||[]; t.chartNotes.push(cn)}
+ if(existing){const idx=d.trades.findIndex(x=>x.id===id);d.trades[idx]=t}else d.trades.push(t);
+ d.settings.activeTradeId=id; delete d.settings.editTradeId;
+ d.emotions.push({id:uid(),time:nowISO(),stage:'Pre-Trade',tradeId:id,tradeLabel:`#${id} ${t.symbol} ${t.side}`,emotions:t.preEmotions,riskScore:risk.score,riskMode:risk.mode,note:`SMC ${t.smcScore} · Quality ${t.quality} · ${existing?'Updated':markEntered?'Entered':'Planned'}${cn?' · Chart note':''}`});
+ save(d); renderAll(); updatePlanEditNotice(); toast(existing?(markEntered?'Trade updated and marked Open':'Trade plan updated'):(markEntered?'Plan saved and marked Open':'Trade Plan saved')); quickTab('desk')}
+function selectTrade(id){if(!id)return;const d=load();d.settings.activeTradeId=id;const t=d.trades.find(x=>x.id===id);if(!(t&&t.status==='closed')) delete d.settings.editCloseTradeId;save(d);syncSelects(id);renderAll()}
+function syncSelects(id){['liveTradeSelect','closeTradeSelect'].forEach(sel=>{if($(sel)&&Array.from($(sel).options).some(o=>o.value===id))$(sel).value=id})}
+function markEntered(id){const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return;t.status='open';t.entered=nowISO();t.actualEntry=t.actualEntry||t.plannedEntry||'';t.actualSL=t.actualSL||t.plannedSL||'';t.actualTP=t.actualTP||t.plannedTP||'';d.settings.activeTradeId=id;save(d);renderAll();toast(`#${id} marked OPEN`)}
+function cancelTrade(id){const reason=prompt('Lý do cancel trade plan?','Setup mất hiệu lực / Giá chưa tới zone');if(reason===null)return;const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return;t.status='cancelled';t.cancelled=nowISO();t.cancelReason=reason;save(d);renderAll();toast(`#${id} cancelled`)}
+function duplicateTrade(id){const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return;const cp={...t,id:uid(),status:'planned',created:nowISO(),entered:null,closed:null,result:null,rMultiple:null,closeNote:null,bestLoserScore:null,processVerdict:null,chartNotes:[]};d.trades.push(cp);d.settings.activeTradeId=cp.id;save(d);renderAll();toast('Duplicated as new plan')}
+function quickLive(id){selectTrade(id);quickTab('live')}
+function quickClose(id){selectTrade(id);quickTab('close')}
+function editTrade(id){const d=load();const t=d.trades.find(x=>x.id===id);if(!t)return;if(['planned','watching','cancelled'].includes(t.status)){loadTradeIntoPlanForm(id);return}if(t.status==='open'){selectTrade(id);quickTab('live');toast(`#${id} opened in Live Trade`);return}if(t.status==='closed'){loadTradeIntoCloseReview(id);return}const q=prompt('Edit quick fields: symbol,side,quality,riskPct,rr',`${t.symbol},${t.side},${t.quality},${t.riskPct},${t.rr}`);if(!q)return;const [symbol,side,quality,riskPct,rr]=q.split(',').map(x=>x.trim());if(symbol)t.symbol=symbol;if(side)t.side=side;if(quality)t.quality=Number(quality);if(riskPct)t.riskPct=Number(riskPct);if(rr)t.rr=Number(rr);save(d);renderAll();toast(`#${id} updated`)}
+function selectedOpenTrades(){return load().trades.filter(t=>t.status==='open')}
+function selectedTrade(){const d=load();return d.trades.find(t=>t.id===d.settings.activeTradeId)||d.trades.find(t=>t.status==='open')||d.trades.find(t=>['planned','watching'].includes(t.status))}
+function tradeCard(t,compact=false){const active=load().settings.activeTradeId===t.id;const result=t.status==='closed'?`<span class="pill ${t.result==='Win'?'win':t.result==='Loss'?'loss':'be'}">${t.result} ${Number(t.rMultiple||0).toFixed(1)}R</span>`:`<span class="pill ${t.status}">${t.status}</span>`;const verdictText=t.status==='closed'?classifyProcess(t):'';const verdict=t.status==='closed'?`<span class="pill ${verdictClass(verdictText)}">${verdictText}</span>`:'';const emotions=(t.preEmotions||[]).slice(0,4).map(e=>`<span class="pill ${emotionClass(e)}">${e}</span>`).join(' ');const actions=t.status==='planned'||t.status==='watching'?`<button class="btn success small" onclick="event.stopPropagation();markEntered('${t.id}')">Enter</button><button class="btn info small" onclick="event.stopPropagation();selectTrade('${t.id}')">Active</button><button class="btn small" onclick="event.stopPropagation();duplicateTrade('${t.id}')">Duplicate</button><button class="btn danger small" onclick="event.stopPropagation();cancelTrade('${t.id}')">Cancel</button>`:t.status==='open'?`<button class="btn info small" onclick="event.stopPropagation();quickLive('${t.id}')">Live</button><button class="btn success small" onclick="event.stopPropagation();quickClose('${t.id}')">Close</button><button class="btn small" onclick="event.stopPropagation();selectTrade('${t.id}')">Active</button>`:`<button class="btn small" onclick="event.stopPropagation();duplicateTrade('${t.id}')">Duplicate</button>`;
+ return `<div class="trade-row ${active?'active':''}"><div class="trade-head"><div><span class="trade-symbol">${t.symbol}</span><span class="trade-id">#${t.id}</span> <span class="pill ${String(t.side).toLowerCase()}">${t.side}</span></div><div>${result} ${verdict}</div></div><div class="trade-detail"><span><b>Bias:</b> ${t.bias}</span><span><b>Q:</b> ${t.quality}</span><span><b>Risk:</b> ${t.riskPct}%</span><span><b>RR:</b> ${t.rr}</span><span><b>SMC:</b> ${t.smcScore??'-'}</span><span><b>Pre Risk:</b> ${t.preRiskScore??'-'}</span><span><b>Live Max:</b> ${maxLiveRisk(t)}</span></div>${compact?'':`<div class="trade-expand"><b>Zone:</b> ${t.zone||'-'}<br><b>Trigger:</b> ${t.trigger||'-'}<br><b>Plan:</b> Entry ${t.plannedEntry||'-'} · SL ${t.plannedSL||'-'} · TP ${t.plannedTP||'-'}<br><b>Emotions:</b> <span>${emotions||'<span class="pill good">No emotion tag</span>'}</span>${chartThumbs(t.chartNotes)}${t.cancelReason?`<br><b>Cancel:</b> ${t.cancelReason}`:''}${t.status==='closed'?`<br><b>Final Grade:</b> ${classifyProcess(t)}${livePressureEmotions(t).length?` · <b>Live Pressure:</b> ${livePressureEmotions(t).join(', ')}`:''}`:''}${t.closeNote?`<br><b>Reflection:</b> ${t.closeNote}`:''}</div>`}<div class="btn-row">${actions}<button class="btn small" onclick="event.stopPropagation();editTrade('${t.id}')">Edit</button></div></div>`}
+function renderTradeBoard(){const d=load();const date=$('dayDate').value||todayISO();const planned=d.trades.filter(t=>['planned','watching'].includes(t.status)&&sameDay(t.created,date));const open=d.trades.filter(t=>t.status==='open');const done=d.trades.filter(t=>['closed','cancelled'].includes(t.status)&&(sameDay(t.closed,date)||sameDay(t.cancelled,date)||sameDay(t.created,date))).slice(-8).reverse();
+ $('tradeBoard').innerHTML=`<div class="lane"><div class="lane-title"><span>Planned / Watching</span><b>${planned.length}</b></div><div class="trade-list">${planned.length?planned.map(t=>tradeCard(t,true)).join(''):'<div class="empty"><div class="icon">P</div>Không có trade plan.</div>'}</div></div><div class="lane"><div class="lane-title"><span>Active / Open</span><b>${open.length}</b></div><div class="trade-list">${open.length?open.map(t=>tradeCard(t,true)).join(''):'<div class="empty"><div class="icon">O</div>Không có open trade.</div>'}</div></div><div class="lane"><div class="lane-title"><span>Closed / Cancelled Today</span><b>${done.length}</b></div><div class="trade-list">${done.length?done.map(t=>tradeCard(t,true)).join(''):'<div class="empty"><div class="icon">D</div>Chưa có trade hoàn tất.</div>'}</div></div>`}
+function renderSelects(){
+ const d=load();
+ const open=d.trades.filter(t=>t.status==='open');
+ const editClose=d.settings.editCloseTradeId?d.trades.find(t=>t.id===d.settings.editCloseTradeId):null;
+ const active=d.settings.activeTradeId?d.trades.find(t=>t.id===d.settings.activeTradeId):null;
+ const liveSel=$('liveTradeSelect');
+ if(liveSel){liveSel.innerHTML='';if(open.length){open.forEach(t=>{const o=document.createElement('option');o.value=t.id;o.textContent=`#${t.id} · ${t.symbol} ${t.side} · ${prettyTime(t.entered)}`;liveSel.appendChild(o)})}else{const o=document.createElement('option');o.value='';o.textContent='No open trade';liveSel.appendChild(o)}}
+ const closeSel=$('closeTradeSelect');
+ if(closeSel){closeSel.innerHTML='';let list=[...open]; if(editClose&&!list.some(t=>t.id===editClose.id)) list.unshift(editClose); if(!list.length && active&&active.status==='closed') list=[active]; if(list.length){list.forEach(t=>{const o=document.createElement('option');o.value=t.id;o.textContent=`#${t.id} · ${t.symbol} ${t.side} · ${t.status==='closed'?'Closed '+(t.result||'')+' '+Number(t.rMultiple||0).toFixed(1)+'R':'Open · '+prettyTime(t.entered)}`;closeSel.appendChild(o)})}else{const o=document.createElement('option');o.value='';o.textContent='No open trade';closeSel.appendChild(o)}}
+ const id=d.settings.editCloseTradeId||d.settings.activeTradeId;if(id)syncSelects(id);updateCloseEditModeUI();
+}
+function maxLiveRisk(t){return Math.max(0,...((t.liveChecks||[]).map(c=>Number(c.riskScore)||0)))}
+function livePressureEmotions(t){const pressure=new Set(['Sợ mất lời','Muốn chốt non','Muốn đóng vì PnL','Muốn thêm vị thế','Muốn dời SL xa hơn','Hy vọng quay lại','Mệt mỏi','Quá tự tin','Muốn gỡ','Muốn lấy lại tiền']);return [...new Set((t.liveChecks||[]).flatMap(c=>[...(c.emotions||[]),...(c.urges||[])].filter(x=>pressure.has(x))))]}
+function hasLivePressure(t){return maxLiveRisk(t)>8 || livePressureEmotions(t).length>0}
+function setupProcessOk(t){return Number(t.quality)>=70 && (t.smcScore===undefined || Number(t.smcScore)>=70) && !biasConflict(t.side,t.bias)}
+function verdictClass(v){if(/Bad|Emotional Loss/.test(v))return'bad'; if(/Pressure|Mixed/.test(v))return'warn'; return'good'}
+function classifyProcess(t){const closeScore=Number(t.bestLoserScore)||0;const preRisk=Number(t.preRiskScore)||0;const liveMax=maxLiveRisk(t);const setupOk=setupProcessOk(t);const preOk=preRisk<45;const closeOk=closeScore>=80; if(t.result==='Win'){if(!setupOk||!preOk||!closeOk||liveMax>20)return'Bad Win'; if(hasLivePressure(t))return'Good Win with Emotional Pressure'; return'Clean Good Win'} if(t.result==='Loss'){return closeOk&&setupOk?'Good Loss':'Bad Loss'} if(t.result==='BE'){return closeOk&&setupOk&&preOk&&liveMax<=8?'Clean BE':'Mixed BE'} return'Unreviewed'}
+function selectedBox(t){if(!t)return'<div class="hint"><b>No selected trade.</b> Create a plan or mark a plan as entered.</div>';const last=(t.liveChecks||[]).slice(-1)[0];const liveMax=maxLiveRisk(t);const pressure=livePressureEmotions(t);const verdict=t.status==='closed'?classifyProcess(t):'';return `<div class="hint"><b>Selected:</b> #${t.id} · ${t.symbol} · ${t.side} · ${t.status}${verdict?` · <b>${verdict}</b>`:''}<br><b>Bias:</b> ${t.bias} · <b>Quality:</b> ${t.quality} · <b>Risk:</b> ${t.riskPct}% · <b>Zone:</b> ${t.zoneTf||'-'}<br><b>Key Zone:</b> ${t.zone||'-'}<br><b>Trigger:</b> ${t.trigger||'-'}<br><b>Live Risk Max:</b> ${liveMax}${pressure.length?` · <b>Pressure:</b> ${pressure.join(', ')}`:''}${last?`<br><b>Last Live:</b> ${last.phase} · ${[...(last.emotions||[]),...(last.urges||[])].join(', ')||'-'} · Risk ${last.riskScore}`:''}</div>`}
+
 function arrHas(arr, keys){return keys.some(k=>arr.includes(k))}
 function selectedTradeForLiveAdvice(){const d=load();return d.trades.find(x=>x.id===d.settings.activeTradeId)||selectedTrade()}
 function livePsychologyAdvice(all, phase){
@@ -1411,7 +894,7 @@ function updateLiveRisk(){
  $('liveRisk').insertAdjacentHTML('beforeend', livePsychologyAdvice(all,phase));
  return risk;
 }
-function saveLiveCheck(){const d=load();const t=d.trades.find(x=>x.id===d.settings.activeTradeId&&x.status==='open');if(!t){toast('No open trade selected');return}const risk=updateLiveRisk();const emotions=selectedEmotions('liveEmotionGroups');const urges=checkedValues('urge');const riskyAction=[...emotions,...urges].some(x=>['Muốn chốt non','Muốn đóng vì PnL','Sợ mất lời','Sợ trả lại lợi nhuận','Muốn dời SL xa hơn','Muốn thêm vị thế','Muốn tăng lot','Muốn đảo chiều','Muốn gỡ'].includes(x));if(riskyAction && !$('liveNote').value.trim()){const ok=confirm('Bạn đang ghi nhận cảm xúc/hành vi có rủi ro. Nếu vẫn định hành động theo cảm xúc, hãy ghi lý do kỹ thuật vào Live Note trước. Lưu check mà không có lý do kỹ thuật?');if(!ok)return}const check={time:nowISO(),phase:$('livePhase').value,emotions,urges,riskScore:risk.score,riskMode:risk.mode,note:$('liveNote').value};t.liveChecks=t.liveChecks||[];t.liveChecks.push(check);t.liveRiskMax=maxLiveRisk(t);t.livePressureEmotions=livePressureEmotions(t);t.chartNotes=t.chartNotes||[];const cn=buildChartNote('live',t.id,`#${t.id} ${t.symbol} ${t.side}`); if(cn) t.chartNotes.push(cn);d.emotions.push({id:uid(),time:check.time,stage:'Live Trade',tradeId:t.id,tradeLabel:`#${t.id} ${t.symbol} ${t.side}`,emotions:[...emotions,...urges],riskScore:risk.score,riskMode:risk.mode,note:`${check.phase} · ${check.note}${cn?' · Chart note':''}`});if(risk.mode==='red') {d.settings.cooldownUntil=new Date(Date.now()+30*60000).toISOString();d.settings.cooldownReason='Red Mode from live trade emotion';} save(d);$('liveNote').value='';clearChartStage('live');qsa('#liveEmotionGroups .chip.on').forEach(x=>x.classList.remove('on'));qsa('.urge').forEach(x=>x.checked=false);try{renderAll();}catch(e){console.error('renderAll after live save failed',e)}switchToDailyDesk();toast('Live check saved')}
+function saveLiveCheck(){const d=load();const t=d.trades.find(x=>x.id===d.settings.activeTradeId&&x.status==='open');if(!t){toast('No open trade selected');return}const risk=updateLiveRisk();const emotions=selectedEmotions('liveEmotionGroups');const urges=checkedValues('urge');const riskyAction=[...emotions,...urges].some(x=>['Muốn chốt non','Muốn đóng vì PnL','Sợ mất lời','Sợ trả lại lợi nhuận','Muốn dời SL xa hơn','Muốn thêm vị thế','Muốn tăng lot','Muốn đảo chiều','Muốn gỡ'].includes(x));if(riskyAction && !$('liveNote').value.trim()){const ok=confirm('Bạn đang ghi nhận cảm xúc/hành vi có rủi ro. Nếu vẫn định hành động theo cảm xúc, hãy ghi lý do kỹ thuật vào Management Note trước. Lưu check mà không có lý do kỹ thuật?');if(!ok)return}const check={time:nowISO(),phase:$('livePhase').value,emotions,urges,riskScore:risk.score,riskMode:risk.mode,note:$('liveNote').value};t.liveChecks=t.liveChecks||[];t.liveChecks.push(check);t.liveRiskMax=maxLiveRisk(t);t.livePressureEmotions=livePressureEmotions(t);t.chartNotes=t.chartNotes||[];const cn=buildChartNote('live',t.id,`#${t.id} ${t.symbol} ${t.side}`); if(cn) t.chartNotes.push(cn);d.emotions.push({id:uid(),time:check.time,stage:'Live Trade',tradeId:t.id,tradeLabel:`#${t.id} ${t.symbol} ${t.side}`,emotions:[...emotions,...urges],riskScore:risk.score,riskMode:risk.mode,note:`${check.phase} · ${check.note}${cn?' · Chart note':''}`});if(risk.mode==='red') {d.settings.cooldownUntil=new Date(Date.now()+30*60000).toISOString();d.settings.cooldownReason='Red Mode from live trade emotion';} save(d);$('liveNote').value='';clearChartStage('live');qsa('#liveEmotionGroups .chip.on').forEach(x=>x.classList.remove('on'));qsa('.urge').forEach(x=>x.checked=false);renderAll();toast('Live check saved')}
 function updateBestLoser(){const vals=checkedValues('bestloser');const score=vals.length*20;const t=selectedTrade();const liveMax=t?maxLiveRisk(t):0;const pressure=t?livePressureEmotions(t):[];const verdict=score>=80?'Good Close Process':score>=50?'Mixed Close Process':'Emotional Close';let note='<b>Rule:</b> Close Review chỉ là 1 phần. Final Grade còn tính Setup, Pre-Trade Risk và Live Risk.'; if(liveMax>8||pressure.length)note+=`<br><b>Live Warning:</b> Trade này có Live Risk ${liveMax}${pressure.length?' · '+pressure.join(', '):''}. Nếu thắng, nó sẽ là <b>Good Win with Emotional Pressure</b>, không phải Clean Good Win.`;$('bestLoserBox').innerHTML=`<div class="risk-result ${score>=80?'green':score>=50?'yellow':'red'}"><div class="risk-head"><div class="risk-score ${score>=80?'green':score>=50?'yellow':'red'}">${score}</div><div class="risk-meta"><div class="risk-label">Close Process Score</div><div class="risk-title">${verdict}</div></div></div><div class="risk-note">${note}</div></div>`;return score}
 
 function updateCloseEmotionRisk(){
@@ -1427,31 +910,62 @@ function updateCloseEmotionRisk(){
  el.insertAdjacentHTML('beforeend',closePsychologyAdvice(emotions,risk));
  return risk;
 }
-function closeTrade(){const d=load();const t=d.trades.find(x=>x.id===d.settings.activeTradeId&&x.status==='open');if(!t){toast('No open trade selected');return}const bl=updateBestLoser();const closeRisk=updateCloseEmotionRisk();const selectedCloseEmotions=selectedEmotions('closeEmotionGroups');t.status='closed';t.closed=nowISO();t.result=$('closeResult').value;t.rMultiple=Number($('closeR').value);t.discipline=Number($('closeDiscipline').value);t.closeNote=$('closeNote').value;t.bestLoserScore=bl;t.closeEmotions=selectedCloseEmotions;t.closeRiskScore=closeRisk.score;t.closeRiskMode=closeRisk.mode;t.liveRiskMax=maxLiveRisk(t);t.livePressureEmotions=livePressureEmotions(t);t.processVerdict=classifyProcess(t);t.chartNotes=t.chartNotes||[];const cn=buildChartNote('close',t.id,`#${t.id} ${t.symbol} ${t.side}`); if(cn) t.chartNotes.push(cn);const closeEmotions=selectedCloseEmotions.length?selectedCloseEmotions:(bl<80?['Process weakness']:(hasLivePressure(t)?['Live emotional pressure']:['Hài lòng vì tuân thủ']));d.emotions.push({id:uid(),time:t.closed,stage:'Close Review',tradeId:t.id,tradeLabel:`#${t.id} ${t.symbol} ${t.side}`,emotions:closeEmotions,riskScore:Math.max(100-bl,t.liveRiskMax||0,closeRisk.score||0),riskMode:t.processVerdict==='Bad Win'||t.processVerdict==='Bad Loss'||closeRisk.mode==='red'||closeRisk.mode==='black'?'red':t.processVerdict.includes('Pressure')||closeRisk.mode==='yellow'||closeRisk.mode==='orange'?'yellow':bl>=80?'green':'yellow',note:`${t.result} ${t.rMultiple}R · ${t.processVerdict} · Live Max ${t.liveRiskMax}${cn?' · Chart note':''}`});if(t.result==='Loss'){const ls=lossStreak()+1;if(ls>=3){d.settings.cooldownUntil=new Date(Date.now()+8*3600*1000).toISOString();d.settings.cooldownReason='3 consecutive losses · Stop trading day'}else if(ls===2){d.settings.cooldownUntil=new Date(Date.now()+45*60000).toISOString();d.settings.cooldownReason='2 consecutive losses'}else{d.settings.cooldownUntil=new Date(Date.now()+15*60000).toISOString();d.settings.cooldownReason='Loss cooldown'}}else if(t.result==='Win'&&Number(t.rMultiple)>=2){d.settings.cooldownUntil=new Date(Date.now()+15*60000).toISOString();d.settings.cooldownReason='Win cooldown · prevent overconfidence'}if(closeRisk.mode==='red'||closeRisk.mode==='black'){d.settings.cooldownUntil=new Date(Date.now()+30*60000).toISOString();d.settings.cooldownReason='Post-trade Red Mode · prevent revenge/overconfidence'}save(d);$('closeNote').value='';$('closeR').value='0';clearChartStage('close');qsa('#closeEmotionGroups .chip.on').forEach(x=>x.classList.remove('on'));qsa('.bestloser').forEach(x=>x.checked=false);try{renderAll();}catch(e){console.error('renderAll after close failed',e)}switchToDailyDesk();toast(`Trade closed · ${t.processVerdict}`)}
+function closeTrade(){
+ const d=load();
+ const editId=d.settings.editCloseTradeId;
+ const selectedId=editId||d.settings.activeTradeId||($('closeTradeSelect')?$('closeTradeSelect').value:'');
+ const t=d.trades.find(x=>x.id===selectedId && (x.status==='open'||(editId&&x.status==='closed')));
+ if(!t){toast(editId?'Closed trade not found':'No open trade selected');return}
+ const isEditingClosed=!!editId || t.status==='closed';
+ const bl=updateBestLoser();
+ const closeRisk=updateCloseEmotionRisk();
+ const selectedCloseEmotions=selectedEmotions('closeEmotionGroups');
+ t.status='closed';
+ t.closed=isEditingClosed?(t.closed||nowISO()):nowISO();
+ t.result=$('closeResult').value;
+ t.rMultiple=Number($('closeR').value);
+ t.discipline=Number($('closeDiscipline').value);
+ t.closeNote=$('closeNote').value;
+ t.bestLoserScore=bl;
+ t.closeEmotions=selectedCloseEmotions;
+ t.closeRiskScore=closeRisk.score;
+ t.closeRiskMode=closeRisk.mode;
+ t.liveRiskMax=maxLiveRisk(t);
+ t.livePressureEmotions=livePressureEmotions(t);
+ t.processVerdict=classifyProcess(t);
+ const cn=buildChartNote('close',t.id,`#${t.id} ${t.symbol} ${t.side}`);
+ const chartSaved=upsertCloseReviewChartNote(t,cn,isEditingClosed);
+ const closeEmotions=selectedCloseEmotions.length?selectedCloseEmotions:(bl<80?['Process weakness']:(hasLivePressure(t)?['Live emotional pressure']:['Hài lòng vì tuân thủ']));
+ if(isEditingClosed) d.emotions=d.emotions.filter(e=>!(e.stage==='Close Review'&&e.tradeId===t.id));
+ d.emotions.push({id:uid(),time:t.closed,stage:'Close Review',tradeId:t.id,tradeLabel:`#${t.id} ${t.symbol} ${t.side}`,emotions:closeEmotions,riskScore:Math.max(100-bl,t.liveRiskMax||0,closeRisk.score||0),riskMode:t.processVerdict==='Bad Win'||t.processVerdict==='Bad Loss'||closeRisk.mode==='red'||closeRisk.mode==='black'?'red':t.processVerdict.includes('Pressure')||closeRisk.mode==='yellow'||closeRisk.mode==='orange'?'yellow':bl>=80?'green':'yellow',note:`${t.result} ${t.rMultiple}R · ${t.processVerdict} · Live Max ${t.liveRiskMax}${chartSaved?' · Chart note':''}${isEditingClosed?' · Edited':''}`});
+ if(!isEditingClosed){
+  if(t.result==='Loss'){const ls=lossStreak()+1;if(ls>=3){d.settings.cooldownUntil=new Date(Date.now()+8*3600*1000).toISOString();d.settings.cooldownReason='3 consecutive losses · Stop trading day'}else if(ls===2){d.settings.cooldownUntil=new Date(Date.now()+45*60000).toISOString();d.settings.cooldownReason='2 consecutive losses'}else{d.settings.cooldownUntil=new Date(Date.now()+15*60000).toISOString();d.settings.cooldownReason='Loss cooldown'}}
+  else if(t.result==='Win'&&Number(t.rMultiple)>=2){d.settings.cooldownUntil=new Date(Date.now()+15*60000).toISOString();d.settings.cooldownReason='Win cooldown · prevent overconfidence'}
+  if(closeRisk.mode==='red'||closeRisk.mode==='black'){d.settings.cooldownUntil=new Date(Date.now()+30*60000).toISOString();d.settings.cooldownReason='Post-trade Red Mode · prevent revenge/overconfidence'}
+ }
+ delete d.settings.editCloseTradeId;
+ d.settings.activeTradeId=t.id;
+ save(d);
+ $('closeNote').value='';
+ clearChartStage('close');
+ renderAll();
+ toast(`${isEditingClosed?'Close Review updated':'Trade closed'} · ${t.processVerdict}`);
+ switchToDailyDesk();
+}
 function saveMissedTrade(){const d=load();const m={id:uid(),time:nowISO(),date:todayISO(),symbol:$('missSymbol').value,side:$('missSide').value,reason:$('missReason').value,quality:$('missQuality').value,fomo:$('missFomo').value,note:$('missNote').value};d.missed.push(m);let em=[];if(m.fomo==='Strong')em.push('FOMO','Tiếc vì bỏ lỡ entry','Sợ bỏ lỡ');else if(m.fomo==='Mild')em.push('Tiếc vì bỏ lỡ entry');if(m.reason==='Fear to enter')em.push('Sợ thua','Thiếu tự tin');const risk=m.fomo==='Strong'?70:m.fomo==='Mild'?35:10;d.emotions.push({id:uid(),time:m.time,stage:'Missed Trade',tradeId:m.id,tradeLabel:`#${m.id} ${m.symbol} ${m.side}`,emotions:em,riskScore:risk,riskMode:risk>=70?'red':risk>=35?'yellow':'green',note:`${m.reason} · ${m.quality}`});save(d);$('missNote').value='';renderAll();toast('Missed trade saved')}
 function saveEod(){const d=load();d.eod[$('eodDate').value]={date:$('eodDate').value,type:$('eodType').value,mainEmotion:$('eodEmotion').value,discipline:Number($('eodDiscipline').value),checks:checkedValues('eodcheck'),best:$('eodBest').value,mistake:$('eodMistake').value,tomorrow:$('eodTomorrow').value,saved:nowISO()};save(d);renderAll();toast('End of day saved')}
 function loadEodForDate(){const d=load();const e=d.eod[$('eodDate').value];if(!e){toast('No EOD for this date');return}$('eodType').value=e.type;$('eodEmotion').value=e.mainEmotion;$('eodDiscipline').value=e.discipline;$('eodBest').value=e.best||'';$('eodMistake').value=e.mistake||'';$('eodTomorrow').value=e.tomorrow||'';qsa('.eodcheck').forEach(x=>x.checked=(e.checks||[]).includes(x.value));renderEodSummary()}
-function renderEodSummary(){const date=$('eodDate').value||todayISO();const st=dailyStats(date);const d=load();const e=d.eod[date];const sc=scenariosForDate(date);const reviewed=sc.filter(x=>x.review).length;const good=sc.filter(x=>x.review&&['Accurate Good Plan','Good No Trade Scenario'].includes(x.review.grade)).length;$('eodSummary').innerHTML=`<div class="kpi-grid"><div class="kpi"><div class="kpi-label">Entered Trades</div><div class="kpi-value gold">${st.enteredToday}</div><div class="kpi-sub">today</div></div><div class="kpi"><div class="kpi-label">Closed R</div><div class="kpi-value ${st.r>=0?'bull':'bear'}">${st.r.toFixed(1)}</div><div class="kpi-sub">today</div></div><div class="kpi"><div class="kpi-label">Scenarios</div><div class="kpi-value ${reviewed===sc.length&&sc.length?'bull':'gold'}">${reviewed}/${sc.length}</div><div class="kpi-sub">reviewed · ${good} good</div></div><div class="kpi"><div class="kpi-label">Day Review</div><div class="kpi-value ${e?'bull':'warn'}">${e?'Done':'No'}</div><div class="kpi-sub">${e?.type||'pending'}</div></div></div>${e?`<div class="hint"><b>Main emotion:</b> ${e.mainEmotion}<br><b>Best:</b> ${e.best||'-'}<br><b>Mistake:</b> ${e.mistake||'-'}<br><b>Tomorrow:</b> ${e.tomorrow||'-'}</div>`:''}${sc.length?`<div style="margin-top:12px">${sc.map(x=>scenarioCard(x,true)).join('')}</div>`:''}`}
-
-function scoreLabel(v,type){v=Number(v)||0;if(type==='pressure'){return v<=2?'good':v===3?'warn':'bad'}return v>=4?'good':v===3?'warn':'bad'}
-function dailyStateGuidance(day,risk,st){
- const e=Number(day.energy)||0, s=Number(day.sleep)||0, p=Number(day.pressure)||0;
- const eText=e>=4?'Đủ tỉnh táo để xử lý plan.':e===3?'Có thể trade nhưng cần giảm tốc độ, tránh vào lệnh nhanh.':'Năng lượng thấp: dễ bỏ checklist, dễ vào/thoát sai. Ưu tiên quan sát hoặc chỉ A+.';
- const sText=s>=4?'Giấc ngủ ổn, khả năng kiểm soát tốt hơn.':s===3?'Giấc ngủ trung bình: giảm số lệnh, tránh phiên biến động mạnh.':'Thiếu ngủ: phản ứng chậm, dễ sửa lệnh cảm tính. Không nên trade nếu áp lực cũng cao.';
- const pText=p<=2?'Áp lực thấp: ít nguy cơ trade vì tiền hoặc vì phải có kết quả.':p===3?'Áp lực trung bình: cần nhắc lại daily plan trước khi tạo trade.':'Áp lực cao: dễ FOMO, muốn gỡ, muốn chốt non, hoặc tăng lot để đạt mục tiêu. Đây là yếu tố làm giảm chất lượng quyết định.';
- let action='';
- if(risk.mode==='green') action='Hành động: được phép giao dịch bình thường nhưng vẫn phải có kịch bản, Key Zone và Trigger rõ.';
- else if(risk.mode==='yellow') action='Hành động: chỉ trade A/A+, giảm tốc độ ra quyết định, bắt buộc đọc lại kịch bản trước khi tạo plan.';
- else if(risk.mode==='orange') action='Hành động: giảm risk 50% hoặc chỉ quan sát. Chỉ được trade nếu setup A+ và tâm lý không có FOMO/revenge.';
- else action='Hành động: không mở lệnh mới. Viết scenario, quản lý lệnh đang có hoặc làm review.';
- return `<div class="daily-risk-guide"><div class="dg-grid"><div class="dg-card ${scoreLabel(e,'energy')}"><b>Energy ${e}/5</b>${eText}</div><div class="dg-card ${scoreLabel(s,'sleep')}"><b>Sleep ${s}/5</b>${sText}</div><div class="dg-card ${scoreLabel(p,'pressure')}"><b>Pressure ${p}/5</b>${pText}</div></div><div class="dg-action"><b>${action}</b><br><span style="color:var(--text-dim)">Current: ${risk.title} · Trades ${st.enteredToday}/${day.maxTrades||'-'} · Closed R ${st.r.toFixed(1)}/${day.maxLossR??'-'}</span></div></div>`;
-}
-
-function renderDailyRisk(){const d=load();const date=$('dayDate').value||todayISO();const saved=d.daily[date]||{};const day={...saved,energy:Number(saved.energy??$('dayEnergy').value),sleep:Number(saved.sleep??$('daySleep').value),pressure:Number(saved.pressure??$('dayPressure').value),maxTrades:Number(saved.maxTrades??$('dayMaxTrades').value),maxLossR:Number(saved.maxLossR??$('dayMaxLossR').value)};const st=dailyStats(date);const risk=evaluateRisk([],{stage:'daily',energy:day.energy,sleep:day.sleep,pressure:day.pressure,lossStreak:lossStreak(),cooldown:cooldownRemaining()>0,dailyLimitHit:dailyLimitHit(date)});$('deskRisk').className='risk-result '+risk.mode;$('deskRiskScore').className='risk-score '+risk.mode;$('deskRiskScore').textContent=risk.score;$('deskRiskTitle').textContent=risk.title;$('deskRiskNote').innerHTML=`<b>Daily Risk:</b> ${risk.permission}<br><span style="color:var(--text-dim)">Energy ${day.energy}/5 · Pressure ${day.pressure}/5 · Sleep ${day.sleep}/5 · Trades ${st.enteredToday}/${day.maxTrades||'-'} · R ${st.r.toFixed(1)}/${day.maxLossR??'-'}</span>${dailyStateGuidance(day,risk,st)}`;$('deskDoDont').innerHTML=riskDoDont(risk,'daily')}
+function renderEodSummary(){const date=$('eodDate').value||todayISO();const st=dailyStats(date);const d=load();const e=d.eod[date];$('eodSummary').innerHTML=`<div class="kpi-grid"><div class="kpi"><div class="kpi-label">Entered Trades</div><div class="kpi-value gold">${st.enteredToday}</div><div class="kpi-sub">today</div></div><div class="kpi"><div class="kpi-label">Closed R</div><div class="kpi-value ${st.r>=0?'bull':'bear'}">${st.r.toFixed(1)}</div><div class="kpi-sub">today</div></div><div class="kpi"><div class="kpi-label">Open</div><div class="kpi-value info">${st.open.length}</div><div class="kpi-sub">current</div></div><div class="kpi"><div class="kpi-label">Day Review</div><div class="kpi-value ${e?'bull':'warn'}">${e?'Done':'No'}</div><div class="kpi-sub">${e?.type||'pending'}</div></div></div>${e?`<div class="hint"><b>Main emotion:</b> ${e.mainEmotion}<br><b>Best:</b> ${e.best||'-'}<br><b>Mistake:</b> ${e.mistake||'-'}<br><b>Tomorrow:</b> ${e.tomorrow||'-'}</div>`:''}`}
+function renderDailyRisk(){const d=load();const date=$('dayDate').value||todayISO();const day=d.daily[date]||{energy:$('dayEnergy').value,sleep:$('daySleep').value,pressure:$('dayPressure').value};const st=dailyStats(date);const risk=evaluateRisk([],{energy:day.energy,sleep:day.sleep,pressure:day.pressure,lossStreak:lossStreak(),cooldown:cooldownRemaining()>0,dailyLimitHit:dailyLimitHit(date)});$('deskRisk').className='risk-result '+risk.mode;$('deskRiskScore').className='risk-score '+risk.mode;$('deskRiskScore').textContent=risk.score;$('deskRiskTitle').textContent=risk.title;$('deskRiskNote').innerHTML=`<b>Daily Risk:</b> ${risk.permission}<br><span style="color:var(--text-dim)">Energy ${day.energy}/5 · Pressure ${day.pressure}/5 · Sleep ${day.sleep}/5 · Trades ${st.enteredToday}/${day.maxTrades||'-'} · R ${st.r.toFixed(1)}/${day.maxLossR??'-'}</span>`;$('deskDoDont').innerHTML=riskDoDont(risk)}
 function renderKpis(){const d=load();const closed=d.trades.filter(t=>t.status==='closed');const open=d.trades.filter(t=>t.status==='open');const planned=d.trades.filter(t=>['planned','watching'].includes(t.status));const r=closed.reduce((s,t)=>s+(Number(t.rMultiple)||0),0);const wins=closed.filter(t=>t.result==='Win').length;const losses=closed.filter(t=>t.result==='Loss').length;const avgDisc=closed.length?closed.reduce((s,t)=>s+(Number(t.discipline)||0),0)/closed.length:0;const avgBL=closed.length?closed.reduce((s,t)=>s+(Number(t.bestLoserScore)||0),0)/closed.length:0;
  $('deskKpis').innerHTML=`<div class="kpi"><div class="kpi-label">Planned</div><div class="kpi-value gold">${planned.length}</div><div class="kpi-sub">trade plans</div></div><div class="kpi"><div class="kpi-label">Open Trades</div><div class="kpi-value info">${open.length}</div><div class="kpi-sub">đang theo dõi</div></div><div class="kpi"><div class="kpi-label">Loss Streak</div><div class="kpi-value ${lossStreak()>=2?'bear':'gold'}">${lossStreak()}</div><div class="kpi-sub">cooldown risk</div></div><div class="kpi"><div class="kpi-label">Closed R</div><div class="kpi-value ${r>=0?'bull':'bear'}">${r.toFixed(1)}</div><div class="kpi-sub">all closed</div></div>`;
  $('analyticsKpis').innerHTML=`<div class="kpi"><div class="kpi-label">Trades</div><div class="kpi-value gold">${d.trades.length}</div><div class="kpi-sub">all</div></div><div class="kpi"><div class="kpi-label">Win / Loss</div><div class="kpi-value gold">${wins}/${losses}</div><div class="kpi-sub">closed</div></div><div class="kpi"><div class="kpi-label">Total R</div><div class="kpi-value ${r>=0?'bull':'bear'}">${r.toFixed(1)}</div><div class="kpi-sub">performance</div></div><div class="kpi"><div class="kpi-label">Best Loser Avg</div><div class="kpi-value ${avgBL>=80?'bull':avgBL>=50?'warn':'bear'}">${avgBL.toFixed(0)}</div><div class="kpi-sub">process score · discipline ${avgDisc.toFixed(1)}</div></div>`}
-function renderActivePanel(){const t=selectedTrade();$('activeTradePanel').innerHTML=t?`<div class="hint" style="margin-bottom:12px"><b>Active Trade:</b> #${t.id} · ${t.symbol} ${t.side} · ${t.status} · Q ${t.quality} · Pre Risk ${t.preRiskScore??'-'}<div class="btn-row"><button class="btn info small" onclick="quickLive('${t.id}')" ${t.status!=='open'?'disabled':''}>Live Check</button><button class="btn small" onclick="editTrade('${t.id}')">Edit</button><button class="btn success small" onclick="quickClose('${t.id}')" ${t.status!=='open'?'disabled':''}>Close</button><button class="btn small" onclick="markEntered('${t.id}')" ${t.status==='open'||t.status==='closed'?'disabled':''}>Mark Entered</button></div></div>`:`<div class="hint" style="margin-bottom:12px"><b>No active trade.</b> Create a new plan or mark a plan as entered.</div>`;$('liveSelectedBox').innerHTML=selectedBox(t&&t.status==='open'?t:null);$('closeSelectedBox').innerHTML=selectedBox(t&&t.status==='open'?t:null)}
+function renderActivePanel(){
+ const d=load(); const t=selectedTrade(); const closeEdit=d.settings.editCloseTradeId?d.trades.find(x=>x.id===d.settings.editCloseTradeId):null;
+ $('activeTradePanel').innerHTML=t?`<div class="hint" style="margin-bottom:12px"><b>Active Trade:</b> #${t.id} · ${t.symbol} ${t.side} · ${t.status} · Q ${t.quality} · Pre Risk ${t.preRiskScore??'-'}<div class="btn-row"><button class="btn info small" onclick="quickLive('${t.id}')" ${t.status!=='open'?'disabled':''}>Live Check</button><button class="btn success small" onclick="quickClose('${t.id}')" ${t.status!=='open'?'disabled':''}>Close</button><button class="btn small" onclick="markEntered('${t.id}')" ${t.status==='open'||t.status==='closed'?'disabled':''}>Mark Entered</button></div></div>`:`<div class="hint" style="margin-bottom:12px"><b>No active trade.</b> Create a new plan or mark a plan as entered.</div>`;
+ $('liveSelectedBox').innerHTML=selectedBox(t&&t.status==='open'?t:null);
+ $('closeSelectedBox').innerHTML=closeEdit?`<div class="hint"><b>Editing closed trade:</b> #${closeEdit.id} · ${closeEdit.symbol} ${closeEdit.side} · ${closeEdit.result||'-'} ${Number(closeEdit.rMultiple||0).toFixed(1)}R</div>`:selectedBox(t&&t.status==='open'?t:null);
+}
 function renderMissed(){const d=load();$('missedHistory').innerHTML=d.missed.length?`<div class="table-wrap"><table><thead><tr><th>Time</th><th>Symbol</th><th>Side</th><th>Reason</th><th>FOMO</th><th>Note</th></tr></thead><tbody>${d.missed.slice().reverse().map(m=>`<tr><td>${prettyTime(m.time)}</td><td>${m.symbol}</td><td>${m.side}</td><td>${m.reason}</td><td>${m.fomo}</td><td>${m.note||''}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty"><div class="icon">M</div>Chưa có missed trade.</div>'}
 function renderAnalytics(){const d=load();const counts={};const stage={};d.emotions.forEach(e=>{stage[e.stage]=stage[e.stage]||{};(e.emotions||[]).forEach(x=>{counts[x]=(counts[x]||0)+1;stage[e.stage][x]=(stage[e.stage][x]||0)+1})});const top=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10);const max=top[0]?.[1]||1;$('emotionBars').innerHTML=top.length?top.map(([e,c])=>`<div class="bar-stat"><div class="bar-stat-label"><b>${e}</b><span>${c}</span></div><div class="bar-stat-track"><div class="bar-stat-fill" style="width:${Math.round(c/max*100)}%"></div></div></div>`).join(''):'<div class="empty"><div class="icon">E</div>Chưa có emotion data.</div>';
  const stageRows=Object.entries(stage).map(([s,obj])=>{const [emotion,c]=Object.entries(obj).sort((a,b)=>b[1]-a[1])[0]||['-',0];return `<div class="bar-stat"><div class="bar-stat-label"><b>${s}</b><span>${emotion} · ${c}</span></div><div class="bar-stat-track"><div class="bar-stat-fill" style="width:${Math.min(100,c*15)}%"></div></div></div>`}).join('');$('stageBars').innerHTML=stageRows||'<div class="empty"><div class="icon">S</div>No stage data.</div>';
@@ -1462,158 +976,13 @@ function renderAnalytics(){const d=load();const counts={};const stage={};d.emoti
  renderTradeHistory()}
 function renderTradeHistory(){const d=load();let arr=d.trades.slice().reverse();const fs=$('filterSymbol')?.value||'All',fst=$('filterStatus')?.value||'All',fp=$('filterProcess')?.value||'All',txt=($('filterText')?.value||'').toLowerCase();if(fs!=='All')arr=arr.filter(t=>t.symbol===fs);if(fst!=='All')arr=arr.filter(t=>t.status===fst);if(fp!=='All')arr=arr.filter(t=>t.status==='closed'&&classifyProcess(t)===fp);if(txt)arr=arr.filter(t=>JSON.stringify(t).toLowerCase().includes(txt));$('tradeHistory').innerHTML=arr.length?arr.map(t=>tradeCard(t)).join(''):'<div class="empty"><div class="icon">J</div>No matching trades.</div>'}
 function renderRaw(){$('rawData').value=JSON.stringify(load(),null,2)}
-
-
-/* === v2.27 No Trade Session Monitor logic === */
-let ntsChartCache=null;
-const ntsPsychItems=['Bình tĩnh','Kiên nhẫn','Rõ ràng','Sốt ruột','FOMO','Chán nản','Nghi ngờ hệ thống','Tự trách','Áp lực kiếm tiền','Muốn tìm lệnh ở khung nhỏ','So sánh với người khác','Muốn đổi system'];
-const ntsProcessItems=['Đã xác định Daily Bias','Đã xác định Key Zone chờ','Giá chưa tới vùng','Chưa có M15 Trigger','RR chưa đạt','Market State chưa rõ','Có alert ở vùng chờ','Tôi đang mở khung nhỏ để tìm lệnh','Tôi đã thấy setup sau khi chạy','Tôi không chắc có bỏ lỡ setup không'];
-function renderNoTradeSessionChecks(){
- const p=$('ntsPsychChecks'), pr=$('ntsProcessChecks'); if(!p||!pr)return;
- p.innerHTML=ntsPsychItems.map(x=>`<label class="nt-session-check"><input class="ntspsych" type="checkbox" value="${x}" onchange="updateNoTradeSessionDiagnosis()"><span>${x}</span></label>`).join('');
- pr.innerHTML=ntsProcessItems.map(x=>`<label class="nt-session-check"><input class="ntsproc" type="checkbox" value="${x}" onchange="updateNoTradeSessionDiagnosis()"><span>${x}</span></label>`).join('');
-}
-function setupNoTradeSessionChartInput(){const inp=$('ntsChartFile'), prev=$('ntsChartPreview'); if(!inp||!prev)return; inp.addEventListener('change',()=>{const f=inp.files&&inp.files[0]; if(!f)return; resizeImage(f,(data)=>{ntsChartCache=data;prev.style.display='block';prev.innerHTML='<img src="'+data+'" alt="no trade session chart">';toast('No Trade session chart attached')});});}
-function noTradeSessionDiagnosisObj(obj={}){
- const price=obj.priceState||$('ntsPriceState')?.value||''; const trig=obj.triggerState||$('ntsTriggerState')?.value||''; const market=obj.marketState||$('ntsMarketState')?.value||''; const psych=obj.psych||checkedValues('ntspsych'); const proc=obj.process||checkedValues('ntsproc');
- let type='Watchful Waiting', cls='watch', bullets=[];
- const hungry=psych.some(x=>['Sốt ruột','FOMO','Áp lực kiếm tiền','Muốn tìm lệnh ở khung nhỏ','So sánh với người khác'].includes(x));
- const unclear=proc.some(x=>['Market State chưa rõ','Tôi không chắc có bỏ lỡ setup không'].includes(x))||price==='Key Zone không rõ'||trig==='Trigger không rõ';
- const missed=trig==='Trigger đã miss'||proc.includes('Tôi đã thấy setup sau khi chạy');
- const ready=price==='Đã vào Key Zone'&&['Đang hình thành trigger','Trigger đã xuất hiện'].includes(trig)&&!hungry;
- if(ready){type='Setup Watch Ready';cls='ready';bullets=['Giá đã vào vùng và trigger đang/đã xuất hiện. Đây không còn là “no trade thụ động”; hãy kiểm tra SMC gate và mental gate trước khi tạo trade plan.','Nếu setup đạt chuẩn, chuyển sang Trade Plan. Nếu không đạt chuẩn, ghi rõ điều kiện còn thiếu để tránh vào vì cảm xúc.'];}
- else if(hungry){type='Hungry-for-Trade Warning';cls='danger';bullets=['Cảm xúc “đói lệnh” đang xuất hiện trong phiên. Não thường biến chuyển động giá thành cơ hội dù Bias → Zone → Trigger chưa đủ.','Không mở M1/M5 để tự tạo setup nếu H4/H1 chưa có location rõ. Viết lại điều kiện entry tối thiểu trước khi hành động.'];}
- else if(missed){type='Possible Missed Opportunity';cls='warn';bullets=['Có dấu hiệu bạn nhìn thấy setup sau khi nó đã chạy hoặc trigger đã miss. Đây là dữ liệu kỹ năng, không phải lý do để đuổi giá.','Lưu ảnh chart và cuối ngày replay: bỏ lỡ vì không thấy zone, không thấy trigger, không có alert, hay do sợ?'];}
- else if(unclear){type='Skill Clarity Check';cls='warn';bullets=['Lý do chưa trade chưa đủ rõ. Nếu bạn không viết được Key Zone, market state và trigger cần chờ, khả năng cao vấn đề nằm ở độ rõ của quy trình đọc chart.','Không ép lệnh. Hãy ghi chart note, đánh dấu vùng cần quan sát và quay lại khi có thêm dữ kiện.'];}
- else {type='Valid Waiting State';cls='watch';bullets=['Hiện tại chưa có đủ điều kiện vào lệnh. Không trade trong phiên là đúng nếu giá chưa tới vùng hoặc chưa có trigger.','Công việc lúc này là giữ alert, không hạ tiêu chuẩn và không biến sự chờ đợi thành FOMO.'];}
- if(market==='Range / choppy') bullets.push('Market choppy dễ tạo nhiều tín hiệu giả. Chỉ trade nếu có liquidity + reclaim/rejection rõ tại vùng chất lượng.');
- if(market==='Strong move already gone') bullets.push('Giá đã chạy xa dễ kích hoạt FOMO. Không đuổi giá; chờ pullback về zone mới hoặc bỏ qua.');
- return{type,cls,bullets,price,trig,market,psych,process:proc};
-}
-function updateNoTradeSessionDiagnosis(){const o=noTradeSessionDiagnosisObj({});const el=$('ntsDiagnosis');if(!el)return;el.className='nt-session-diagnosis '+o.cls;el.innerHTML=`<b>${o.type}</b><br><span style="color:var(--text-dim)">Price: ${o.price} · Trigger: ${o.trig} · Market: ${o.market}</span><ul>${o.bullets.map(b=>`<li>${b}</li>`).join('')}</ul>`;}
-function noTradeSessionChecksForDate(date){return (load().noTradeChecks||[]).filter(x=>x.date===date).sort((a,b)=>new Date(b.time)-new Date(a.time));}
-function saveNoTradeSessionCheck(){const d=load();d.noTradeChecks=d.noTradeChecks||[];const id=$('ntsEditId').value||uid();const date=$('dayDate').value||todayISO();const psych=checkedValues('ntspsych'), process=checkedValues('ntsproc');const diag=noTradeSessionDiagnosisObj({psych,process});const chk={id,date,time:nowISO(),symbol:$('ntsSymbol').value,tf:$('ntsTf').value,checkpoint:$('ntsCheckpoint').value,bias:$('ntsBias').value,priceState:$('ntsPriceState').value,triggerState:$('ntsTriggerState').value,marketState:$('ntsMarketState').value,psych,process,diagnosis:diag.type,diagnosisClass:diag.cls,chartNote:$('ntsChartNote').value.trim(),actionRule:$('ntsActionRule').value.trim(),image:ntsChartCache||'',updated:nowISO()};const idx=d.noTradeChecks.findIndex(x=>x.id===id);if(idx>=0){if(!chk.image)chk.image=d.noTradeChecks[idx].image||'';d.noTradeChecks[idx]=chk}else d.noTradeChecks.push(chk);d.emotions.push({id:uid(),time:nowISO(),stage:'No Trade Session',tradeId:id,tradeLabel:`#${id} ${chk.symbol}`,emotions:psych,riskScore:diag.cls==='danger'?60:diag.cls==='warn'?35:diag.cls==='ready'?25:10,riskMode:diag.cls==='danger'?'red':diag.cls==='warn'?'yellow':'green',note:`${diag.type} · ${chk.priceState} · ${chk.triggerState}`});save(d);clearNoTradeSessionForm();renderAll();toast('In-session no-trade check saved');}
-function clearNoTradeSessionForm(){['ntsEditId','ntsChartNote','ntsActionRule'].forEach(id=>$(id)&&( $(id).value='' )); if($('ntsSymbol'))$('ntsSymbol').value=$('dayMarket')?.value||'XAUUSD'; if($('ntsBias'))$('ntsBias').value=$('dayBias')?.value||'Unclear'; qsa('.ntspsych,.ntsproc').forEach(x=>x.checked=false); ntsChartCache=null; if($('ntsChartFile'))$('ntsChartFile').value=''; if($('ntsChartPreview')){$('ntsChartPreview').style.display='none';$('ntsChartPreview').innerHTML='';} updateNoTradeSessionDiagnosis();}
-function editNoTradeSessionCheck(id){const c=(load().noTradeChecks||[]).find(x=>x.id===id);if(!c)return;$('ntsEditId').value=c.id;$('ntsSymbol').value=c.symbol||'XAUUSD';$('ntsTf').value=c.tf||'D1/H4';$('ntsCheckpoint').value=c.checkpoint||'Mid-session';$('ntsBias').value=c.bias||'Unclear';$('ntsPriceState').value=c.priceState||'Chưa tới Key Zone';$('ntsTriggerState').value=c.triggerState||'Chưa có trigger';$('ntsMarketState').value=c.marketState||'Waiting for retest';$('ntsChartNote').value=c.chartNote||'';$('ntsActionRule').value=c.actionRule||'';qsa('.ntspsych').forEach(x=>x.checked=(c.psych||[]).includes(x.value));qsa('.ntsproc').forEach(x=>x.checked=(c.process||[]).includes(x.value));ntsChartCache=c.image||null;if($('ntsChartPreview')){$('ntsChartPreview').style.display=c.image?'block':'none';$('ntsChartPreview').innerHTML=c.image?`<img src="${c.image}" alt="no trade session chart">`:'';}updateNoTradeSessionDiagnosis();setTimeout(()=>document.getElementById('noTradeSessionDesk')?.scrollIntoView({behavior:'smooth',block:'start'}),50);}
-function deleteNoTradeSessionCheck(id){if(!confirm('Xóa In-Session No Trade Check này?'))return;const d=load();d.noTradeChecks=(d.noTradeChecks||[]).filter(x=>x.id!==id);save(d);renderAll();toast('In-session check deleted');}
-function noTradeSessionCard(c){const o=noTradeSessionDiagnosisObj(c);const img=c.image?`<div style="margin-top:8px"><span class="pill info">1 chart</span> <button class="btn small" onclick="toggleDetail('ntsimg${c.id}')">View chart</button><div id="ntsimg${c.id}" class="detail"><img src="${c.image}" class="nt-full-img" alt="session chart"></div></div>`:'';return `<div class="nt-session-card ${o.cls}"><div class="nt-session-title">${c.symbol} · ${c.checkpoint} · ${o.type}</div><div><b>State:</b> ${c.priceState} · ${c.triggerState}<br><b>Market:</b> ${c.marketState}<br><b>Psych:</b> ${(c.psych||[]).join(', ')||'-'}<br><b>Action rule:</b> ${c.actionRule||'-'}</div>${img}<div class="btn-row"><button class="btn small" onclick="editNoTradeSessionCheck('${c.id}')">Edit</button><button class="btn success small" onclick="copySessionToNoTradeReview('${c.id}')">Use for End-Day</button><button class="btn danger small" onclick="deleteNoTradeSessionCheck('${c.id}')">Delete</button></div></div>`;}
-function renderNoTradeSessionList(){const el=$('noTradeSessionList');if(!el)return;const arr=noTradeSessionChecksForDate($('dayDate').value||todayISO());el.innerHTML=arr.length?`<div class="nt-session-grid">${arr.map(noTradeSessionCard).join('')}</div>`:'<div class="empty"><div class="icon">W</div>Chưa có in-session no-trade check. Khi đang trong phiên và chưa có lệnh, hãy ghi lại trạng thái để phát hiện FOMO, skill gap hoặc waiting đúng plan.</div>';}
-function currentNoTradeSessionDraft(){
- const psych=checkedValues('ntspsych'), process=checkedValues('ntsproc');
- return {id:$('ntsEditId')?.value||'',date:$('dayDate')?.value||todayISO(),time:nowISO(),symbol:$('ntsSymbol')?.value||'XAUUSD',tf:$('ntsTf')?.value||'D1/H4',checkpoint:$('ntsCheckpoint')?.value||'Mid-session',bias:$('ntsBias')?.value||'Unclear',priceState:$('ntsPriceState')?.value||'Chưa tới Key Zone',triggerState:$('ntsTriggerState')?.value||'Chưa có trigger',marketState:$('ntsMarketState')?.value||'Waiting for retest',psych,process,chartNote:$('ntsChartNote')?.value.trim()||'',actionRule:$('ntsActionRule')?.value.trim()||'',image:ntsChartCache||''};
-}
-function mapSessionToNoTradeReview(c){
- if(!c)return;
- const o=noTradeSessionDiagnosisObj(c);
- $('ntSymbol').value=c.symbol||'XAUUSD';
- $('ntTf').value=c.tf||'D1/H4';
- $('ntBias').value=c.bias||'Unclear';
- $('ntType').value=o.cls==='danger'?'Avoided Bad Trade':o.type==='Possible Missed Opportunity'?'Missed Opportunity':o.type==='Skill Clarity Check'?'Unclear No Trade':o.type==='Hungry-for-Trade Warning'?'Avoided Bad Trade':'Valid No Trade';
- $('ntMarket').value=c.priceState==='Chưa tới Key Zone'?'Giá chưa về Key Zone':c.priceState==='Key Zone không rõ'?'Không có Key Zone hợp lệ':c.priceState==='Đã chạy xa khỏi Key Zone'?'Giá đã chạy xa khỏi vùng':c.triggerState==='Chưa có trigger'?'Có zone nhưng chưa có trigger':c.triggerState==='Trigger đã miss'?'Giá đã chạy xa khỏi vùng':c.marketState==='Range / choppy'?'Sideway khó đọc':c.marketState==='News risk / avoid'?'News/spread/session không phù hợp':c.marketState==='Strong move already gone'?'Giá đã chạy xa khỏi vùng':'Giá chưa về Key Zone';
- $('ntSkill').value=o.type==='Skill Clarity Check'?'Không rõ Market State':o.type==='Possible Missed Opportunity'?'Tôi thấy setup sau khi nó đã chạy':(c.process||[]).includes('Tôi không chắc có bỏ lỡ setup không')?'Tôi không chắc có bỏ lỡ setup không':(c.process||[]).includes('Market State chưa rõ')?'Không rõ Market State':'Tôi hiểu rõ vì sao không có lệnh';
- qsa('.ntpsych').forEach(x=>x.checked=(c.psych||[]).includes(x.value));
- const scoreDefaults=['Có phân tích Daily Bias rõ','Có xác định Key Zone / vùng chờ','Có lý do không trade rõ ràng'];
- const shouldCheckNoForce=!(c.psych||[]).some(x=>['FOMO','Sốt ruột','Áp lực kiếm tiền','Muốn tìm lệnh ở khung nhỏ'].includes(x));
- const scoreChecks=new Set(scoreDefaults.concat(shouldCheckNoForce?['Không ép lệnh / không vào setup B-C']:[]).concat((c.chartNote||c.actionRule)?['Có ghi bài học hoặc chart note']:[]));
- qsa('.ntscore').forEach(x=>x.checked=scoreChecks.has(x.value));
- $('ntChartNote').value=[c.chartNote||'',`Session: ${c.checkpoint||'-'} · Price: ${c.priceState||'-'} · Trigger: ${c.triggerState||'-'} · Market: ${c.marketState||'-'}`].filter(Boolean).join('\n');
- $('ntLesson').value=c.actionRule||'';
- ntChartCache=c.image||null;
- if($('ntChartFile'))$('ntChartFile').value='';
- if($('ntChartPreview')){$('ntChartPreview').style.display=c.image?'block':'none';$('ntChartPreview').innerHTML=c.image?`<img src="${c.image}" class="nt-full-img" alt="No trade chart">`:'';}
- updateNoTradeDiagnosis();
- document.getElementById('noTradeDesk')?.scrollIntoView({behavior:'smooth',block:'start'});
- toast('Đã copy dữ liệu sang No Trade Psychology & Skill Review');
-}
-function copySessionToNoTradeReview(id){
- const date=$('dayDate')?.value||todayISO();
- const arr=noTradeSessionChecksForDate(date);
- let c=id?(load().noTradeChecks||[]).find(x=>x.id===id):null;
- const draft=currentNoTradeSessionDraft();
- const hasDraft=(draft.chartNote||draft.actionRule||draft.image||(draft.psych||[]).length||(draft.process||[]).length||draft.priceState!=='Chưa tới Key Zone'||draft.triggerState!=='Chưa có trigger'||draft.marketState!=='Waiting for retest');
- if(!c)c=hasDraft?draft:arr[0];
- if(!c){toast('Chưa có dữ liệu trong phiên để copy');return}
- mapSessionToNoTradeReview(c);
-}
-function renderNoTradeSessionAnalytics(){const el=$('noTradeSessionAnalytics');if(!el)return;const arr=load().noTradeChecks||[];if(!arr.length){el.innerHTML='<div class="hint">Chưa có dữ liệu in-session no-trade. Hãy ghi checkpoint trong phiên để biết bạn đang chờ đúng plan hay đang đói lệnh.</div>';return}const counts={};arr.forEach(c=>{const o=noTradeSessionDiagnosisObj(c);counts[o.type]=(counts[o.type]||0)+1});el.innerHTML=`<div class="nt-summary-grid"><div class="nt-mini-kpi"><div class="k">Session Checks</div><div class="v">${arr.length}</div></div><div class="nt-mini-kpi"><div class="k">Hungry/FOMO</div><div class="v">${counts['Hungry-for-Trade Warning']||0}</div></div><div class="nt-mini-kpi"><div class="k">Missed/Skill</div><div class="v">${(counts['Possible Missed Opportunity']||0)+(counts['Skill Clarity Check']||0)}</div></div><div class="nt-mini-kpi"><div class="k">Valid Waiting</div><div class="v">${counts['Valid Waiting State']||0}</div></div></div><div class="hint"><b>Diagnosis:</b> In-session checks cho biết vấn đề xuất hiện ngay trong phiên, trước khi thành No Trade Day. Nếu Hungry/FOMO cao, ưu tiên anti-FOMO rule. Nếu Missed/Skill cao, ưu tiên replay chart và alert tại Key Zone.</div>`;}
-
-
-function forceDailyDesk(){
-  qsa('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab==='desk'));
-  qsa('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-desk'));
-  qsa('#bottomNav button').forEach(b=>b.classList.toggle('active',b.dataset.tab==='desk'));
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-function switchToDailyDesk(){
-  try{ quickTab('desk'); }catch(e){ console.error('quickTab desk failed', e); }
-  forceDailyDesk();
-  setTimeout(forceDailyDesk,80);
-}
-function toggleDetail(id){
-  const el=$(id); if(!el)return;
-  const shown=el.style.display==='block';
-  el.style.display=shown?'none':'block';
-}
-function selectTrade(id,opts={}){
-  if(!id){toast('No trade selected');return false;}
-  const d=load();
-  const t=d.trades.find(x=>x.id===id);
-  if(!t){toast('Trade not found');return false;}
-  d.settings.activeTradeId=id;
-  save(d);
-  syncSelects(id);
-  if(!opts.noRender){try{renderAll();}catch(e){console.error('renderAll after select failed',e)}}
-  if(!opts.silent)toast(`#${id} selected`);
-  return true;
-}
-function markEntered(id){
-  const d=load();
-  const t=d.trades.find(x=>x.id===id);
-  if(!t){toast('Trade not found');return false;}
-  if(t.status==='closed'){toast('Closed trade cannot be marked entered');return false;}
-  t.status='open';
-  t.entered=t.entered||nowISO();
-  t.actualEntry=t.actualEntry||t.plannedEntry||'';
-  t.actualSL=t.actualSL||t.plannedSL||'';
-  t.actualTP=t.actualTP||t.plannedTP||'';
-  d.settings.activeTradeId=id;
-  if(d.settings.editTradeId===id){delete d.settings.editTradeId;delete d.settings.editPreChartNoteId;}
-  save(d);
-  resetPlanForm(true);
-  switchToDailyDesk();
-  toast(`#${id} marked Open`);
-  return true;
-}
-function cancelTrade(id){
-  const d=load();
-  const t=d.trades.find(x=>x.id===id);
-  if(!t){toast('Trade not found');return false;}
-  if(t.status==='closed'){toast('Closed trade cannot be cancelled');return false;}
-  if(t.status==='open'){
-    const ok=confirm('Trade này đang Open. Nếu muốn kết thúc lệnh, nên dùng Close Review. Vẫn cancel trade này?');
-    if(!ok)return false;
-  }
-  const reason=prompt('Lý do cancel plan này?', t.cancelReason||'Setup không còn hợp lệ / không còn đúng plan');
-  if(reason===null)return false;
-  t.status='cancelled';
-  t.cancelled=nowISO();
-  t.cancelReason=(reason||'Cancelled by user').trim();
-  if(d.settings.activeTradeId===id) delete d.settings.activeTradeId;
-  if(d.settings.editTradeId===id){delete d.settings.editTradeId;delete d.settings.editPreChartNoteId;}
-  save(d);
-  resetPlanForm(true);
-  switchToDailyDesk();
-  toast(`#${id} cancelled`);
-  return true;
-}
-
-function renderAll(){renderCooldown();renderDailyRisk();renderKpis();renderTradeBoard();renderSelects();renderActivePanel();renderMissed();renderAnalytics();renderNoTradeAnalytics();renderNoTradeSessionAnalytics();renderChartReview();renderDailyScenarios();renderNoTradeSessionList();renderNoTradeList();renderEodNoTradeReviews();renderEodScenarioReviews();renderEodSummary();renderRaw();updatePlanEditNotice();updatePlanRisk();updateLiveRisk();updateBestLoser();updateCloseEmotionRisk()}
+function renderAll(){renderCooldown();renderDailyRisk();renderKpis();renderTradeBoard();renderSelects();renderActivePanel();renderMissed();renderAnalytics();renderChartReview();renderEodSummary();renderRaw();updatePlanRisk();updateLiveRisk();updateBestLoser();updateCloseEmotionRisk()}
 function quickTab(tab){qsa('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));qsa('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+tab));qsa('#bottomNav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));renderAll();window.scrollTo({top:0,behavior:'smooth'})}
 qsa('.tab').forEach(btn=>btn.addEventListener('click',()=>quickTab(btn.dataset.tab)));qsa('#bottomNav button').forEach(btn=>btn.addEventListener('click',()=>quickTab(btn.dataset.tab)));
 function exportData(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')}
 function importData(ev){const f=ev.target.files[0]; if(!f)return; const r=new FileReader(); r.onload=()=>{try{const obj=JSON.parse(r.result); save(normalizeData(obj));renderAll();toast('Imported JSON')}catch(e){toast('Invalid JSON')}}; r.readAsText(f)}
 function resetData(){if(confirm('Xóa toàn bộ dữ liệu Leo Mind Journal trên trình duyệt này?')){localStorage.removeItem(LS_KEY);renderAll();toast('Data reset')}}
-renderChecks();renderNoTradeControls();renderNoTradeSessionChecks();renderEmotionGroups('preEmotionGroups','pre');renderEmotionGroups('liveEmotionGroups','live');renderEmotionGroups('closeEmotionGroups','close');setupChartInput('pre');setupChartInput('live');setupChartInput('close');setupNoTradeChartInput();setupNoTradeSessionChartInput();initDates();clearNoTradeSessionForm();renderAll();setInterval(()=>{renderCooldown();renderDailyRisk()},1000);
+renderChecks();renderEmotionGroups('preEmotionGroups','pre');renderEmotionGroups('liveEmotionGroups','live');renderEmotionGroups('closeEmotionGroups','close');setupChartInput('pre');setupChartInput('live');setupChartInput('close');initDates();renderAll();setInterval(()=>{renderCooldown();renderDailyRisk()},1000);
 </script>
 </body>
 </html>
