@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="theme-color" content="#0a0a0c" />
-<title>Leo Mind Journal · Daily Trading Decision Journal v2.90</title>
+<title>Leo Mind Journal · Daily Trading Decision Journal v2.91</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -637,7 +637,7 @@ td{color:#8f97a6}
 <body>
 <div class="shell">
 <header class="brand">
-  <div class="brand-left"><div class="brand-mark">L</div><div><div class="brand-title">Leo Mind Journal</div><div class="brand-sub">Daily Trading Command Center · SMC-MA Fusion + Psychology · v2.90</div></div></div>
+  <div class="brand-left"><div class="brand-mark">L</div><div><div class="brand-title">Leo Mind Journal</div><div class="brand-sub">Daily Trading Command Center · SMC-MA Fusion + Psychology · v2.91</div></div></div>
   <div class="brand-right"><span class="dot"></span><span>LOCAL STORAGE · OFFLINE READY</span></div>
 </header>
 <nav class="tabs" id="topTabs">
@@ -702,8 +702,8 @@ td{color:#8f97a6}
     <div class="market-input-section">
       <div class="market-section-head"><div><div class="market-section-title">1 · State</div><div class="market-section-sub">Copy exactly from the State row</div></div></div>
       <div class="grid two">
-        <div class="field"><label>SMC BIAS</label><select id="fsSmcBias" onchange="deriveFusionSelectionsUI()"></select><div class="helper">v345: State chỉ mang Strategic/Background + MAP direction. Quyền thực thi được đọc riêng từ EXECUTION.</div></div>
-        <div class="field"><label>EXECUTION STATE</label><select id="fsExecutionState" onchange="deriveFusionSelectionsUI()"></select><div class="helper">Chọn đúng EXECUTION của v345. MAP READY, LOCATION READY và WAIT H4 CONFIRMATION là ba trạng thái khác nhau.</div></div>
+        <div class="field"><label>SMC BIAS</label><select id="fsSmcBias" onchange="deriveFusionSelectionsUI()"></select><div class="helper">v347: State chỉ mang Strategic/Background + MAP direction. Quyền thực thi được đọc riêng từ EXECUTION.</div></div>
+        <div class="field"><label>EXECUTION STATE</label><select id="fsExecutionState" onchange="deriveFusionSelectionsUI()"></select><div class="helper">Chọn đúng EXECUTION của v347. Phân biệt rõ MAP READY, AT/HELD LOCATION, WAIT H4 WAVE và các trạng thái D1/H4 remap/confirmation.</div></div>
       </div>
     </div>
 
@@ -726,7 +726,7 @@ td{color:#8f97a6}
     </div>
 
     <div class="market-input-section">
-      <div class="market-section-head"><div><div class="market-section-title">3 · DOW</div><div class="market-section-sub">v345: nhập hướng PRICE ở D1, PRICE ở H4 và dòng DOW cuối cùng (context → next event)</div></div></div>
+      <div class="market-section-head"><div><div class="market-section-title">3 · DOW</div><div class="market-section-sub">v347: nhập hướng PRICE ở D1, PRICE ở H4 và dòng DOW cuối cùng (context → next event)</div></div></div>
       <div class="grid three">
         <div class="field"><label>D1 PRICE</label><select id="fsDowPrimary" onchange="syncDowMinimalInputs()"></select><div class="helper">Chọn đúng phần D1: PRICE LONG / SHORT / WAIT.</div></div>
         <div class="field snapshot-conditional" id="fsDowH4LegField"><label>H4 PRICE</label><select id="fsDowH4Leg" onchange="deriveFusionSelectionsUI()"></select><div class="helper">Chọn đúng phần H4: PRICE LONG / SHORT / WAIT.</div></div>
@@ -791,7 +791,7 @@ td{color:#8f97a6}
       </div>
       <div class="grid three" style="margin-top:12px">
         <div class="field"><label>Zone A Source TF</label><select id="fsZoneATfDebug" onchange="syncZoneTfDebug()"></select></div>
-        <div class="field"><label>Legacy H4 Regime</label><select id="fsDowH4Regime" onchange="deriveFusionSelectionsUI()"></select><div class="helper">Chỉ để đọc dữ liệu cũ; v345 dùng H4 PRICE ở phần DOW phía trên.</div></div>
+        <div class="field"><label>Legacy H4 Regime</label><select id="fsDowH4Regime" onchange="deriveFusionSelectionsUI()"></select><div class="helper">Chỉ để đọc dữ liệu cũ; v347 dùng H4 PRICE ở phần DOW phía trên.</div></div>
         <div class="field"><label>Contract Link</label><select id="fsContractLink" onchange="deriveFusionSelectionsUI()"></select></div>
       </div>
       <div class="grid three" style="margin-top:12px">
@@ -1161,13 +1161,13 @@ td{color:#8f97a6}
 
 <section class="panel" id="panel-data">
   <div class="card"><div class="card-title">Data Management</div><div class="card-sub">Safe backup · schema validation · storage monitoring</div>
-    <div class="grid three"><div class="field"><label>Import Mode</label><select id="importMode"><option>Merge</option><option>Replace</option></select></div><div class="field"><label>Stale Plan Threshold</label><select id="staleThreshold"><option value="60">60 minutes</option><option value="120">120 minutes</option><option value="180" selected>180 minutes</option><option value="360">360 minutes</option></select></div><div class="field"><label>Journal / Indicator Contract</label><div class="readonly-value">Journal v2.90 · SMC-MA v.5372.345 P10N2 R5.7.50 · Fusion3 v306 / Live209</div></div></div>
+    <div class="grid three"><div class="field"><label>Import Mode</label><select id="importMode"><option>Merge</option><option>Replace</option></select></div><div class="field"><label>Stale Plan Threshold</label><select id="staleThreshold"><option value="60">60 minutes</option><option value="120">120 minutes</option><option value="180" selected>180 minutes</option><option value="360">360 minutes</option></select></div><div class="field"><label>Journal / Indicator Contract</label><div class="readonly-value">Journal v2.91 · SMC-MA v.5372.347 P10P2 R5.7.52 · Fusion3 v306 / Live209</div></div></div>
     <div id="storageStatus" style="margin-top:12px"></div>
     <div class="btn-row"><button class="btn primary" onclick="exportData()">Export JSON</button><label class="btn" for="importFile">Import JSON</label><input id="importFile" type="file" accept="application/json" style="display:none" onchange="importData(event)"><button class="btn" onclick="createLocalBackup()">Create Local Backup</button><button class="btn danger" onclick="resetData()">Reset All</button></div></div>
   <div class="card"><div class="card-title">Raw Data</div><div class="card-sub">for backup/debug</div><div class="field"><textarea id="rawData" style="min-height:420px;font-family:var(--mono)"></textarea></div></div>
 </section>
 
-<div class="footer">Leo Mind Journal · Daily Trading Command Center · SMC-MA Market Context × Trading Psychology · v2.90</div>
+<div class="footer">Leo Mind Journal · Daily Trading Command Center · SMC-MA Market Context × Trading Psychology · v2.91</div>
 </div>
 <div class="bottom-nav" id="bottomNav">
   <button class="active" data-tab="desk">Desk</button><button data-tab="plan">Plan</button><button data-tab="live">Live</button><button data-action="review">Review</button><button data-tab="analytics">Stats</button><button data-action="more">More</button>
@@ -1178,7 +1178,7 @@ td{color:#8f97a6}
 <div id="toast" class="toast"></div>
 <script>
 const LS_KEY='leo_mind_journal_v2';
-const APP_VERSION='2.90';
+const APP_VERSION='2.91';
 const legacyKey='leo_mind_journal_v1';
 const BACKUP_KEY='leo_mind_journal_v2_backup';
 const JOURNAL_TZ='Asia/Bangkok';
@@ -2338,7 +2338,7 @@ function toggleMobileSheet(id){const target=$(id),was=target?.classList.contains
 function quickTab(tab){closeMobileSheets();qsa('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));qsa('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+tab));qsa('#bottomNav button[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));renderAll();window.scrollTo({top:0,behavior:'smooth'})}
 qsa('.tab').forEach(btn=>btn.addEventListener('click',()=>quickTab(btn.dataset.tab)));qsa('#bottomNav button[data-tab],.mobile-sheet button[data-tab]').forEach(btn=>btn.addEventListener('click',()=>quickTab(btn.dataset.tab)));qsa('#bottomNav button[data-action]').forEach(btn=>btn.addEventListener('click',()=>toggleMobileSheet(btn.dataset.action==='review'?'mobileReviewSheet':'mobileMoreSheet')));
 function createLocalBackup(){try{localStorage.setItem(BACKUP_KEY,JSON.stringify(load()));toast('Local backup created')}catch(e){toast('Cannot create local backup — storage may be full')}}
-function exportData(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v290_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')}
+function exportData(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v291_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')}
 function mergeData(base,incoming){const a=normalizeData(base),b=normalizeData(incoming);a.trades=uniqueById([...a.trades,...b.trades]);a.missed=uniqueById([...a.missed,...b.missed]);a.emotions=uniqueById([...a.emotions,...b.emotions]);a.behaviorEvents=uniqueById([...a.behaviorEvents,...b.behaviorEvents]);a.cooldownOverrides=uniqueById([...a.cooldownOverrides,...b.cooldownOverrides]);a.fusionSnapshots=uniqueById([...a.fusionSnapshots,...b.fusionSnapshots]);a.scenarios=uniqueById([...a.scenarios,...b.scenarios]);a.noTrades=uniqueById([...a.noTrades,...b.noTrades]);a.noTradeChecks=uniqueById([...a.noTradeChecks,...b.noTradeChecks]);a.daily={...a.daily,...b.daily};a.eod={...a.eod,...b.eod};return normalizeData(a)}
 function importData(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const obj=JSON.parse(r.result);if(!obj||typeof obj!=='object'||!Array.isArray(obj.trades))throw new Error('Schema invalid');createLocalBackup();const mode=$('importMode')?.value||'Merge',next=mode==='Replace'?normalizeData(obj):mergeData(load(),obj);if(save(next)){renderAll();toast(`Imported JSON · ${mode}`)}}catch(e){console.error(e);toast('Invalid or unsupported JSON')}finally{ev.target.value=''}};r.readAsText(f)}
 function resetData(){if(confirm('Xóa toàn bộ dữ liệu và legacy data trên trình duyệt này? Hãy Export JSON trước.')){localStorage.removeItem(LS_KEY);localStorage.removeItem(legacyKey);localStorage.removeItem(BACKUP_KEY);renderAll();toast('All journal data reset')}}
@@ -2706,7 +2706,7 @@ normalizeData = function(d){d=normalizeDataV251(d);d.schemaVersion=16;d.version=
 const renderAllV251=renderAll;
 renderAll = function(){renderAllV251();renderMarketTimeline()};
 const exportDataV251=exportData;
-exportData = function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v290_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
+exportData = function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v291_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
 
 
 
@@ -3358,7 +3358,7 @@ quickLive=function(id){const r=v280LegacyQuickLive(id);setTimeout(v280RenderLive
 const v280LegacyQuickClose=quickClose;
 quickClose=function(id){const r=v280LegacyQuickClose(id);setTimeout(v280RenderClose,0);return r};
 const v280LegacyExportData=exportData;
-exportData=function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v290_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
+exportData=function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v291_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
 // Preserve historical chart data, but no new workflow depends on chart attachments.
 setupChartInput=function(){};setupNoTradeChartInput=function(){};setupNoTradeSessionChartInput=function(){};
 v280RebuildPanels();v280InstallEntryModal();if($('v280EodDate'))$('v280EodDate').value=todayISO();v280LegacyRenderAll();v280RenderAll();
@@ -3987,6 +3987,156 @@ try{
 populateSmcDropdowns();refreshTradingSymbolSelects();
 const planField=$('fsPlanConfirmField');if(planField)planField.classList.remove('is-hidden');$('fsDowH4LegField')?.classList.remove('is-hidden');
 try{loadLatestFusionSnapshot();renderAll()}catch(e){console.error('v2.90 startup sync',e)}
+})();
+</script>
+
+
+<style>
+/* === v2.91 SMC-MA v347 contract sync === */
+.v291-contract-note{margin-top:9px;padding:9px 11px;border-left:3px solid var(--info);border-radius:8px;background:rgba(59,130,246,.055);font-size:11.5px;color:var(--text-mid);line-height:1.55}
+.v291-contract-note b{color:var(--text)}
+</style>
+<script>
+/* === v2.91 SMC-MA v347 P10P2 R5.7.52 contract + semantics === */
+(function(){
+const V291_INDICATOR='SMC-MA v.5372.347 P10P2 R5.7.52';
+const V291_EXEC=[
+ 'ENTRY READY','CONTEXT ONLY / OPEN EXEC TF','MISSED / WAIT NEW ZONE','SOURCE MAP ERROR','ZONE DEGRADED / REASSESS','RISK LOCKED','SETUP INVALID',
+ 'LOCATION READY / WAIT H4 WAVE','WAIT H4 CONFIRMATION / CONTEXT MAP',
+ 'WAIT D1 REMAP / H4 PRIMARY','WAIT D1 CONFIRM / H4 PRIMARY','WAIT H4 CONFIRM / D1 TRANSITION','WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN',
+ 'LOCATION HELD / WAIT TRIGGER','AT LOCATION / WAIT TRIGGER','MAP READY / WAIT LOCATION','WAIT MAP / EXECUTION LOCATION'
+];
+const V291_PLAN=[];
+V291_PLAN.push('NO TREND PLAN: D1 REMAP','NO TREND PLAN: WAIT D1 CONF','NO TREND PLAN: WAIT H4 CONF','NO PLAN: DIRECTION / REMAP WAIT');
+['LONG','SHORT'].forEach(d=>{
+ V291_PLAN.push(`${d} MAP: A/B RETEST`);
+ ['TRACKING','TESTING','TESTED/HELD'].forEach(st=>V291_PLAN.push(`${d} MAP: WATCH B FIRST | ${st}`));
+ V291_PLAN.push(`${d} MAP: A REACTION FIRST`,`${d} MAP: B FLIP WATCH`,`${d} MAP: A RETEST`,`${d} MAP: WAIT EXECUTION ZONE`);
+});
+V291_PLAN.push('NO TRADE: WAIT MAP');
+function replaceArrayV291(arr,vals){if(Array.isArray(arr))arr.splice(0,arr.length,...vals)}
+replaceArrayV291(SMC_EXECUTION_STATE_OPTIONS,V291_EXEC);
+replaceArrayV291(SMC_PLAN_STATE_OPTIONS,V291_PLAN);
+
+function v291DirFromPlan(p){const m=String(p||'').match(/^(LONG|SHORT) MAP:/);return m?m[1]:'WAIT'}
+function v291Opp(d){return d==='LONG'?'SHORT':d==='SHORT'?'LONG':'WAIT'}
+function v291AValid(s){return ['DEMAND','SUPPLY'].includes(s.zoneAType)&&s.zoneARole!=='NONE'}
+function v291BDir(s){return zoneBDirectionFromSelections(s)}
+function v291BFlip(st){return String(st||'').startsWith('BROKEN -> ')}
+function v291BStatusSuffix(s){return ['TRACKING','TESTING','TESTED/HELD'].includes(s.zoneBStatus)?s.zoneBStatus:'TRACKING'}
+function v291ParseRange(txt){const nums=String(txt||'').match(/\d+(?:\.\d+)?/g);if(!nums||nums.length<2)return null;const a=Number(nums[0]),b=Number(nums[1]);return Number.isFinite(a)&&Number.isFinite(b)?[Math.min(a,b),Math.max(a,b)]:null}
+function v291RangesOverlap(a,b){const x=v291ParseRange(a),y=v291ParseRange(b);return !!(x&&y&&Math.max(x[0],y[0])<=Math.min(x[1],y[1]))}
+function v291BPlanEvidence(s,map){const st=String(s.zoneBStatus||''),dir=v291BDir(s),aligned=map!=='WAIT'&&dir===map,A=v291AValid(s),e=String(s.executionState||'');if(!aligned||['NONE','CONSUMED'].includes(st)||v291BFlip(st))return{possible:false,certain:true};if(st==='TRACKING')return{possible:true,certain:true};if(['TESTING','TESTED/HELD'].includes(st)){if(!A&&['MAP READY / WAIT LOCATION','LOCATION READY / WAIT H4 WAVE','AT LOCATION / WAIT TRIGGER','LOCATION HELD / WAIT TRIGGER'].includes(e))return{possible:true,certain:true};if(!A&&e==='WAIT MAP / EXECUTION LOCATION')return{possible:false,certain:true};return{possible:true,certain:false}}return{possible:false,certain:true}}
+function v291PlanAuto(s,dims){
+ const e=String(s.executionState||''),map=dims.planningDirection,A=v291AValid(s),bDir=v291BDir(s),ev=v291BPlanEvidence(s,map),bAligned=ev.possible&&map!=='WAIT'&&bDir===map,flip=v291BFlip(s.zoneBStatus)&&map!=='WAIT'&&bDir===v291Opp(map),st=v291BStatusSuffix(s);
+ if(e==='WAIT D1 REMAP / H4 PRIMARY')return{state:'NO TREND PLAN: D1 REMAP',ambiguous:false};
+ if(e==='WAIT D1 CONFIRM / H4 PRIMARY')return{state:'NO TREND PLAN: WAIT D1 CONF',ambiguous:false};
+ if(e==='WAIT H4 CONFIRM / D1 TRANSITION')return{state:'NO TREND PLAN: WAIT H4 CONF',ambiguous:false};
+ if(e==='WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN')return{state:'NO PLAN: DIRECTION / REMAP WAIT',ambiguous:false};
+ if(map==='WAIT')return{state:'NO TRADE: WAIT MAP',ambiguous:false};
+ if(flip)return{state:`${map} MAP: B FLIP WATCH`,ambiguous:false};
+ if(A&&bAligned){
+   if(v291RangesOverlap(s.zoneAPrice,s.zoneBPrice))return{state:`${map} MAP: A/B RETEST`,ambiguous:false};
+   return{state:`${map} MAP: A RETEST`,ambiguous:true,candidates:[`${map} MAP: A/B RETEST`,`${map} MAP: WATCH B FIRST | ${st}`,`${map} MAP: A REACTION FIRST`]};
+ }
+ if(!A&&bAligned){if(!ev.certain)return{state:`${map} MAP: WAIT EXECUTION ZONE`,ambiguous:true,candidates:[`${map} MAP: WATCH B FIRST | ${st}`,`${map} MAP: WAIT EXECUTION ZONE`]};return{state:`${map} MAP: WATCH B FIRST | ${st}`,ambiguous:false}}
+ if(A)return{state:`${map} MAP: A RETEST`,ambiguous:false};
+ return{state:`${map} MAP: WAIT EXECUTION ZONE`,ambiguous:false};
+}
+function v291ParseAlt(txt){const raw=String(txt||'').trim(),m=raw.match(/(?:ALT:\s*)?(DEMAND|SUPPLY)\s+([^|]+?)(?:\s*\|\s*([A-Z0-9/]+))?$/i);if(!m)return null;return{raw:`ALT: ${m[1].toUpperCase()} ${m[2].trim()}${m[3]?` | ${m[3].toUpperCase()}`:''}`}}
+function v291PlanDetails(state,s){const p=String(state||''),altStruct=v291ParseAlt(s.planAltDetail),map=v291DirFromPlan(p)||parseSmcBiasDimensions(s.smcBias).planningDirection;let alt='ALT STRUCT: NONE';if(isRangeSelection(s))alt='RANGE: WAIT H1 EDGE';else if(p.includes('WATCH B FIRST'))alt='ALT A: DEEPER MAP';else if(p.includes('A REACTION FIRST'))alt='B: DEEPER RETEST';else if(altStruct)alt=altStruct.raw;let guard='NO-TRADE until map resolves';const prot=String(s.planProtection||'').trim();if(prot&&map!=='WAIT'&&!String(s.executionState).includes('H4 CONFIRMATION'))guard=`INVALID: H1/H4 CLOSE ${map==='LONG'?'BELOW':'ABOVE'} ${prot}`;return{planPath:'',planAlt:alt,planGuard:guard}}
+
+inferIndicatorPlan=function(s){const dims=parseSmcBiasDimensions(s.smcBias),auto=v291PlanAuto(s,dims),selected=V291_PLAN.includes(s.planConfirm)?s.planConfirm:'',allowed=auto.ambiguous?(auto.candidates||[]):[auto.state],selectionMismatch=Boolean(selected&&!allowed.includes(selected)),accepted=selected&&!selectionMismatch?selected:'',state=accepted||auto.state,details=v291PlanDetails(state,s),requires=Boolean(auto.ambiguous&&!accepted);return{planState:state,...details,requiresConfirmation:requires,confirmedByUser:Boolean(accepted),selectionMismatch,selectedPlan:selected,confidence:selectionMismatch?'PLAN LINE DOES NOT MATCH CURRENT STATE':requires?'CONFIRM PLAN LINE FROM INDICATOR':accepted?'CONFIRMED FROM INDICATOR':'DERIVED FROM v347 PUBLIC OUTPUT',candidates:auto.candidates||[]}};
+planConfirmationRequired=function(s){return v291PlanAuto(s,parseSmcBiasDimensions(s.smcBias)).ambiguous};
+syncPlanConfirmUI=function(parsed){const field=$('fsPlanConfirmField'),sel=$('fsPlanConfirm');if(!field||!sel)return;field.classList.remove('is-hidden');const auto=v291PlanAuto(parsed.indicatorSelections||{},parsed.dimensions||parseSmcBiasDimensions(parsed.indicatorSelections?.smcBias)),allowed=auto.ambiguous?(auto.candidates||[]):[auto.state];if(auto.ambiguous){if(sel.value&&!allowed.includes(sel.value))sel.value=''}else if(V291_PLAN.includes(auto.state))sel.value=auto.state};
+
+permissionFromExecutionState=function(v){const x=String(v||'');if(x==='ENTRY READY')return 3;if(x==='SETUP INVALID')return 5;if(x==='MISSED / WAIT NEW ZONE')return 4;if(['AT LOCATION / WAIT TRIGGER','LOCATION HELD / WAIT TRIGGER'].includes(x))return 2;if(['RISK LOCKED','SOURCE MAP ERROR'].includes(x))return 0;return 1};
+waitReasonFromExecutionState=function(v){const x=String(v||'');if(x==='ENTRY READY')return'NONE';if(x==='MAP READY / WAIT LOCATION')return'WAIT EXECUTION LOCATION';if(x==='LOCATION READY / WAIT H4 WAVE')return'WAIT H4 CONFIRMATION';if(x==='AT LOCATION / WAIT TRIGGER'||x==='LOCATION HELD / WAIT TRIGGER')return'WAIT TRIGGER / ROOM';if(x==='WAIT H4 CONFIRMATION / CONTEXT MAP'||x==='WAIT H4 CONFIRM / D1 TRANSITION')return'WAIT H4 CONFIRMATION';if(x==='WAIT D1 REMAP / H4 PRIMARY')return'WAIT NEW CYCLE / REMAP';if(x==='WAIT D1 CONFIRM / H4 PRIMARY')return'WAIT DIRECTIONAL ALIGNMENT';if(x==='WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN')return'WAIT DIRECTIONAL ALIGNMENT';if(x==='WAIT MAP / EXECUTION LOCATION')return'WAIT MAP / NO EXEC PLAN';if(x==='MISSED / WAIT NEW ZONE')return'MISSED / WAIT NEW ZONE';if(x==='ZONE DEGRADED / REASSESS')return'ZONE DEGRADED / REASSESS';if(x==='SOURCE MAP ERROR')return'SOURCE MAP ERROR';if(x==='RISK LOCKED')return'RISK LOCKED';if(x==='SETUP INVALID')return'SETUP INVALID';return'OTHER'};
+locationFromExecutionState=function(s){const e=String(s.executionState||'');if(isRangeSelection(s))return rangeLocationFromSelections(s);if(e==='ENTRY READY')return'IN TRADE-ENTRY ZONE';if(['LOCATION READY / WAIT H4 WAVE','AT LOCATION / WAIT TRIGGER','LOCATION HELD / WAIT TRIGGER'].includes(e))return'IN EXECUTION AREA / WAIT CONFIRMATION';if(e==='MAP READY / WAIT LOCATION')return'WAIT RETEST';if(e==='MISSED / WAIT NEW ZONE')return'MOVE EXTENDED / NO CHASE';if(['ZONE DEGRADED / REASSESS','SETUP INVALID','RISK LOCKED','SOURCE MAP ERROR'].includes(e))return'LOCATION IGNORED';return'IN WATCH / OBSERVATION AREA'};
+planningStageFromModel=function(s,dims,planState){const e=String(s.executionState||'');if(['RISK LOCKED','SOURCE MAP ERROR','SETUP INVALID','ZONE DEGRADED / REASSESS'].includes(e))return'INVALID / LOCKED';if(e==='ENTRY READY')return'ENTRY READY';if(e==='MISSED / WAIT NEW ZONE')return'NO CHASE';if(isRangeSelection(s))return'RANGE WAIT';if(e==='LOCATION READY / WAIT H4 WAVE')return'WAIT H4 WAVE';if(['AT LOCATION / WAIT TRIGGER','LOCATION HELD / WAIT TRIGGER'].includes(e))return'WAIT TRIGGER';if(e==='MAP READY / WAIT LOCATION')return'WAIT LOCATION';if(e==='WAIT H4 CONFIRMATION / CONTEXT MAP')return'WAIT AUTHORITY';if(e==='WAIT D1 REMAP / H4 PRIMARY')return'WAIT D1 REMAP';if(e==='WAIT D1 CONFIRM / H4 PRIMARY')return'WAIT D1 CONFIRM';if(e==='WAIT H4 CONFIRM / D1 TRANSITION')return'WAIT H4 CONFIRM';if(e==='WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN')return'WAIT ALIGNMENT';if(e==='WAIT MAP / EXECUTION LOCATION')return'WAIT MAP';return'OBSERVE'};
+
+const v291NaturalStageBase=naturalStageV261;
+naturalStageV261=function(stage){const m={'WAIT D1 REMAP':'CHỜ D1 XÁC LẬP LẠI','WAIT D1 CONFIRM':'CHỜ D1 XÁC NHẬN','WAIT H4 CONFIRM':'CHỜ H4 XÁC NHẬN','WAIT TRIGGER':'CHỜ TÍN HIỆU VÀO LỆNH'};return m[stage]||v291NaturalStageBase(stage)};
+const v291NaturalActionBase=naturalCurrentActionV261;
+naturalCurrentActionV261=function(stage){const m={'WAIT D1 REMAP':'ĐỨNG NGOÀI · CHỜ D1','WAIT D1 CONFIRM':'ĐỨNG NGOÀI · CHỜ D1','WAIT H4 CONFIRM':'ĐỨNG NGOÀI · CHỜ H4','WAIT TRIGGER':'CHỜ TÍN HIỆU'};return m[stage]||v291NaturalActionBase(stage)};
+
+function v291ExecutionText(e){
+ if(e==='MAP READY / WAIT LOCATION')return'Kịch bản và vùng giá đã được xác định. Việc còn thiếu là giá quay về vị trí phù hợp; không cần xây lại hướng từ đầu.';
+ if(e==='LOCATION READY / WAIT H4 WAVE')return'Giá đang ở vùng cần quan sát, nhưng nhịp 4 giờ chưa đủ điều kiện. Chờ H4 hình thành/xác nhận nhịp phù hợp trước khi tìm tín hiệu vào lệnh.';
+ if(e==='AT LOCATION / WAIT TRIGGER')return'Giá đang ở đúng vùng cần theo dõi và điều kiện khung lớn không còn là blocker chính. Bước còn thiếu là tín hiệu vào lệnh; không vào chỉ vì giá đã chạm vùng.';
+ if(e==='LOCATION HELD / WAIT TRIGGER')return'Vùng H1 đã được kiểm tra và giữ được vai trò, cho thấy phản ứng ban đầu phù hợp. Tuy nhiên vẫn cần tín hiệu vào lệnh; nếu giá đã rời vùng quá xa thì không đuổi theo.';
+ if(e==='WAIT H4 CONFIRMATION / CONTEXT MAP')return'Hướng và vùng mới chỉ đủ để lập bối cảnh. H4 chưa xác nhận nên chưa chuyển sang bước tìm điểm vào.';
+ if(e==='WAIT D1 REMAP / H4 PRIMARY')return'H4 đang dẫn dắt theo hướng ngược với D1 đang còn hoạt động. Không chọn lệnh theo H4 cho tới khi D1 được xác lập lại và mâu thuẫn này được giải quyết.';
+ if(e==='WAIT D1 CONFIRM / H4 PRIMARY')return'H4 đang là nhịp dẫn dắt trong lúc D1 còn chuyển tiếp. Chờ D1 xác nhận hướng mới trước khi coi kịch bản H4 là kế hoạch có thể thực thi.';
+ if(e==='WAIT H4 CONFIRM / D1 TRANSITION')return'D1 đang chuyển tiếp và tín hiệu hiện mới đến từ khung thấp. Chờ H4 xác nhận trước khi chọn hướng giao dịch.';
+ if(e==='WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN')return'Các hướng chính đang mâu thuẫn. Đứng ngoài cho tới khi thị trường đồng thuận lại.';
+ if(e==='WAIT MAP / EXECUTION LOCATION')return'Chưa có đủ tổ hợp hướng và vùng giá để hình thành kế hoạch thực thi. Không tự tìm điểm vào giữa đường.';
+ if(e==='ENTRY READY')return'Các điều kiện kỹ thuật đã hội tụ. Có thể chuyển sang chuẩn bị lệnh nếu giá vào, dừng lỗ, rủi ro và tâm lý đều đúng kế hoạch.';
+ if(e==='CONTEXT ONLY / OPEN EXEC TF')return'Khung đang xem chỉ dùng để đọc bối cảnh. Muốn thực thi cần chuyển về khung vào lệnh đã định.';
+ if(e==='MISSED / WAIT NEW ZONE')return'Cơ hội thuận lợi đã đi qua. Chờ vùng hoặc chu kỳ mới; không đuổi giá.';
+ if(e==='ZONE DEGRADED / REASSESS')return'Vùng hiện tại đã suy giảm chất lượng. Dừng ý định vào lệnh và đánh giá lại.';
+ if(e==='SOURCE MAP ERROR')return'Dữ liệu nguồn của bản đồ đang lỗi. Không dùng trạng thái này để ra quyết định.';
+ if(e==='RISK LOCKED')return'Hệ thống đang khóa rủi ro. Không mở lệnh mới.';
+ if(e==='SETUP INVALID')return'Kịch bản hiện tại đã mất hiệu lực. Bỏ kế hoạch cũ và chờ bối cảnh mới.';
+ return'';
+}
+function v291ZoneANatural(s,x){if(!v291AValid(s)||!String(x.zoneAPrice||s.zoneAPrice||'').trim())return'';const type=s.zoneAType==='DEMAND'?'vùng cầu':'vùng cung',price=x.zoneAPrice||s.zoneAPrice,role=s.zoneARole;if(role==='SETUP MAP')return`${type[0].toUpperCase()+type.slice(1)} A ${price} là vùng có thể dùng cho thực thi khi các điều kiện còn lại đã hoàn tất. Giá chạm vùng vẫn không tự tạo lệnh.`;if(role==='STRATEGIC MAP')return`${type[0].toUpperCase()+type.slice(1)} A ${price} là vùng tham chiếu chiến lược để chờ một nhịp hồi/retest phù hợp, chưa phải điểm vào lệnh tự động.`;if(role==='REACTION/RETEST MAP')return`${type[0].toUpperCase()+type.slice(1)} A ${price} được dùng để đánh giá phản ứng/retest của giá trước khi quyết định bước tiếp theo.`;return`${type[0].toUpperCase()+type.slice(1)} A ${price} là vùng phản ứng cần theo dõi; chưa dùng riêng vùng này làm lý do vào lệnh.`}
+function v291ZoneBNatural(s,map){if(s.zoneBRole==='NONE')return'';const price=s.zoneBPrice||'vùng đã ghi',kind=s.zoneBRole.includes('SUPPORT')?'hỗ trợ H1':'kháng cự H1',st=s.zoneBStatus;if(st==='TRACKING')return`${kind[0].toUpperCase()+kind.slice(1)} B ${price} đang được theo dõi như một vùng retest gần giá.`;if(st==='TESTING')return`Giá đang kiểm tra ${kind} B ${price}. Đây là vị trí cần quan sát phản ứng, không phải tín hiệu vào lệnh tự động.`;if(st==='TESTED/HELD')return`${kind[0].toUpperCase()+kind.slice(1)} B ${price} đã được kiểm tra và giữ vai trò. Phản ứng ban đầu đã xuất hiện nhưng vẫn cần điều kiện vào lệnh.`;if(st==='CONSUMED')return`${kind[0].toUpperCase()+kind.slice(1)} B ${price} đã hoàn thành vòng đời và không còn là vùng chờ ưu tiên.`;if(st.startsWith('BROKEN ->'))return`${kind[0].toUpperCase()+kind.slice(1)} B ${price} đã bị phá và hiện chỉ được theo dõi khả năng đổi vai khi giá quay lại; việc phá vùng không tự tạo lệnh.`;return''}
+function v291DowNatural(dow={}){const d=normalizeDowContext(dow),o=d.outlook,h4=d.h4Leg,dir=z=>z==='LONG'?'tăng':z==='SHORT'?'giảm':'chưa rõ';if(o.includes('CTX: H4 PRIMARY')&&o.includes('D1 OPP'))return`H4 đang dẫn dắt theo hướng ${dir(h4)} nhưng D1 còn hoạt động theo hướng đối diện. Đây là xung đột cần D1 xác lập lại trước khi chọn kế hoạch.`;if(o.includes('CTX: H4 PRIMARY')&&o.includes('D1 TRANSITION'))return`H4 đang dẫn dắt theo hướng ${dir(h4)} trong khi D1 còn chuyển tiếp. Chờ D1 xác nhận hướng mới hoặc chờ một nhịp điều chỉnh H4 rõ ràng.`;if(o.includes('CTX: LTF PRIMARY'))return'Khung thấp đang dẫn dắt trong khi D1/H4 chưa hoàn tất xác nhận. Chỉ xem đây là tín hiệu sớm và chờ H4 xác nhận.';if(o==='CTX: D1 TRANSITION | NEXT: WAIT D1/H4')return'D1 đang chuyển tiếp và H4 chưa đủ rõ. Chờ cả D1 và H4 ổn định trước khi chọn hướng.';if(o==='D1/H4 ALIGNED | TREND EXTENDED | NEXT: WAIT H4 CORRECTION')return`D1 và H4 đang cùng hướng ${dir(dowActiveD1Direction(d.primary))}, nhưng xu hướng đã đi xa. Không đuổi giá; chờ H4 điều chỉnh.`;if(o==='D1 CONTINUATION ACTIVE | NEXT: H1/M15 ENTRY')return'D1/H4 đang tiếp diễn cùng hướng. Trọng tâm chuyển sang vị trí và tín hiệu ở H1/M15.';if(o==='H4 CORRECTION ACTIVE | NEXT: WAIT END')return'Nhịp điều chỉnh H4 đang hoạt động. Chờ nhịp điều chỉnh kết thúc thay vì đuổi theo.';if(o==='H4 CORRECTION ENDING | NEXT: WAIT RESUME')return'Nhịp điều chỉnh H4 gần kết thúc. Chờ xu hướng chính quay lại rõ ràng.';if(o==='H4 RESUME FORMING | NEXT: WAIT H4 CLOSE')return'Một nhịp H4 quay lại hướng chính đang hình thành. Chờ H4 đóng/xác nhận.';if(o==='H4 CORRECTION WATCH | NEXT: WAIT H4 CONFIRM')return'Có dấu hiệu điều chỉnh ở H4. Chờ H4 xác nhận trước khi tiếp tục kế hoạch.';if(o==='RSI CORRECTION WATCH | NEXT: WAIT H4 PRICE')return'Động lượng báo khả năng điều chỉnh nhưng giá H4 chưa xác nhận. Chờ giá H4 phản ánh nhịp này.';if(o==='H4 MAP WAIT | NEXT: WAIT STRUCTURE')return'Quan hệ D1–H4 chưa đủ rõ. Chờ cấu trúc H4 trước khi dùng vùng giá để lập kế hoạch.';return o&&o!=='NOT RECORDED'?o:''}
+function v291BuildContext(x){const s=x.indicatorSelections||{},d=x.dimensions||parseSmcBiasDimensions(s.smcBias),parts=[],dir=z=>z==='LONG'?'tăng':z==='SHORT'?'giảm':'chưa rõ';if(d.strategicStatus==='BACKGROUND'&&d.strategicDirection!=='WAIT')parts.push(`Bức tranh lớn vẫn có nền ${dir(d.strategicDirection)}, nhưng hướng này hiện chỉ là nền tham chiếu.`);else if(d.strategicDirection!=='WAIT')parts.push(`Bức tranh lớn hiện nghiêng ${dir(d.strategicDirection)}.`);else parts.push('Bức tranh lớn hiện chưa đủ rõ để ưu tiên một phía.');if(d.planningDirection==='LONG')parts.push('Kịch bản đang được theo dõi là canh mua.');else if(d.planningDirection==='SHORT')parts.push('Kịch bản đang được theo dõi là canh bán.');else parts.push('Hiện chưa có hướng giao dịch cụ thể để ưu tiên.');const dn=v291DowNatural(x.dow);if(dn)parts.push(dn);if(isRangeSelection(s)){const r=normalizeRangeState(s.rangeState);parts.push(`Thị trường đang trong vùng đi ngang ${x.zoneAPrice||s.zoneAPrice||'đã ghi'}. ${r==='IN RANGE / WAIT EDGE'?'Chờ giá về biên; không giao dịch ở giữa vùng.':r.startsWith('M15 BREAK ABOVE')?'M15 đã vượt biên trên nhưng còn chờ H1 đóng xác nhận.':'M15 đã phá biên dưới nhưng còn chờ H1 đóng xác nhận.'}`)}else{const a=v291ZoneANatural(s,x);if(a)parts.push(a)}const b=v291ZoneBNatural(s,d.planningDirection);if(b)parts.push(b);const e=v291ExecutionText(x.executionState);if(e)parts.push(e);return parts.join(' ')}
+function v291BuildPlaybook(x){const s=x.indicatorSelections||{},p=x.indicatorPlan?.planState||'',stage=x.executionStage,dir=x.planningDirection||'WAIT',side=dir==='LONG'?'mua':dir==='SHORT'?'bán':'giao dịch',A=`${s.zoneAType==='DEMAND'?'vùng cầu':s.zoneAType==='SUPPLY'?'vùng cung':'vùng'} ${x.zoneAPrice||s.zoneAPrice||''}`.trim(),B=s.zoneBPrice||'vùng H1';let summary='Tiếp tục quan sát; hiện chưa có hành động giao dịch.',trigger='Cập nhật lại bối cảnh khi hướng, vùng giá hoặc nhịp chính thay đổi.',invalid='Không biến một trạng thái đang chờ thành lý do vào lệnh.',next='Giữ cảnh báo tại các vùng quan trọng và chờ trạng thái mới.';
+ if(x.indicatorPlan?.requiresConfirmation)return{summary:'Chưa thể hoàn tất kế hoạch vì thứ tự ưu tiên giữa các vùng chưa xác định chắc chắn.',trigger:'Chọn đúng PLAN · DÒNG 1 đang hiển thị trên SMC-MA v347.',invalidation:'Không tự suy đoán vùng nào phải được quan sát trước.',nextAction:'Xác nhận dòng Plan rồi Refresh Context.'};
+ if(stage==='WAIT D1 REMAP'){summary='Đứng ngoài: H4 đang dẫn dắt ngược với D1 còn hoạt động.';trigger='Chờ D1 xác lập lại hướng và mâu thuẫn D1–H4 được giải quyết. Sau đó mới xây lại kế hoạch vùng giá.';invalid='Không giao dịch theo H4 chỉ vì H4 đang mạnh khi D1 vẫn giữ hướng đối diện.';next='Cập nhật Market Context khi D1 thay đổi hoặc DOW không còn báo H4-primary đối nghịch D1.'}
+ else if(stage==='WAIT D1 CONFIRM'){summary='H4 đã có hướng dẫn dắt nhưng D1 vẫn đang chuyển tiếp. Chưa mở lệnh.';trigger='Chờ D1 xác nhận hướng mới. Sau xác nhận, đánh giá lại map và vùng retest thay vì dùng nguyên snapshot cũ.';invalid='Không coi H4-primary là xu hướng chiến lược đã xác nhận khi D1 còn transition.';next='Cập nhật lại context khi D1 xác nhận hoặc H4 chuyển sang nhịp pullback mới.'}
+ else if(stage==='WAIT H4 CONFIRM'){summary='Đứng ngoài: D1 đang chuyển tiếp và tín hiệu hiện mới đến từ khung thấp.';trigger='Chờ H4 xác nhận hướng. Chỉ sau đó mới chọn vùng cần chờ và chuẩn bị kịch bản vào lệnh.';invalid='Không nâng tín hiệu khung thấp thành kế hoạch giao dịch khi H4 chưa xác nhận.';next='Cập nhật context khi H4 xác nhận.'}
+ else if(stage==='WAIT LOCATION'){summary=`Kịch bản ${side} đã rõ nhưng giá chưa ở vị trí phù hợp. Không ${side} ở giá hiện tại.`;if(p.includes('A/B RETEST'))trigger=`Chờ giá quay lại cụm A/B đang chồng lấn; khi giá tới vùng, cập nhật context để kiểm tra điều kiện tiếp theo.`;else if(p.includes('WATCH B FIRST'))trigger=`Chờ giá quay lại vùng H1 ${B} trước. Nếu B mất vai trò, mới chuyển sang vùng A nếu A vẫn còn hợp lệ.`;else if(p.includes('A REACTION FIRST'))trigger=`Chờ phản ứng tại ${A} trước; chỉ nếu A không còn giữ vai trò mới đánh giá vùng H1 phía sau.`;else if(p.includes('A RETEST'))trigger=`Chờ giá hồi/retest ${A}. Khi giá tới A, cần cập nhật lại context và kiểm tra tín hiệu; chạm A chưa phải lệnh.`;else trigger='Chờ giá quay về vùng được hệ thống xác định.';next=`Đặt alert tại ${p.includes('WATCH B FIRST')?`vùng H1 ${B}`:A||'vùng chờ'} và không đuổi giá.`}
+ else if(stage==='WAIT H4 WAVE'){summary=`Giá đã tới vùng cần theo dõi nhưng chưa được phép ${side}.`;trigger='Chờ H4 hình thành/xác nhận nhịp phù hợp. Sau đó mới chuyển sang bước chờ tín hiệu vào lệnh.';next=`Theo dõi phản ứng tại vùng H1 ${B} và cập nhật context khi H4 thay đổi.`}
+ else if(stage==='WAIT TRIGGER'){summary=p.includes('A/B RETEST')?`Giá đã ở/đã phản ứng tại cụm A/B phù hợp với kịch bản ${side}; bước còn thiếu là tín hiệu vào lệnh.`:p.includes('A RETEST')?`${A} đã trở thành vị trí retest của kịch bản ${side}; chưa vào cho tới khi tín hiệu cuối xuất hiện.`:`Vị trí giao dịch đã được kiểm tra; bước còn thiếu là tín hiệu vào lệnh.`;trigger=x.executionState==='LOCATION HELD / WAIT TRIGGER'?'Vùng H1 đã giữ được vai trò. Chờ tín hiệu vào lệnh theo rule; nếu giá đã chạy xa khỏi vị trí hợp lý thì bỏ nhịp, không chase.':'Giá đang ở vùng phù hợp. Chờ tín hiệu vào lệnh theo rule đã định; không cần tìm thêm một bias mới.';next='Giữ nguyên risk plan và chỉ chuyển sang Entry khi EXECUTION đạt ENTRY READY.'}
+ else if(stage==='WAIT AUTHORITY'){summary=`Kịch bản ${side} mới đủ để theo dõi, chưa đủ để tìm điểm vào.`;trigger='Chờ H4 xác nhận rõ nhịp và hướng, sau đó đánh giá lại vị trí giá.';next='Cập nhật context khi H4 xác nhận.'}
+ else if(stage==='WAIT ALIGNMENT'){summary='Đứng ngoài vì các hướng chính đang mâu thuẫn.';trigger='Chỉ lập lại kế hoạch khi các khung chính đồng thuận.';next='Chờ thị trường xác lập lại hướng.'}
+ else if(stage==='WAIT MAP'){summary='Chưa có kế hoạch thực thi đủ rõ.';trigger='Chờ hệ thống xác định hướng cùng vùng giá hợp lệ.';next='Không tìm điểm vào thủ công giữa đường.'}
+ else if(stage==='RANGE WAIT'){const r=normalizeRangeState(s.rangeState);summary='Thị trường đang đi ngang; hiện chưa có lệnh.';trigger=r==='IN RANGE / WAIT EDGE'?'Chờ giá về biên và có phản ứng đủ rõ.':'Chờ H1 đóng xác nhận cú phá range trước khi lập kế hoạch mới.';invalid='Không dự đoán trước hướng phá range.';next='Cập nhật Market Context khi giá tới biên hoặc H1 đóng xác nhận.'}
+ else if(stage==='ENTRY READY'){summary=`Các điều kiện kỹ thuật đã đủ để chuẩn bị ${side}.`;trigger='Xác nhận snapshot còn mới, giá vào/SL/risk đúng kế hoạch và tâm lý ổn định trước khi bấm lệnh.';next='Chuyển sang Trade Plan / Entry Confirmation.'}
+ else if(stage==='NO CHASE'){summary='Bỏ qua cơ hội hiện tại; không đuổi theo giá.';trigger='Chỉ quay lại khi hệ thống tạo vùng hoặc chu kỳ mới.';next='Đặt alert cho vùng mới.'}
+ else if(stage==='INVALID / LOCKED'){summary='Kịch bản hiện tại bị khóa hoặc mất hiệu lực.';trigger='Chờ một bối cảnh mới.';next='Không mở lệnh theo snapshot cũ.'}
+ return{summary,trigger,invalidation:invalid,nextAction:next}}
+
+const baseDeriveV291=deriveFusionFromSelections;
+deriveFusionFromSelections=function(input){const x=baseDeriveV291(input),s=x.indicatorSelections||{...smcSelectionInputs(),...input},e=String(s.executionState||x.executionState||'');x.executionState=e;x.permissionCode=permissionFromExecutionState(e);x.permission=permissionTextFromCode(x.permissionCode);if(['MAP READY / WAIT LOCATION','LOCATION READY / WAIT H4 WAVE','WAIT H4 CONFIRMATION / CONTEXT MAP','WAIT D1 REMAP / H4 PRIMARY','WAIT D1 CONFIRM / H4 PRIMARY','WAIT H4 CONFIRM / D1 TRANSITION','WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN','CONTEXT ONLY / OPEN EXEC TF'].includes(e))x.permission='WATCH / MAP ONLY';if(['AT LOCATION / WAIT TRIGGER','LOCATION HELD / WAIT TRIGGER'].includes(e))x.permission='WAIT CONFIRMATION';x.executionDirection=e==='ENTRY READY'?x.planningDirection:'WAIT';x.direction=x.executionDirection;x.executionStage=planningStageFromModel(s,x.dimensions||parseSmcBiasDimensions(s.smcBias),x.indicatorPlan?.planState||'');x.currentAction=currentActionFromStage(x.executionStage);x.priceLocation=locationFromExecutionState(s);x.waitReason=waitReasonFromExecutionState(e);x.scenario=scenarioFromSmcSelections(s);
+ let errors=(x.errors||[]).filter(msg=>!String(msg).includes('v345')&&!String(msg).includes('A/B CONFLUENCE')&&!String(msg).includes('A CONTEXT / MONITOR'));
+ const map=x.planningDirection,A=v291AValid(s),bDir=v291BDir(s),ev=v291BPlanEvidence(s,map),bAligned=ev.possible&&map!=='WAIT'&&bDir===map,o=String(x.dow?.outlook||s.dowOutlook||'');
+ if(e==='AT LOCATION / WAIT TRIGGER'&&s.zoneBStatus!=='TESTING')errors.push('AT LOCATION / WAIT TRIGGER yêu cầu Zone B đang TESTING.');
+ if(e==='LOCATION HELD / WAIT TRIGGER'&&s.zoneBStatus!=='TESTED/HELD')errors.push('LOCATION HELD / WAIT TRIGGER yêu cầu Zone B đang TESTED/HELD.');
+ if(e==='WAIT D1 REMAP / H4 PRIMARY'&&!(o.includes('CTX: H4 PRIMARY')&&o.includes('D1 OPP')))errors.push('WAIT D1 REMAP / H4 PRIMARY cần DOW báo H4 PRIMARY đối nghịch D1 đang hoạt động.');
+ if(e==='WAIT D1 CONFIRM / H4 PRIMARY'&&!(o.includes('CTX: H4 PRIMARY')&&o.includes('D1 TRANSITION')))errors.push('WAIT D1 CONFIRM / H4 PRIMARY cần DOW báo H4 PRIMARY trong D1 TRANSITION.');
+ if(e==='WAIT H4 CONFIRM / D1 TRANSITION'&&!o.includes('CTX: LTF PRIMARY'))errors.push('WAIT H4 CONFIRM / D1 TRANSITION cần DOW cho thấy khung thấp đang dẫn dắt trong khi D1 chuyển tiếp.');
+ if(e==='MAP READY / WAIT LOCATION'&&map!=='WAIT'&&!A&&!bAligned)errors.push('MAP READY / WAIT LOCATION yêu cầu ít nhất một vùng A hoặc B hợp lệ cùng hướng MAP.');
+ const p=String(x.indicatorPlan?.planState||'');if(e==='WAIT D1 REMAP / H4 PRIMARY'&&p!=='NO TREND PLAN: D1 REMAP')errors.push('Execution đang chờ D1 REMAP nhưng dòng Plan chưa phải NO TREND PLAN: D1 REMAP.');if(e==='WAIT D1 CONFIRM / H4 PRIMARY'&&p!=='NO TREND PLAN: WAIT D1 CONF')errors.push('Execution đang chờ D1 CONFIRM nhưng dòng Plan chưa phải NO TREND PLAN: WAIT D1 CONF.');if(e==='WAIT H4 CONFIRM / D1 TRANSITION'&&p!=='NO TREND PLAN: WAIT H4 CONF')errors.push('Execution đang chờ H4 CONFIRM trong D1 transition nhưng dòng Plan chưa phải NO TREND PLAN: WAIT H4 CONF.');
+ x.errors=[...new Set(errors)];x.warnings=x.errors.slice();x.marketContext=v291BuildContext(x);x.playbook=v291BuildPlaybook(x);x.tradingPlaybook=playbookText(x.playbook);x.stateFingerprint=marketStateFingerprint(x);return x};
+
+scenarioFromSmcSelections=function(s){const e=String(s.executionState||'');if(e==='MAP READY / WAIT LOCATION')return'Wait execution zone';if(e==='LOCATION READY / WAIT H4 WAVE')return'Wait H4 confirmation';if(['AT LOCATION / WAIT TRIGGER','LOCATION HELD / WAIT TRIGGER'].includes(e))return'Wait confirmation';if(['WAIT H4 CONFIRMATION / CONTEXT MAP','WAIT H4 CONFIRM / D1 TRANSITION'].includes(e))return'Wait H4 confirmation';if(e==='WAIT D1 REMAP / H4 PRIMARY')return'D1 remap / H4 primary conflict';if(e==='WAIT D1 CONFIRM / H4 PRIMARY')return'Wait D1 confirmation';if(e==='WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN')return'Wait directional alignment';if(e==='WAIT MAP / EXECUTION LOCATION')return'Wait map / no execution plan';if(e==='ENTRY READY')return'Primary pullback to Zone A';if(e==='MISSED / WAIT NEW ZONE')return'Tactical retest map / no chase';if(e==='SETUP INVALID'||e==='ZONE DEGRADED / REASSESS')return'Setup reset / invalid';if(e==='RISK LOCKED'||e==='SOURCE MAP ERROR')return'Risk lock / avoid';return'Observation only'};
+
+renderContextConsistency=function(parsed){const el=$('marketConsistencyBox');if(!el)return;const errs=parsed.errors||[],adv=(parsed.advisories||[]).map(x=>String(x).replace(/v345/g,'v347'));if(errs.length){el.className='consistency-box bad';el.innerHTML=`<b>Chưa thể lưu bối cảnh:</b><ul>${errs.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul>${adv.length?`<div style="margin-top:7px"><b>Ghi chú:</b> ${adv.map(escapeHtml).join(' · ')}</div>`:''}`;return}if(adv.length){el.className='consistency-box warn';el.innerHTML=`<b>Contract v347 hợp lệ, nhưng còn thiếu context tùy chọn:</b> ${adv.map(escapeHtml).join(' · ')}`;return}el.className='consistency-box good';el.innerHTML='<b>Contract consistency:</b> State / Zones / DOW / Plan phù hợp với output công khai của SMC-MA v347.'};
+
+eodStageNaturalV265=function(snap){if(!snap)return'chưa có bối cảnh được lưu';const e=String(snap.executionState||''),stage=String(snap.executionStage||'');if(e==='ENTRY READY'||stage==='ENTRY READY')return'các điều kiện kỹ thuật đã đủ để chuẩn bị vào lệnh';if(['AT LOCATION / WAIT TRIGGER','LOCATION HELD / WAIT TRIGGER'].includes(e)||stage==='WAIT TRIGGER')return'vị trí đã phù hợp và hiện chỉ còn chờ tín hiệu vào lệnh';if(e==='MAP READY / WAIT LOCATION'||stage==='WAIT LOCATION')return'kịch bản đã rõ nhưng giá chưa về vị trí cần chờ';if(e==='LOCATION READY / WAIT H4 WAVE'||stage==='WAIT H4 WAVE')return'giá đã tới vùng nhưng vẫn phải chờ nhịp H4';if(e==='WAIT D1 REMAP / H4 PRIMARY'||stage==='WAIT D1 REMAP')return'H4 đang đối nghịch D1 nên phải chờ D1 xác lập lại';if(e==='WAIT D1 CONFIRM / H4 PRIMARY'||stage==='WAIT D1 CONFIRM')return'H4 đang dẫn dắt nhưng D1 còn chuyển tiếp nên phải chờ D1 xác nhận';if(e==='WAIT H4 CONFIRM / D1 TRANSITION'||stage==='WAIT H4 CONFIRM')return'D1 đang chuyển tiếp và cần H4 xác nhận trước khi chọn hướng';if(e==='WAIT H4 CONFIRMATION / CONTEXT MAP'||stage==='WAIT AUTHORITY')return'đang chờ H4 xác nhận trước khi tìm điểm vào';if(e==='WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN'||stage==='WAIT ALIGNMENT')return'các hướng còn mâu thuẫn nên phải đứng ngoài';if(e==='WAIT MAP / EXECUTION LOCATION'||stage==='WAIT MAP')return'chưa có đủ hướng + vùng giá để hình thành kế hoạch thực thi';if(e==='MISSED / WAIT NEW ZONE'||stage==='NO CHASE')return'cơ hội đã đi qua và chỉ nên chờ vùng mới';if(['SOURCE MAP ERROR','ZONE DEGRADED / REASSESS','RISK LOCKED','SETUP INVALID'].includes(e)||stage==='INVALID / LOCKED')return'kịch bản đang bị khóa, suy giảm hoặc mất hiệu lực';if(isRangeSelection(snap.indicatorSelections||{}))return'thị trường đang đi ngang và cần chờ xác nhận tại biên';return'đang quan sát, chưa nên vào lệnh'};
+ntdStageTextV270=function(s){return eodStageNaturalV265(s)};
+
+const v291SnapshotBase=snapshotFromForm;
+snapshotFromForm=function(){const x=v291SnapshotBase();if(!x)return null;x.indicatorVersion=V291_INDICATOR;x.contractVersion='Fusion3 v306 / Live209';x.contractGeneration='v347';return x};
+
+const v291FillBase=fillSnapshotForm;
+fillSnapshotForm=function(x){if(!x)return;const is347=String(x.indicatorVersion||'').includes('5372.347')||x.contractGeneration==='v347';if(is347){const clone=JSON.parse(JSON.stringify(x));clone.indicatorVersion='SMC-MA v.5372.345 P10N2 R5.7.50';clone.contractGeneration='v345';const r=v291FillBase(clone);if($('fsExecutionState')&&V291_EXEC.includes(x.indicatorSelections?.executionState||x.executionState))$('fsExecutionState').value=x.indicatorSelections?.executionState||x.executionState;if($('fsPlanConfirm')){const pc=x.indicatorSelections?.planConfirm||x.indicatorPlan?.planState||'';if(V291_PLAN.includes(pc))$('fsPlanConfirm').value=pc}deriveFusionSelectionsUI(false);renderFusionSnapshotStatus(x);renderMarketTimeline();return r}const r=v291FillBase(x);const box=$('marketConsistencyBox');if(box)box.insertAdjacentHTML('beforeend','<div class="v291-contract-note"><b>Legacy contract:</b> snapshot này được tạo trước v347. Hãy nhập lại State / Zones / DOW / Plan từ SMC-MA v347 trước khi dùng cho entry.</div>');return r};
+
+const v291NormalizeBase=normalizeData;
+normalizeData=function(d){const raw=d&&typeof d==='object'?d:{},keep=new Map((raw.fusionSnapshots||[]).map(x=>[x.id,JSON.parse(JSON.stringify(x))]));const out=v291NormalizeBase(d);out.schemaVersion=17;out.version=17;out.journalVersion=APP_VERSION;(out.fusionSnapshots||[]).forEach(x=>{const k=keep.get(x.id),is347=String(k?.indicatorVersion||x.indicatorVersion||'').includes('5372.347')||k?.contractGeneration==='v347'||x.contractGeneration==='v347';if(is347&&x.indicatorSelections?.smcBias){const der=deriveFusionFromSelections(x.indicatorSelections);Object.assign(x,{strategicDirection:der.strategicDirection,planningDirection:der.planningDirection,planningAuthority:der.planningAuthority,executionDirection:der.executionDirection,direction:der.executionDirection,executionStage:der.executionStage,currentAction:der.currentAction,marketMapLabel:der.marketMapLabel,scenario:der.scenario,permissionCode:der.permissionCode,permission:der.permission,executionState:der.executionState,zoneRole:der.zoneRole,zoneHealth:der.zoneHealth,priceLocation:der.priceLocation,waitReason:der.waitReason,dow:der.dow,indicatorPlan:der.indicatorPlan,marketContext:der.marketContext,playbook:der.playbook,tradingPlaybook:der.tradingPlaybook,stateFingerprint:der.stateFingerprint,contractGeneration:'v347',indicatorVersion:V291_INDICATOR,legacyContract:false})}else if(k){['marketContext','playbook','tradingPlaybook','executionStage','currentAction','marketMapLabel','indicatorPlan','stateFingerprint','indicatorVersion','contractGeneration'].forEach(key=>{if(k[key]!==undefined)x[key]=k[key]});x.legacyContract=true}});return out};
+
+renderFusionSnapshotStatus=function(snap){const el=$('fusionSnapshotStatus');if(!el)return;if(!snap?.capturedAt){el.innerHTML='<span class="snapshot-age">Unsaved current context · v347</span>';return}const dims=snap.planningDirection?snap:parseSmcBiasDimensions(snap.indicatorSelections?.smcBias||''),pd=snap.planningDirection||dims.planningDirection||'WAIT',stage=snap.executionStage||'OBSERVE',tag=pd==='WAIT'?(snap.strategicDirection&&snap.strategicDirection!=='WAIT'?`CONTEXT ${snap.strategicDirection}`:'WAIT'):`MAP ${pd}`;el.innerHTML=`<span class="pill info">${escapeHtml(snap.symbol)}</span><span class="pill ${biasPillClass(pd)}">${escapeHtml(tag)}</span><span class="pill ${snap.permissionCode===3?'good':snap.permissionCode>=4?'bad':'warn'}">${escapeHtml(snap.permission)}</span><span class="pill">${escapeHtml(naturalStageV261(stage))}</span>${snap.legacyContract?'<span class="pill bad">LEGACY CONTRACT</span>':''}<span class="snapshot-age">${snapshotAgeLabel(snap.capturedAt)}</span>`};
+
+normalizeFusionLifecycle=function(v){const x=String(v||'').trim();if(V291_EXEC.includes(x))return x;if(x==='WAIT TRIGGER / ROOM')return'AT LOCATION / WAIT TRIGGER';if(x.includes('H4 CONFIRMATION'))return'WAIT H4 CONFIRMATION / CONTEXT MAP';if(x.includes('DIRECTIONAL ALIGNMENT'))return'WAIT DIRECTIONAL ALIGNMENT / NO EXEC PLAN';if(x.includes('MISSED'))return'MISSED / WAIT NEW ZONE';if(x==='ENTRY READY')return'ENTRY READY';if(x.includes('INVALID'))return'SETUP INVALID';if(x.includes('RISK LOCK'))return'RISK LOCKED';if(x.includes('SOURCE'))return'SOURCE MAP ERROR';return'WAIT MAP / EXECUTION LOCATION'};
+
+function refreshV291Dropdowns(){populateSmcDropdowns();setSelectOptions('fsExecutionState',V291_EXEC);setSelectOptions('planExecutionState',V291_EXEC);setSelectOptions('entryExecutionState',V291_EXEC);setSelectOptions('ntsTriggerState',V291_EXEC);const pc=$('fsPlanConfirm');if(pc){const old=pc.value;pc.innerHTML='<option value="">— Tự suy ra / chọn đúng dòng Plan —</option>'+V291_PLAN.map(x=>`<option value="${escapeHtml(x)}">${escapeHtml(x)}</option>`).join('');if(V291_PLAN.includes(old))pc.value=old}}
+refreshV291Dropdowns();
+try{loadLatestFusionSnapshot();renderAll()}catch(e){console.error('v2.91 startup sync',e)}
 })();
 </script>
 
