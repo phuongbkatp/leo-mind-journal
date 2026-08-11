@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="theme-color" content="#0a0a0c" />
-<title>Leo Mind Journal · Daily Trading Decision Journal v2.93</title>
+<title>Leo Mind Journal · Daily Trading Decision Journal v2.94</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -633,7 +633,7 @@ td{color:#8f97a6}
 .compact-plan-context .market-section-head{margin-bottom:8px}
 .compact-plan-context .field input{min-height:40px}
 
-/* === v2.93 Optional multi-device cloud sync + local HTML auth guidance === */
+/* === v2.94 Optional multi-device cloud sync + reset safety === */
 .cloud-sync-card{background:radial-gradient(760px 210px at 0 0,rgba(59,130,246,.085),transparent 68%),linear-gradient(180deg,#151923,#0f1218);border-color:rgba(59,130,246,.24)}
 .cloud-sync-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
 .cloud-status-pill{font-family:var(--mono);font-size:10px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;border-radius:999px;padding:6px 10px;border:1px solid var(--border);background:rgba(0,0,0,.22);color:var(--text-mid)}
@@ -662,7 +662,7 @@ td{color:#8f97a6}
 <body>
 <div class="shell">
 <header class="brand">
-  <div class="brand-left"><div class="brand-mark">L</div><div><div class="brand-title">Leo Mind Journal</div><div class="brand-sub">Daily Trading Command Center · SMC-MA Fusion + Psychology · v2.93</div></div></div>
+  <div class="brand-left"><div class="brand-mark">L</div><div><div class="brand-title">Leo Mind Journal</div><div class="brand-sub">Daily Trading Command Center · SMC-MA Fusion + Psychology · v2.94</div></div></div>
   <div class="brand-right"><span id="cloudHeaderDot" class="cloud-header-dot local"></span><span id="cloudHeaderStatus">LOCAL ONLY · OFFLINE READY</span></div>
 </header>
 <nav class="tabs" id="topTabs">
@@ -1186,9 +1186,9 @@ td{color:#8f97a6}
 
 <section class="panel" id="panel-data">
   <div class="card"><div class="card-title">Data Management</div><div class="card-sub">Safe backup · schema validation · storage monitoring</div>
-    <div class="grid three"><div class="field"><label>Import Mode</label><select id="importMode"><option>Merge</option><option>Replace</option></select></div><div class="field"><label>Stale Plan Threshold</label><select id="staleThreshold"><option value="60">60 minutes</option><option value="120">120 minutes</option><option value="180" selected>180 minutes</option><option value="360">360 minutes</option></select></div><div class="field"><label>Journal / Indicator Contract</label><div class="readonly-value">Journal v2.93 · SMC-MA v.5372.347 P10P2 R5.7.52 · Fusion3 v306 / Live209</div></div></div>
+    <div class="grid three"><div class="field"><label>Import Mode</label><select id="importMode"><option>Merge</option><option>Replace</option></select></div><div class="field"><label>Stale Plan Threshold</label><select id="staleThreshold"><option value="60">60 minutes</option><option value="120">120 minutes</option><option value="180" selected>180 minutes</option><option value="360">360 minutes</option></select></div><div class="field"><label>Journal / Indicator Contract</label><div class="readonly-value">Journal v2.94 · SMC-MA v.5372.347 P10P2 R5.7.52 · Fusion3 v306 / Live209</div></div></div>
     <div id="storageStatus" style="margin-top:12px"></div>
-    <div class="btn-row"><button class="btn primary" onclick="exportData()">Export JSON</button><label class="btn" for="importFile">Import JSON</label><input id="importFile" type="file" accept="application/json" style="display:none" onchange="importData(event)"><button class="btn" onclick="createLocalBackup()">Create Local Backup</button><button class="btn danger" onclick="resetData()">Reset All</button></div></div>
+    <div class="btn-row"><button class="btn primary" onclick="exportData()">Export JSON</button><label class="btn" for="importFile">Import JSON</label><input id="importFile" type="file" accept="application/json" style="display:none" onchange="importData(event)"><button class="btn" onclick="createLocalBackup()">Create Local Backup</button><button class="btn danger" onclick="resetData()">Reset All Data</button></div><div class="helper" style="margin-top:8px"><b>Reset All Data:</b> nếu Cloud Sync đang đăng nhập, journal sẽ xóa dữ liệu trên <b>máy này và bản cloud</b> cùng lúc để dữ liệu cũ không tự quay trở lại. Cấu hình Supabase và phiên đăng nhập vẫn được giữ.</div></div>
 
   <div class="card cloud-sync-card" id="cloudSyncCard">
     <div class="cloud-sync-head">
@@ -1241,7 +1241,7 @@ td{color:#8f97a6}
   <div class="card"><div class="card-title">Raw Data</div><div class="card-sub">for backup/debug</div><div class="field"><textarea id="rawData" style="min-height:420px;font-family:var(--mono)"></textarea></div></div>
 </section>
 
-<div class="footer">Leo Mind Journal · Daily Trading Command Center · SMC-MA Market Context × Trading Psychology · v2.93</div>
+<div class="footer">Leo Mind Journal · Daily Trading Command Center · SMC-MA Market Context × Trading Psychology · v2.94</div>
 </div>
 <div class="bottom-nav" id="bottomNav">
   <button class="active" data-tab="desk">Desk</button><button data-tab="plan">Plan</button><button data-tab="live">Live</button><button data-action="review">Review</button><button data-tab="analytics">Stats</button><button data-action="more">More</button>
@@ -1252,7 +1252,7 @@ td{color:#8f97a6}
 <div id="toast" class="toast"></div>
 <script>
 const LS_KEY='leo_mind_journal_v2';
-const APP_VERSION='2.93';
+const APP_VERSION='2.94';
 const legacyKey='leo_mind_journal_v1';
 const BACKUP_KEY='leo_mind_journal_v2_backup';
 const JOURNAL_TZ='Asia/Bangkok';
@@ -2412,10 +2412,10 @@ function toggleMobileSheet(id){const target=$(id),was=target?.classList.contains
 function quickTab(tab){closeMobileSheets();qsa('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));qsa('.panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+tab));qsa('#bottomNav button[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));renderAll();window.scrollTo({top:0,behavior:'smooth'})}
 qsa('.tab').forEach(btn=>btn.addEventListener('click',()=>quickTab(btn.dataset.tab)));qsa('#bottomNav button[data-tab],.mobile-sheet button[data-tab]').forEach(btn=>btn.addEventListener('click',()=>quickTab(btn.dataset.tab)));qsa('#bottomNav button[data-action]').forEach(btn=>btn.addEventListener('click',()=>toggleMobileSheet(btn.dataset.action==='review'?'mobileReviewSheet':'mobileMoreSheet')));
 function createLocalBackup(){try{localStorage.setItem(BACKUP_KEY,JSON.stringify(load()));toast('Local backup created')}catch(e){toast('Cannot create local backup — storage may be full')}}
-function exportData(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v293_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')}
+function exportData(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v294_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')}
 function mergeData(base,incoming){const a=normalizeData(base),b=normalizeData(incoming);a.trades=uniqueById([...a.trades,...b.trades]);a.missed=uniqueById([...a.missed,...b.missed]);a.emotions=uniqueById([...a.emotions,...b.emotions]);a.behaviorEvents=uniqueById([...a.behaviorEvents,...b.behaviorEvents]);a.cooldownOverrides=uniqueById([...a.cooldownOverrides,...b.cooldownOverrides]);a.fusionSnapshots=uniqueById([...a.fusionSnapshots,...b.fusionSnapshots]);a.scenarios=uniqueById([...a.scenarios,...b.scenarios]);a.noTrades=uniqueById([...a.noTrades,...b.noTrades]);a.noTradeChecks=uniqueById([...a.noTradeChecks,...b.noTradeChecks]);a.daily={...a.daily,...b.daily};a.eod={...a.eod,...b.eod};return normalizeData(a)}
 function importData(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const obj=JSON.parse(r.result);if(!obj||typeof obj!=='object'||!Array.isArray(obj.trades))throw new Error('Schema invalid');createLocalBackup();const mode=$('importMode')?.value||'Merge',next=mode==='Replace'?normalizeData(obj):mergeData(load(),obj);if(save(next)){renderAll();toast(`Imported JSON · ${mode}`)}}catch(e){console.error(e);toast('Invalid or unsupported JSON')}finally{ev.target.value=''}};r.readAsText(f)}
-function resetData(){if(confirm('Xóa toàn bộ dữ liệu và legacy data trên trình duyệt này? Hãy Export JSON trước.')){localStorage.removeItem(LS_KEY);localStorage.removeItem(legacyKey);localStorage.removeItem(BACKUP_KEY);renderAll();toast('All journal data reset')}}
+function resetData(){if(confirm('Xóa toàn bộ dữ liệu journal trên trình duyệt này? Hãy Export JSON trước.')){localStorage.removeItem(LS_KEY);localStorage.removeItem(legacyKey);localStorage.removeItem(BACKUP_KEY);location.reload()}}
 
 
 /* === v2.60 architecture overrides === */
@@ -2780,7 +2780,7 @@ normalizeData = function(d){d=normalizeDataV251(d);d.schemaVersion=16;d.version=
 const renderAllV251=renderAll;
 renderAll = function(){renderAllV251();renderMarketTimeline()};
 const exportDataV251=exportData;
-exportData = function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v293_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
+exportData = function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v294_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
 
 
 
@@ -3432,7 +3432,7 @@ quickLive=function(id){const r=v280LegacyQuickLive(id);setTimeout(v280RenderLive
 const v280LegacyQuickClose=quickClose;
 quickClose=function(id){const r=v280LegacyQuickClose(id);setTimeout(v280RenderClose,0);return r};
 const v280LegacyExportData=exportData;
-exportData=function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v293_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
+exportData=function(){const blob=new Blob([JSON.stringify(load(),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`leo_mind_journal_v294_${todayISO()}.json`;a.click();URL.revokeObjectURL(a.href);toast('Exported JSON')};
 // Preserve historical chart data, but no new workflow depends on chart attachments.
 setupChartInput=function(){};setupNoTradeChartInput=function(){};setupNoTradeSessionChartInput=function(){};
 v280RebuildPanels();v280InstallEntryModal();if($('v280EodDate'))$('v280EodDate').value=todayISO();v280LegacyRenderAll();v280RenderAll();
@@ -4217,7 +4217,7 @@ try{loadLatestFusionSnapshot();renderAll()}catch(e){console.error('v2.92 startup
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-/* === v2.93 Multi-device cloud sync: local-first + Supabase === */
+/* === v2.94 Multi-device cloud sync: local-first + Supabase + cloud-safe reset === */
 (function(){
 const CLOUD_CONFIG_KEY='leo_mind_cloud_sync_config_v1';
 const CLOUD_STATE_KEY='leo_mind_cloud_sync_state_v1';
@@ -4363,6 +4363,62 @@ window.cloudSyncNow=async function(silent=false){
 window.cloudForcePull=async function(){if(!cloudSignedIn()){toast('Đăng nhập Cloud Sync trước');return}if(!confirm('Tải bản cloud xuống? Journal sẽ tạo Local Backup trước rồi thay dữ liệu hiện tại trên máy này bằng bản cloud.'))return;await cloudPullLatestV292(true,false)};
 window.cloudForcePush=async function(){if(!cloudSignedIn()){toast('Đăng nhập Cloud Sync trước');return}if(!confirm('Đẩy bản trên máy này lên cloud? Thao tác này sẽ ghi đè bản cloud hiện tại.'))return;await cloudPushLocalV292(true,false)};
 window.copyCloudSql=function(){const el=$('cloudSqlSetup');if(!el)return;el.focus();el.select();try{document.execCommand('copy');toast('Đã copy SQL setup')}catch(_){toast('Hãy copy thủ công đoạn SQL')}};
+
+/* v2.94 — Reset All must not be undone by Cloud Sync. */
+function resetEmptyPayloadV294(stamp){
+ const empty=normalizeData(dataTemplate());
+ empty.schemaVersion=18;empty.version=18;empty.journalVersion=APP_VERSION;
+ empty.syncMeta={modifiedAt:stamp,resetAt:stamp,deviceId:cloudDeviceId(),syncModel:'latest-write-wins'};
+ return empty;
+}
+function applyLocalResetV294(payload){
+ clearTimeout(cloudPushTimer);
+ cloudApplyingRemote=true;
+ try{
+  localStorage.removeItem(legacyKey);
+  localStorage.removeItem(BACKUP_KEY);
+  localStorage.setItem(LS_KEY,JSON.stringify(payload));
+ }finally{cloudApplyingRemote=false}
+}
+window.resetData=async function(){
+ if(!confirm('RESET ALL DATA sẽ xóa toàn bộ Daily State, Market Context, Trade, No Trade, Missed, End Day và Analytics. Hãy Export JSON trước nếu cần backup. Tiếp tục?'))return;
+ let signedIn=false;
+ if(cloudConfigured()){
+  try{await cloudRefreshSession()}catch(_){ }
+  signedIn=cloudSignedIn();
+ }
+ if(signedIn){
+  if(!navigator.onLine){
+   toast('Đang đăng nhập Cloud Sync nhưng máy đang offline. Reset All bị chặn để tránh dữ liệu cloud cũ tự quay lại. Hãy kết nối mạng rồi thử lại.');
+   return;
+  }
+  if(!confirm('Cloud Sync đang đăng nhập. Xác nhận xóa dữ liệu trên MÁY NÀY VÀ CLOUD? Cấu hình Supabase/tài khoản sẽ được giữ.'))return;
+  const stamp=nowISO(),empty=resetEmptyPayloadV294(stamp);
+  cloudSetUi('syncing','RESETTING');
+  try{
+   const c=cloudCreateClient();
+   if(!c||!cloudSession?.user?.id)throw new Error('Cloud session unavailable');
+   const {error}=await c.from(CLOUD_TABLE).upsert({user_id:cloudSession.user.id,payload:empty,client_modified_at:stamp,updated_at:stamp},{onConflict:'user_id'});
+   if(error)throw error;
+   applyLocalResetV294(empty);
+   cloudSaveState({lastSyncAt:stamp,lastMessage:'Reset all data'});
+   cloudSetUi('synced','RESET COMPLETE');
+   toast('Đã xóa toàn bộ dữ liệu trên máy này và cloud');
+   setTimeout(()=>location.reload(),350);
+  }catch(e){
+   console.error('Reset all cloud failed',e);
+   cloudSetUi('error','RESET FAILED');
+   toast('Không thể reset cloud nên dữ liệu local CHƯA bị xóa. Kiểm tra mạng/quyền Supabase rồi thử lại.');
+  }
+  return;
+ }
+ if(!confirm(cloudConfigured()?'Cloud Sync đã được cấu hình nhưng hiện chưa đăng nhập. Reset này CHỈ xóa dữ liệu trên máy này; dữ liệu cloud cũ có thể quay lại nếu bạn đăng nhập sau này. Muốn xóa cả cloud, hãy đăng nhập trước rồi Reset All. Vẫn tiếp tục xóa local?':'Cloud Sync chưa được cấu hình. Xác nhận xóa toàn bộ dữ liệu journal trên máy này?'))return;
+ const stamp=nowISO(),empty=resetEmptyPayloadV294(stamp);
+ applyLocalResetV294(empty);
+ try{localStorage.removeItem(CLOUD_STATE_KEY)}catch(_){ }
+ toast('Đã xóa toàn bộ dữ liệu journal trên máy này');
+ setTimeout(()=>location.reload(),250);
+};
 
 function queueCloudAutoPushV292(){if(cloudApplyingRemote||!cloudSignedIn())return;clearTimeout(cloudPushTimer);cloudSetUi(navigator.onLine?'pending':'pending',navigator.onLine?'PENDING SYNC':'OFFLINE · PENDING');cloudPushTimer=setTimeout(()=>cloudSyncNow(true),900)}
 
